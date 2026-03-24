@@ -267,7 +267,7 @@ def generate_alert_signals():
 
 def generate_all_data():
     """Generate complete dataset for the dashboard."""
-    random.seed(42)  # Reproducible sample data
+    random.seed()  # Unique data each run
 
     dataset = {
         "metadata": {
