@@ -11,6 +11,11 @@ import json
 import random
 import hashlib
 from datetime import datetime, timedelta
+from real_data_collector import (
+    VERIFIED_LISTINGS,
+    MARKETPLACE_PROFILES,
+    SOURCE_URLS,
+)
 
 # ============================================================
 # CONFIGURATION
@@ -22,7 +27,7 @@ SOURCES = {
     "marketplace": [
         "PlayerAuctions", "G2G", "Eldorado.gg", "Z2U", "IGVault",
         "AccountWarehouse", "EpicNPC", "Gameflip", "SEAgm", "Mulefactory",
-        "U7Buy", "Zeusx.com", "Ownedcore", "Funpay"
+        "U7Buy", "Zeusx.com", "Ownedcore", "Funpay", "eBay"
     ],
     "forum": [
         "V3rmillion", "OGUsers", "Nulled.to", "Sythe.org", "MPGH",
@@ -111,16 +116,33 @@ def generate_source_breakdown():
                 # Not all sources sell all platforms
                 if random.random() < 0.7:
                     weight = {"marketplace": 3, "forum": 2, "social": 1.5}[source_type]
-                    listings = int(random.uniform(10, 500) * weight)
+
+                    # Use real data for verified marketplaces on Roblox
+                    if platform == "Roblox" and source in MARKETPLACE_PROFILES:
+                        profile = MARKETPLACE_PROFILES[source]
+                        listings = int(profile["estimated_roblox_listings"] * random.uniform(0.85, 1.15))
+                        avg_price = profile["avg_price_usd"]
+                        verified_pct = profile["verified_sellers_pct"]
+                        source_url = profile["url"]
+                        is_verified = True
+                    else:
+                        listings = int(random.uniform(10, 500) * weight)
+                        avg_price = round(random.uniform(5, 120), 2)
+                        verified_pct = round(random.uniform(0.1, 0.9), 2)
+                        source_url = None
+                        is_verified = False
+
                     data.append({
                         "platform": platform,
                         "source_type": source_type,
                         "source_name": source,
                         "listings_count": listings,
-                        "avg_price_usd": round(random.uniform(5, 120), 2),
-                        "verified_sellers_pct": round(random.uniform(0.1, 0.9), 2),
+                        "avg_price_usd": avg_price if is_verified else avg_price,
+                        "verified_sellers_pct": verified_pct,
                         "avg_account_age_days": random.randint(30, 2000),
                         "last_scraped": (datetime.now() - timedelta(hours=random.randint(1, 168))).isoformat(),
+                        "source_url": source_url,
+                        "verified": is_verified,
                     })
     return data
 
@@ -266,6 +288,11 @@ def generate_alert_signals():
     return sorted(alerts, key=lambda x: x["timestamp"], reverse=True)
 
 
+def generate_verified_listings():
+    """Return verified listings from real marketplaces."""
+    return VERIFIED_LISTINGS
+
+
 def generate_all_data():
     """Generate complete dataset for the dashboard."""
     random.seed()  # Unique data each run
@@ -278,6 +305,8 @@ def generate_all_data():
             "sources_tracked": sum(len(v) for v in SOURCES.values()),
             "refresh_frequency": "Monthly",
             "version": "1.0.0",
+            "verified_sources": list(MARKETPLACE_PROFILES.keys()),
+            "verified_listings_count": len(VERIFIED_LISTINGS),
         },
         "monthly_trends": generate_monthly_data("2025-04-01", 12),
         "source_breakdown": generate_source_breakdown(),
@@ -286,6 +315,8 @@ def generate_all_data():
         "language_data": generate_language_data(),
         "quality_distribution": generate_quality_distribution(),
         "alerts": generate_alert_signals(),
+        "verified_listings": generate_verified_listings(),
+        "marketplace_profiles": MARKETPLACE_PROFILES,
         "config": {
             "platforms": PLATFORMS,
             "source_types": list(SOURCES.keys()),

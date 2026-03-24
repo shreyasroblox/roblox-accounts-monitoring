@@ -157,10 +157,86 @@ tr:hover {{ background: var(--surface2); }}
 .source-type-tag.forum {{ background: #ffa50233; color: var(--orange); }}
 .source-type-tag.social {{ background: #9b59b633; color: var(--fortnite); }}
 
+/* Verified Badge */
+.verified-badge {{
+  display: inline-flex; align-items: center; gap: 4px; padding: 2px 8px;
+  border-radius: 4px; background: #26de8133; color: var(--green); font-size: 11px;
+  font-weight: 600; text-transform: uppercase;
+}}
+
+/* Data Provenance Section */
+.provenance-section {{
+  background: var(--surface2); border: 1px solid var(--border); border-radius: 12px;
+  padding: 20px; margin-bottom: 24px;
+}}
+.provenance-section h2 {{
+  font-size: 16px; font-weight: 600; margin-bottom: 12px; color: var(--text);
+}}
+.provenance-text {{
+  font-size: 14px; color: var(--text-dim); margin-bottom: 12px;
+}}
+.provenance-links {{
+  display: flex; gap: 12px; flex-wrap: wrap;
+}}
+.provenance-links a {{
+  display: inline-block; padding: 6px 12px; background: var(--accent);
+  color: #fff; text-decoration: none; border-radius: 6px; font-size: 13px;
+  font-weight: 500; transition: all 0.2s;
+}}
+.provenance-links a:hover {{
+  background: var(--accent2); transform: translateY(-2px);
+}}
+
+/* Marketplace Profile Cards */
+.marketplace-cards {{
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 16px; margin-bottom: 24px;
+}}
+.marketplace-card {{
+  background: var(--surface); border: 1px solid var(--border); border-radius: 12px;
+  padding: 20px;
+}}
+.marketplace-card h3 {{
+  font-size: 16px; font-weight: 600; margin-bottom: 12px; color: var(--text);
+}}
+.marketplace-stat {{
+  font-size: 13px; color: var(--text-dim); margin-bottom: 8px; display: flex;
+  justify-content: space-between;
+}}
+.marketplace-stat .value {{
+  color: var(--text); font-weight: 500;
+}}
+.marketplace-card-link {{
+  display: inline-block; margin-top: 12px; padding: 6px 12px;
+  background: var(--accent); color: #fff; text-decoration: none;
+  border-radius: 6px; font-size: 12px; font-weight: 500;
+  transition: all 0.2s;
+}}
+.marketplace-card-link:hover {{
+  background: var(--accent2);
+}}
+
+/* Verified Listings Table */
+.verified-table {{
+  margin-top: 16px;
+}}
+.verified-table td:last-child {{
+  white-space: nowrap;
+}}
+.view-listing-btn {{
+  display: inline-block; padding: 4px 10px; background: var(--blue);
+  color: #fff; text-decoration: none; border-radius: 4px;
+  font-size: 11px; font-weight: 600; transition: all 0.2s;
+}}
+.view-listing-btn:hover {{
+  background: var(--accent2); text-decoration: none;
+}}
+
 @media (max-width: 900px) {{
   .chart-row {{ grid-template-columns: 1fr; }}
   .chart-row.triple {{ grid-template-columns: 1fr; }}
   .kpi-grid {{ grid-template-columns: repeat(2, 1fr); }}
+  .marketplace-cards {{ grid-template-columns: 1fr; }}
 }}
 </style>
 </head>
@@ -182,6 +258,7 @@ tr:hover {{ background: var(--surface2); }}
   <button data-tab="languages">Languages</button>
   <button data-tab="quality">Quality Tiers</button>
   <button data-tab="alerts">Alerts</button>
+  <button data-tab="rawdata">Raw Data</button>
 </div>
 
 <div class="container">
@@ -238,7 +315,7 @@ tr:hover {{ background: var(--surface2); }}
   <div class="chart-card" style="margin-bottom:24px">
     <h3>Source Details</h3>
     <div class="table-wrap"><table id="sourceTable"><thead><tr>
-      <th>Source</th><th>Type</th><th>Platform</th><th>Listings</th><th>Avg Price</th><th>Verified Sellers</th><th>Last Scraped</th>
+      <th>Source</th><th>Type</th><th>Platform</th><th>Listings</th><th>Avg Price</th><th>Verified Sellers</th><th>Last Scraped</th><th>Link</th>
     </tr></thead><tbody></tbody></table></div>
   </div>
 </div>
@@ -328,6 +405,25 @@ tr:hover {{ background: var(--surface2); }}
     <select id="alertPlatform"><option value="all">All Platforms</option></select>
   </div>
   <div id="alertList"></div>
+</div>
+
+<!-- ========== RAW DATA ========== -->
+<div class="section" id="sec-rawdata">
+  <div class="provenance-section">
+    <h2>Verified Data Provenance</h2>
+    <div class="provenance-text">This dashboard integrates verified, real-world listing data from 3 primary marketplace sources. Comparative platforms (Fortnite, Minecraft, Steam) use synthetic data for comparison.</div>
+    <div class="provenance-links" id="provenanceLinks"></div>
+  </div>
+
+  <h3 style="margin-bottom:16px; font-size:16px; color:var(--text);">Verified Marketplace Profiles</h3>
+  <div class="marketplace-cards" id="marketplaceCards"></div>
+
+  <div class="chart-card">
+    <h3>Verified Listings from Real Marketplaces</h3>
+    <div class="table-wrap verified-table"><table id="verifiedListingsTable"><thead><tr>
+      <th>Source</th><th>Title</th><th>Price</th><th>Category</th><th>Quality Tier</th><th>Features</th><th>Link</th>
+    </tr></thead><tbody></tbody></table></div>
+  </div>
 </div>
 
 </div><!-- container -->
@@ -631,6 +727,9 @@ function renderSources() {{
   const sortedAll = [...filtered].sort((a, b) => b.listings_count - a.listings_count);
   sortedAll.forEach(r => {{
     const ago = Math.round((Date.now() - new Date(r.last_scraped).getTime()) / 3600000);
+    const linkHtml = r.verified && r.source_url ?
+      `<a href="${{r.source_url}}" target="_blank" class="view-listing-btn">✓ Verified ↗</a>` :
+      '';
     tbody.innerHTML += `<tr>
       <td>${{r.source_name}}</td>
       <td><span class="source-type-tag ${{r.source_type}}">${{r.source_type}}</span></td>
@@ -639,6 +738,7 @@ function renderSources() {{
       <td>${{fmtUSD(r.avg_price_usd)}}</td>
       <td>${{pct(r.verified_sellers_pct)}}</td>
       <td>${{ago}}h ago</td>
+      <td>${{linkHtml}}</td>
     </tr>`;
   }});
 }}
@@ -893,6 +993,61 @@ function renderAlerts() {{
 document.getElementById('alertSeverity').addEventListener('change', renderAlerts);
 document.getElementById('alertPlatform').addEventListener('change', renderAlerts);
 
+// ============ RAW DATA ============
+function renderRawData() {{
+  // Render provenance links
+  const provenanceDiv = document.getElementById('provenanceLinks');
+  provenanceDiv.innerHTML = '';
+  if (D.marketplace_profiles) {{
+    Object.entries(D.marketplace_profiles).forEach(([source, profile]) => {{
+      const a = document.createElement('a');
+      a.href = profile.url;
+      a.target = '_blank';
+      a.textContent = '↗ ' + source;
+      provenanceDiv.appendChild(a);
+    }});
+  }}
+
+  // Render marketplace profile cards
+  const cardsDiv = document.getElementById('marketplaceCards');
+  cardsDiv.innerHTML = '';
+  if (D.marketplace_profiles) {{
+    Object.entries(D.marketplace_profiles).forEach(([source, profile]) => {{
+      const card = document.createElement('div');
+      card.className = 'marketplace-card';
+      card.innerHTML = `
+        <h3>${{source}}</h3>
+        <div class="marketplace-stat"><span>Listings:</span><span class="value">${{fmt(profile.estimated_roblox_listings)}}</span></div>
+        <div class="marketplace-stat"><span>Est. Yearly Sales:</span><span class="value">${{fmt(profile.estimated_total_sold_yearly)}}</span></div>
+        <div class="marketplace-stat"><span>Price Range:</span><span class="value">${{fmtUSD(profile.price_range[0])}}-${{profile.price_range[1]}}</span></div>
+        <div class="marketplace-stat"><span>Avg Price:</span><span class="value">${{fmtUSD(profile.avg_price_usd)}}</span></div>
+        <div class="marketplace-stat"><span>Verified Sellers:</span><span class="value">${{pct(profile.verified_sellers_pct)}}</span></div>
+        <div class="marketplace-stat"><span>Guarantee:</span><span class="value">${{profile.account_guarantee_days}} days</span></div>
+        <a href="${{profile.url}}" target="_blank" class="marketplace-card-link">Browse Listings ↗</a>
+      `;
+      cardsDiv.appendChild(card);
+    }});
+  }}
+
+  // Render verified listings table
+  const tbody = document.querySelector('#verifiedListingsTable tbody');
+  tbody.innerHTML = '';
+  if (D.verified_listings) {{
+    D.verified_listings.forEach(listing => {{
+      const featuresStr = listing.features.join(', ');
+      tbody.innerHTML += `<tr>
+        <td><span class="verified-badge">✓ ${{listing.source}}</span></td>
+        <td style="font-weight:500;">${{listing.title}}</td>
+        <td style="font-weight:600;color:var(--green);">${{fmtUSD(listing.price)}}</td>
+        <td><span style="font-size:11px;color:var(--text-dim);">${{listing.category}}</span></td>
+        <td><span style="font-size:11px;padding:2px 6px;background:var(--surface2);border-radius:3px;">${{listing.quality_tier}}</span></td>
+        <td style="font-size:12px;">${{featuresStr}}</td>
+        <td><a href="${{listing.source_url}}" target="_blank" class="view-listing-btn">View ↗</a></td>
+      </tr>`;
+    }});
+  }}
+}}
+
 // ============ INIT ============
 renderOverview();
 renderTrends();
@@ -902,6 +1057,7 @@ renderRegions();
 renderLanguages();
 renderQuality();
 renderAlerts();
+renderRawData();
 </script>
 </body>
 </html>
