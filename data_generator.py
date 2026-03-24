@@ -21,7 +21,8 @@ PLATFORMS = ["Roblox", "Fortnite", "Minecraft", "Steam"]
 SOURCES = {
     "marketplace": [
         "PlayerAuctions", "G2G", "Eldorado.gg", "Z2U", "IGVault",
-        "AccountWarehouse", "EpicNPC", "Gameflip", "SEAgm", "Mulefactory"
+        "AccountWarehouse", "EpicNPC", "Gameflip", "SEAgm", "Mulefactory",
+        "U7Buy", "Zeusx.com", "Ownedcore", "Funpay"
     ],
     "forum": [
         "V3rmillion", "OGUsers", "Nulled.to", "Sythe.org", "MPGH",
