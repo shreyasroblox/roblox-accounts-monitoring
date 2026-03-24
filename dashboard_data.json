@@ -1,0 +1,7126 @@
+{
+  "metadata": {
+    "generated_at": "2026-03-24T15:02:11.719275",
+    "data_period": "2025-04 to 2026-03",
+    "platforms": [
+      "Roblox",
+      "Fortnite",
+      "Minecraft",
+      "Steam"
+    ],
+    "sources_tracked": 28,
+    "refresh_frequency": "Monthly",
+    "version": "1.0.0"
+  },
+  "monthly_trends": [
+    {
+      "month": "2025-04",
+      "platform": "Roblox",
+      "total_listings": 4284,
+      "new_listings": 1262,
+      "avg_price_usd": 24.01,
+      "median_price_usd": 14.33,
+      "max_price_usd": 492.69,
+      "total_sellers": 1864,
+      "unique_sources": 43
+    },
+    {
+      "month": "2025-04",
+      "platform": "Fortnite",
+      "total_listings": 3104,
+      "new_listings": 834,
+      "avg_price_usd": 46.22,
+      "median_price_usd": 22.66,
+      "max_price_usd": 552.57,
+      "total_sellers": 1304,
+      "unique_sources": 32
+    },
+    {
+      "month": "2025-04",
+      "platform": "Minecraft",
+      "total_listings": 2611,
+      "new_listings": 767,
+      "avg_price_usd": 12.54,
+      "median_price_usd": 5.04,
+      "max_price_usd": 225.94,
+      "total_sellers": 1205,
+      "unique_sources": 15
+    },
+    {
+      "month": "2025-04",
+      "platform": "Steam",
+      "total_listings": 1983,
+      "new_listings": 605,
+      "avg_price_usd": 76.32,
+      "median_price_usd": 39.38,
+      "max_price_usd": 889.92,
+      "total_sellers": 897,
+      "unique_sources": 18
+    },
+    {
+      "month": "2025-05",
+      "platform": "Roblox",
+      "total_listings": 4058,
+      "new_listings": 1504,
+      "avg_price_usd": 24.86,
+      "median_price_usd": 16.04,
+      "max_price_usd": 539.99,
+      "total_sellers": 1809,
+      "unique_sources": 32
+    },
+    {
+      "month": "2025-05",
+      "platform": "Fortnite",
+      "total_listings": 2931,
+      "new_listings": 904,
+      "avg_price_usd": 51.21,
+      "median_price_usd": 22.89,
+      "max_price_usd": 956.95,
+      "total_sellers": 1398,
+      "unique_sources": 26
+    },
+    {
+      "month": "2025-05",
+      "platform": "Minecraft",
+      "total_listings": 2878,
+      "new_listings": 850,
+      "avg_price_usd": 12.86,
+      "median_price_usd": 4.55,
+      "max_price_usd": 166.15,
+      "total_sellers": 909,
+      "unique_sources": 22
+    },
+    {
+      "month": "2025-05",
+      "platform": "Steam",
+      "total_listings": 2104,
+      "new_listings": 876,
+      "avg_price_usd": 82.76,
+      "median_price_usd": 39.63,
+      "max_price_usd": 890.92,
+      "total_sellers": 780,
+      "unique_sources": 36
+    },
+    {
+      "month": "2025-05",
+      "platform": "Roblox",
+      "total_listings": 4451,
+      "new_listings": 1654,
+      "avg_price_usd": 32.3,
+      "median_price_usd": 15.44,
+      "max_price_usd": 352.37,
+      "total_sellers": 1984,
+      "unique_sources": 20
+    },
+    {
+      "month": "2025-05",
+      "platform": "Fortnite",
+      "total_listings": 3236,
+      "new_listings": 1254,
+      "avg_price_usd": 42.73,
+      "median_price_usd": 27.13,
+      "max_price_usd": 501.37,
+      "total_sellers": 1180,
+      "unique_sources": 39
+    },
+    {
+      "month": "2025-05",
+      "platform": "Minecraft",
+      "total_listings": 3049,
+      "new_listings": 954,
+      "avg_price_usd": 11.25,
+      "median_price_usd": 4.53,
+      "max_price_usd": 141.21,
+      "total_sellers": 1043,
+      "unique_sources": 45
+    },
+    {
+      "month": "2025-05",
+      "platform": "Steam",
+      "total_listings": 2063,
+      "new_listings": 721,
+      "avg_price_usd": 92.37,
+      "median_price_usd": 37.7,
+      "max_price_usd": 2128.17,
+      "total_sellers": 884,
+      "unique_sources": 19
+    },
+    {
+      "month": "2025-06",
+      "platform": "Roblox",
+      "total_listings": 5431,
+      "new_listings": 1643,
+      "avg_price_usd": 26.65,
+      "median_price_usd": 15.18,
+      "max_price_usd": 478.05,
+      "total_sellers": 2604,
+      "unique_sources": 27
+    },
+    {
+      "month": "2025-06",
+      "platform": "Fortnite",
+      "total_listings": 3778,
+      "new_listings": 1317,
+      "avg_price_usd": 53.27,
+      "median_price_usd": 23.19,
+      "max_price_usd": 1110.59,
+      "total_sellers": 1784,
+      "unique_sources": 19
+    },
+    {
+      "month": "2025-06",
+      "platform": "Minecraft",
+      "total_listings": 3500,
+      "new_listings": 919,
+      "avg_price_usd": 13.44,
+      "median_price_usd": 4.92,
+      "max_price_usd": 194.71,
+      "total_sellers": 1747,
+      "unique_sources": 31
+    },
+    {
+      "month": "2025-06",
+      "platform": "Steam",
+      "total_listings": 2325,
+      "new_listings": 897,
+      "avg_price_usd": 88.95,
+      "median_price_usd": 43.54,
+      "max_price_usd": 884.82,
+      "total_sellers": 1108,
+      "unique_sources": 39
+    },
+    {
+      "month": "2025-07",
+      "platform": "Roblox",
+      "total_listings": 5709,
+      "new_listings": 1923,
+      "avg_price_usd": 30.35,
+      "median_price_usd": 13.83,
+      "max_price_usd": 476.9,
+      "total_sellers": 2801,
+      "unique_sources": 43
+    },
+    {
+      "month": "2025-07",
+      "platform": "Fortnite",
+      "total_listings": 4168,
+      "new_listings": 1465,
+      "avg_price_usd": 53.43,
+      "median_price_usd": 26.31,
+      "max_price_usd": 524.09,
+      "total_sellers": 1771,
+      "unique_sources": 41
+    },
+    {
+      "month": "2025-07",
+      "platform": "Minecraft",
+      "total_listings": 3574,
+      "new_listings": 1438,
+      "avg_price_usd": 12.89,
+      "median_price_usd": 4.65,
+      "max_price_usd": 221.31,
+      "total_sellers": 1628,
+      "unique_sources": 31
+    },
+    {
+      "month": "2025-07",
+      "platform": "Steam",
+      "total_listings": 2746,
+      "new_listings": 747,
+      "avg_price_usd": 91.02,
+      "median_price_usd": 39.91,
+      "max_price_usd": 1289.81,
+      "total_sellers": 1364,
+      "unique_sources": 40
+    },
+    {
+      "month": "2025-08",
+      "platform": "Roblox",
+      "total_listings": 6037,
+      "new_listings": 2652,
+      "avg_price_usd": 25.5,
+      "median_price_usd": 16.13,
+      "max_price_usd": 241.13,
+      "total_sellers": 2397,
+      "unique_sources": 17
+    },
+    {
+      "month": "2025-08",
+      "platform": "Fortnite",
+      "total_listings": 4491,
+      "new_listings": 1715,
+      "avg_price_usd": 47.71,
+      "median_price_usd": 23.13,
+      "max_price_usd": 1149.64,
+      "total_sellers": 1495,
+      "unique_sources": 31
+    },
+    {
+      "month": "2025-08",
+      "platform": "Minecraft",
+      "total_listings": 3805,
+      "new_listings": 1361,
+      "avg_price_usd": 12.31,
+      "median_price_usd": 4.71,
+      "max_price_usd": 251.23,
+      "total_sellers": 1294,
+      "unique_sources": 24
+    },
+    {
+      "month": "2025-08",
+      "platform": "Steam",
+      "total_listings": 2569,
+      "new_listings": 1104,
+      "avg_price_usd": 93.85,
+      "median_price_usd": 38.99,
+      "max_price_usd": 1471.12,
+      "total_sellers": 898,
+      "unique_sources": 17
+    },
+    {
+      "month": "2025-09",
+      "platform": "Roblox",
+      "total_listings": 5485,
+      "new_listings": 1612,
+      "avg_price_usd": 30.47,
+      "median_price_usd": 14.19,
+      "max_price_usd": 280.53,
+      "total_sellers": 2337,
+      "unique_sources": 22
+    },
+    {
+      "month": "2025-09",
+      "platform": "Fortnite",
+      "total_listings": 3316,
+      "new_listings": 1169,
+      "avg_price_usd": 40.99,
+      "median_price_usd": 24.15,
+      "max_price_usd": 521.97,
+      "total_sellers": 1316,
+      "unique_sources": 32
+    },
+    {
+      "month": "2025-09",
+      "platform": "Minecraft",
+      "total_listings": 2883,
+      "new_listings": 993,
+      "avg_price_usd": 14.38,
+      "median_price_usd": 5.07,
+      "max_price_usd": 306.85,
+      "total_sellers": 1330,
+      "unique_sources": 21
+    },
+    {
+      "month": "2025-09",
+      "platform": "Steam",
+      "total_listings": 2148,
+      "new_listings": 713,
+      "avg_price_usd": 94.4,
+      "median_price_usd": 38.83,
+      "max_price_usd": 2141.49,
+      "total_sellers": 667,
+      "unique_sources": 35
+    },
+    {
+      "month": "2025-10",
+      "platform": "Roblox",
+      "total_listings": 6492,
+      "new_listings": 2063,
+      "avg_price_usd": 26.35,
+      "median_price_usd": 14.71,
+      "max_price_usd": 596.79,
+      "total_sellers": 2270,
+      "unique_sources": 21
+    },
+    {
+      "month": "2025-10",
+      "platform": "Fortnite",
+      "total_listings": 3749,
+      "new_listings": 1284,
+      "avg_price_usd": 42.95,
+      "median_price_usd": 23.42,
+      "max_price_usd": 982.11,
+      "total_sellers": 1181,
+      "unique_sources": 40
+    },
+    {
+      "month": "2025-10",
+      "platform": "Minecraft",
+      "total_listings": 3397,
+      "new_listings": 1528,
+      "avg_price_usd": 13.03,
+      "median_price_usd": 4.55,
+      "max_price_usd": 289.43,
+      "total_sellers": 1677,
+      "unique_sources": 44
+    },
+    {
+      "month": "2025-10",
+      "platform": "Steam",
+      "total_listings": 2536,
+      "new_listings": 878,
+      "avg_price_usd": 83.76,
+      "median_price_usd": 39.25,
+      "max_price_usd": 1901.27,
+      "total_sellers": 1218,
+      "unique_sources": 20
+    },
+    {
+      "month": "2025-11",
+      "platform": "Roblox",
+      "total_listings": 6975,
+      "new_listings": 2837,
+      "avg_price_usd": 34.64,
+      "median_price_usd": 14.3,
+      "max_price_usd": 545.07,
+      "total_sellers": 2682,
+      "unique_sources": 45
+    },
+    {
+      "month": "2025-11",
+      "platform": "Fortnite",
+      "total_listings": 4624,
+      "new_listings": 1606,
+      "avg_price_usd": 52.73,
+      "median_price_usd": 25.81,
+      "max_price_usd": 592.07,
+      "total_sellers": 1588,
+      "unique_sources": 16
+    },
+    {
+      "month": "2025-11",
+      "platform": "Minecraft",
+      "total_listings": 3794,
+      "new_listings": 991,
+      "avg_price_usd": 13.12,
+      "median_price_usd": 5.25,
+      "max_price_usd": 235.25,
+      "total_sellers": 1519,
+      "unique_sources": 42
+    },
+    {
+      "month": "2025-11",
+      "platform": "Steam",
+      "total_listings": 2902,
+      "new_listings": 1219,
+      "avg_price_usd": 79.6,
+      "median_price_usd": 40.06,
+      "max_price_usd": 729.52,
+      "total_sellers": 910,
+      "unique_sources": 42
+    },
+    {
+      "month": "2025-12",
+      "platform": "Roblox",
+      "total_listings": 7044,
+      "new_listings": 2107,
+      "avg_price_usd": 27.04,
+      "median_price_usd": 16.17,
+      "max_price_usd": 489.61,
+      "total_sellers": 2985,
+      "unique_sources": 28
+    },
+    {
+      "month": "2025-12",
+      "platform": "Fortnite",
+      "total_listings": 4670,
+      "new_listings": 1411,
+      "avg_price_usd": 50.01,
+      "median_price_usd": 24.08,
+      "max_price_usd": 969.46,
+      "total_sellers": 1694,
+      "unique_sources": 23
+    },
+    {
+      "month": "2025-12",
+      "platform": "Minecraft",
+      "total_listings": 3720,
+      "new_listings": 1165,
+      "avg_price_usd": 13.75,
+      "median_price_usd": 4.8,
+      "max_price_usd": 285.75,
+      "total_sellers": 1169,
+      "unique_sources": 29
+    },
+    {
+      "month": "2025-12",
+      "platform": "Steam",
+      "total_listings": 3043,
+      "new_listings": 1087,
+      "avg_price_usd": 94.4,
+      "median_price_usd": 36.8,
+      "max_price_usd": 1567.04,
+      "total_sellers": 993,
+      "unique_sources": 26
+    },
+    {
+      "month": "2026-01",
+      "platform": "Roblox",
+      "total_listings": 7177,
+      "new_listings": 2020,
+      "avg_price_usd": 34.3,
+      "median_price_usd": 14.61,
+      "max_price_usd": 760.56,
+      "total_sellers": 3162,
+      "unique_sources": 34
+    },
+    {
+      "month": "2026-01",
+      "platform": "Fortnite",
+      "total_listings": 4386,
+      "new_listings": 1682,
+      "avg_price_usd": 54.06,
+      "median_price_usd": 25.14,
+      "max_price_usd": 942.17,
+      "total_sellers": 2133,
+      "unique_sources": 18
+    },
+    {
+      "month": "2026-01",
+      "platform": "Minecraft",
+      "total_listings": 3627,
+      "new_listings": 984,
+      "avg_price_usd": 11.75,
+      "median_price_usd": 4.62,
+      "max_price_usd": 204.51,
+      "total_sellers": 1285,
+      "unique_sources": 34
+    },
+    {
+      "month": "2026-01",
+      "platform": "Steam",
+      "total_listings": 2487,
+      "new_listings": 1045,
+      "avg_price_usd": 89.09,
+      "median_price_usd": 41.5,
+      "max_price_usd": 1478.18,
+      "total_sellers": 871,
+      "unique_sources": 44
+    },
+    {
+      "month": "2026-02",
+      "platform": "Roblox",
+      "total_listings": 7398,
+      "new_listings": 2258,
+      "avg_price_usd": 27.28,
+      "median_price_usd": 14.77,
+      "max_price_usd": 219.88,
+      "total_sellers": 3360,
+      "unique_sources": 35
+    },
+    {
+      "month": "2026-02",
+      "platform": "Fortnite",
+      "total_listings": 4484,
+      "new_listings": 1753,
+      "avg_price_usd": 44.88,
+      "median_price_usd": 24.71,
+      "max_price_usd": 786.99,
+      "total_sellers": 1445,
+      "unique_sources": 45
+    },
+    {
+      "month": "2026-02",
+      "platform": "Minecraft",
+      "total_listings": 3650,
+      "new_listings": 1521,
+      "avg_price_usd": 14.93,
+      "median_price_usd": 5.05,
+      "max_price_usd": 267.29,
+      "total_sellers": 1203,
+      "unique_sources": 19
+    },
+    {
+      "month": "2026-02",
+      "platform": "Steam",
+      "total_listings": 2466,
+      "new_listings": 1095,
+      "avg_price_usd": 90.52,
+      "median_price_usd": 43.46,
+      "max_price_usd": 785.55,
+      "total_sellers": 916,
+      "unique_sources": 36
+    }
+  ],
+  "source_breakdown": [
+    {
+      "platform": "Roblox",
+      "source_type": "marketplace",
+      "source_name": "PlayerAuctions",
+      "listings_count": 181,
+      "avg_price_usd": 94.71,
+      "verified_sellers_pct": 0.81,
+      "avg_account_age_days": 862,
+      "last_scraped": "2026-03-18T00:02:11.722600"
+    },
+    {
+      "platform": "Roblox",
+      "source_type": "marketplace",
+      "source_name": "Z2U",
+      "listings_count": 268,
+      "avg_price_usd": 96.99,
+      "verified_sellers_pct": 0.24,
+      "avg_account_age_days": 874,
+      "last_scraped": "2026-03-24T08:02:11.722608"
+    },
+    {
+      "platform": "Roblox",
+      "source_type": "marketplace",
+      "source_name": "IGVault",
+      "listings_count": 1388,
+      "avg_price_usd": 94.97,
+      "verified_sellers_pct": 0.43,
+      "avg_account_age_days": 1401,
+      "last_scraped": "2026-03-21T23:02:11.722611"
+    },
+    {
+      "platform": "Roblox",
+      "source_type": "marketplace",
+      "source_name": "AccountWarehouse",
+      "listings_count": 1187,
+      "avg_price_usd": 17.43,
+      "verified_sellers_pct": 0.8,
+      "avg_account_age_days": 1788,
+      "last_scraped": "2026-03-19T14:02:11.722614"
+    },
+    {
+      "platform": "Roblox",
+      "source_type": "marketplace",
+      "source_name": "EpicNPC",
+      "listings_count": 1230,
+      "avg_price_usd": 57.93,
+      "verified_sellers_pct": 0.34,
+      "avg_account_age_days": 1658,
+      "last_scraped": "2026-03-22T04:02:11.722616"
+    },
+    {
+      "platform": "Roblox",
+      "source_type": "marketplace",
+      "source_name": "Gameflip",
+      "listings_count": 1000,
+      "avg_price_usd": 50.82,
+      "verified_sellers_pct": 0.32,
+      "avg_account_age_days": 172,
+      "last_scraped": "2026-03-21T15:02:11.722618"
+    },
+    {
+      "platform": "Roblox",
+      "source_type": "marketplace",
+      "source_name": "SEAgm",
+      "listings_count": 778,
+      "avg_price_usd": 83.14,
+      "verified_sellers_pct": 0.77,
+      "avg_account_age_days": 708,
+      "last_scraped": "2026-03-24T07:02:11.722620"
+    },
+    {
+      "platform": "Roblox",
+      "source_type": "marketplace",
+      "source_name": "Mulefactory",
+      "listings_count": 1456,
+      "avg_price_usd": 25.54,
+      "verified_sellers_pct": 0.87,
+      "avg_account_age_days": 573,
+      "last_scraped": "2026-03-24T05:02:11.722621"
+    },
+    {
+      "platform": "Roblox",
+      "source_type": "forum",
+      "source_name": "V3rmillion",
+      "listings_count": 445,
+      "avg_price_usd": 88.78,
+      "verified_sellers_pct": 0.35,
+      "avg_account_age_days": 1271,
+      "last_scraped": "2026-03-19T04:02:11.722623"
+    },
+    {
+      "platform": "Roblox",
+      "source_type": "forum",
+      "source_name": "OGUsers",
+      "listings_count": 901,
+      "avg_price_usd": 26.86,
+      "verified_sellers_pct": 0.14,
+      "avg_account_age_days": 923,
+      "last_scraped": "2026-03-24T14:02:11.722625"
+    },
+    {
+      "platform": "Roblox",
+      "source_type": "forum",
+      "source_name": "Nulled.to",
+      "listings_count": 810,
+      "avg_price_usd": 83.99,
+      "verified_sellers_pct": 0.85,
+      "avg_account_age_days": 1539,
+      "last_scraped": "2026-03-22T12:02:11.722627"
+    },
+    {
+      "platform": "Roblox",
+      "source_type": "forum",
+      "source_name": "Sythe.org",
+      "listings_count": 88,
+      "avg_price_usd": 81.39,
+      "verified_sellers_pct": 0.36,
+      "avg_account_age_days": 672,
+      "last_scraped": "2026-03-23T07:02:11.722629"
+    },
+    {
+      "platform": "Roblox",
+      "source_type": "forum",
+      "source_name": "UnknownCheats",
+      "listings_count": 323,
+      "avg_price_usd": 51.97,
+      "verified_sellers_pct": 0.42,
+      "avg_account_age_days": 635,
+      "last_scraped": "2026-03-18T17:02:11.722631"
+    },
+    {
+      "platform": "Roblox",
+      "source_type": "forum",
+      "source_name": "RaidForums Archive",
+      "listings_count": 432,
+      "avg_price_usd": 113.14,
+      "verified_sellers_pct": 0.64,
+      "avg_account_age_days": 1878,
+      "last_scraped": "2026-03-22T18:02:11.722633"
+    },
+    {
+      "platform": "Roblox",
+      "source_type": "forum",
+      "source_name": "HackForums",
+      "listings_count": 314,
+      "avg_price_usd": 68.01,
+      "verified_sellers_pct": 0.1,
+      "avg_account_age_days": 617,
+      "last_scraped": "2026-03-22T09:02:11.722635"
+    },
+    {
+      "platform": "Roblox",
+      "source_type": "forum",
+      "source_name": "Cracked.io",
+      "listings_count": 588,
+      "avg_price_usd": 80.29,
+      "verified_sellers_pct": 0.47,
+      "avg_account_age_days": 935,
+      "last_scraped": "2026-03-22T08:02:11.722637"
+    },
+    {
+      "platform": "Roblox",
+      "source_type": "forum",
+      "source_name": "BreachForums",
+      "listings_count": 797,
+      "avg_price_usd": 115.38,
+      "verified_sellers_pct": 0.69,
+      "avg_account_age_days": 1379,
+      "last_scraped": "2026-03-23T17:02:11.722640"
+    },
+    {
+      "platform": "Roblox",
+      "source_type": "social",
+      "source_name": "Telegram",
+      "listings_count": 502,
+      "avg_price_usd": 76.21,
+      "verified_sellers_pct": 0.17,
+      "avg_account_age_days": 1979,
+      "last_scraped": "2026-03-22T02:02:11.722643"
+    },
+    {
+      "platform": "Roblox",
+      "source_type": "social",
+      "source_name": "Discord",
+      "listings_count": 180,
+      "avg_price_usd": 27.9,
+      "verified_sellers_pct": 0.12,
+      "avg_account_age_days": 531,
+      "last_scraped": "2026-03-19T13:02:11.722644"
+    },
+    {
+      "platform": "Roblox",
+      "source_type": "social",
+      "source_name": "Twitter/X",
+      "listings_count": 579,
+      "avg_price_usd": 57.37,
+      "verified_sellers_pct": 0.81,
+      "avg_account_age_days": 1208,
+      "last_scraped": "2026-03-22T13:02:11.722646"
+    },
+    {
+      "platform": "Roblox",
+      "source_type": "social",
+      "source_name": "TikTok",
+      "listings_count": 308,
+      "avg_price_usd": 21.97,
+      "verified_sellers_pct": 0.65,
+      "avg_account_age_days": 1858,
+      "last_scraped": "2026-03-23T11:02:11.722648"
+    },
+    {
+      "platform": "Roblox",
+      "source_type": "social",
+      "source_name": "WhatsApp Groups",
+      "listings_count": 606,
+      "avg_price_usd": 85.03,
+      "verified_sellers_pct": 0.47,
+      "avg_account_age_days": 1171,
+      "last_scraped": "2026-03-21T23:02:11.722650"
+    },
+    {
+      "platform": "Fortnite",
+      "source_type": "marketplace",
+      "source_name": "PlayerAuctions",
+      "listings_count": 226,
+      "avg_price_usd": 58.43,
+      "verified_sellers_pct": 0.52,
+      "avg_account_age_days": 1174,
+      "last_scraped": "2026-03-18T06:02:11.722652"
+    },
+    {
+      "platform": "Fortnite",
+      "source_type": "marketplace",
+      "source_name": "G2G",
+      "listings_count": 1140,
+      "avg_price_usd": 55.9,
+      "verified_sellers_pct": 0.75,
+      "avg_account_age_days": 1856,
+      "last_scraped": "2026-03-19T05:02:11.722654"
+    },
+    {
+      "platform": "Fortnite",
+      "source_type": "marketplace",
+      "source_name": "Eldorado.gg",
+      "listings_count": 1363,
+      "avg_price_usd": 56.28,
+      "verified_sellers_pct": 0.23,
+      "avg_account_age_days": 1794,
+      "last_scraped": "2026-03-19T13:02:11.722656"
+    },
+    {
+      "platform": "Fortnite",
+      "source_type": "marketplace",
+      "source_name": "Z2U",
+      "listings_count": 1135,
+      "avg_price_usd": 101.58,
+      "verified_sellers_pct": 0.32,
+      "avg_account_age_days": 1622,
+      "last_scraped": "2026-03-19T01:02:11.722658"
+    },
+    {
+      "platform": "Fortnite",
+      "source_type": "marketplace",
+      "source_name": "IGVault",
+      "listings_count": 381,
+      "avg_price_usd": 55.59,
+      "verified_sellers_pct": 0.67,
+      "avg_account_age_days": 510,
+      "last_scraped": "2026-03-21T17:02:11.722659"
+    },
+    {
+      "platform": "Fortnite",
+      "source_type": "marketplace",
+      "source_name": "AccountWarehouse",
+      "listings_count": 1342,
+      "avg_price_usd": 14.27,
+      "verified_sellers_pct": 0.22,
+      "avg_account_age_days": 814,
+      "last_scraped": "2026-03-22T23:02:11.722661"
+    },
+    {
+      "platform": "Fortnite",
+      "source_type": "marketplace",
+      "source_name": "Gameflip",
+      "listings_count": 629,
+      "avg_price_usd": 67.4,
+      "verified_sellers_pct": 0.43,
+      "avg_account_age_days": 453,
+      "last_scraped": "2026-03-20T03:02:11.722663"
+    },
+    {
+      "platform": "Fortnite",
+      "source_type": "marketplace",
+      "source_name": "SEAgm",
+      "listings_count": 1161,
+      "avg_price_usd": 113.8,
+      "verified_sellers_pct": 0.12,
+      "avg_account_age_days": 1833,
+      "last_scraped": "2026-03-18T11:02:11.722665"
+    },
+    {
+      "platform": "Fortnite",
+      "source_type": "marketplace",
+      "source_name": "Mulefactory",
+      "listings_count": 38,
+      "avg_price_usd": 45.45,
+      "verified_sellers_pct": 0.7,
+      "avg_account_age_days": 1777,
+      "last_scraped": "2026-03-20T03:02:11.722667"
+    },
+    {
+      "platform": "Fortnite",
+      "source_type": "forum",
+      "source_name": "V3rmillion",
+      "listings_count": 739,
+      "avg_price_usd": 96.98,
+      "verified_sellers_pct": 0.82,
+      "avg_account_age_days": 1029,
+      "last_scraped": "2026-03-22T06:02:11.722670"
+    },
+    {
+      "platform": "Fortnite",
+      "source_type": "forum",
+      "source_name": "OGUsers",
+      "listings_count": 495,
+      "avg_price_usd": 49.72,
+      "verified_sellers_pct": 0.64,
+      "avg_account_age_days": 1664,
+      "last_scraped": "2026-03-20T07:02:11.722671"
+    },
+    {
+      "platform": "Fortnite",
+      "source_type": "forum",
+      "source_name": "RaidForums Archive",
+      "listings_count": 908,
+      "avg_price_usd": 73.07,
+      "verified_sellers_pct": 0.63,
+      "avg_account_age_days": 201,
+      "last_scraped": "2026-03-17T18:02:11.722673"
+    },
+    {
+      "platform": "Fortnite",
+      "source_type": "forum",
+      "source_name": "HackForums",
+      "listings_count": 869,
+      "avg_price_usd": 25.9,
+      "verified_sellers_pct": 0.31,
+      "avg_account_age_days": 700,
+      "last_scraped": "2026-03-22T08:02:11.722675"
+    },
+    {
+      "platform": "Fortnite",
+      "source_type": "forum",
+      "source_name": "Cracked.io",
+      "listings_count": 350,
+      "avg_price_usd": 106.16,
+      "verified_sellers_pct": 0.32,
+      "avg_account_age_days": 1978,
+      "last_scraped": "2026-03-20T03:02:11.722677"
+    },
+    {
+      "platform": "Fortnite",
+      "source_type": "forum",
+      "source_name": "BreachForums",
+      "listings_count": 100,
+      "avg_price_usd": 7.23,
+      "verified_sellers_pct": 0.53,
+      "avg_account_age_days": 1979,
+      "last_scraped": "2026-03-20T21:02:11.722679"
+    },
+    {
+      "platform": "Fortnite",
+      "source_type": "social",
+      "source_name": "Telegram",
+      "listings_count": 65,
+      "avg_price_usd": 115.09,
+      "verified_sellers_pct": 0.13,
+      "avg_account_age_days": 93,
+      "last_scraped": "2026-03-21T23:02:11.722680"
+    },
+    {
+      "platform": "Fortnite",
+      "source_type": "social",
+      "source_name": "Discord",
+      "listings_count": 29,
+      "avg_price_usd": 22.52,
+      "verified_sellers_pct": 0.2,
+      "avg_account_age_days": 1401,
+      "last_scraped": "2026-03-23T09:02:11.722682"
+    },
+    {
+      "platform": "Fortnite",
+      "source_type": "social",
+      "source_name": "Twitter/X",
+      "listings_count": 175,
+      "avg_price_usd": 85.44,
+      "verified_sellers_pct": 0.71,
+      "avg_account_age_days": 373,
+      "last_scraped": "2026-03-18T03:02:11.722684"
+    },
+    {
+      "platform": "Fortnite",
+      "source_type": "social",
+      "source_name": "Reddit",
+      "listings_count": 564,
+      "avg_price_usd": 18.17,
+      "verified_sellers_pct": 0.76,
+      "avg_account_age_days": 667,
+      "last_scraped": "2026-03-23T11:02:11.722686"
+    },
+    {
+      "platform": "Fortnite",
+      "source_type": "social",
+      "source_name": "TikTok",
+      "listings_count": 697,
+      "avg_price_usd": 71.22,
+      "verified_sellers_pct": 0.83,
+      "avg_account_age_days": 798,
+      "last_scraped": "2026-03-20T09:02:11.722688"
+    },
+    {
+      "platform": "Fortnite",
+      "source_type": "social",
+      "source_name": "WhatsApp Groups",
+      "listings_count": 450,
+      "avg_price_usd": 100.52,
+      "verified_sellers_pct": 0.29,
+      "avg_account_age_days": 1457,
+      "last_scraped": "2026-03-21T09:02:11.722689"
+    },
+    {
+      "platform": "Minecraft",
+      "source_type": "marketplace",
+      "source_name": "PlayerAuctions",
+      "listings_count": 207,
+      "avg_price_usd": 118.14,
+      "verified_sellers_pct": 0.73,
+      "avg_account_age_days": 741,
+      "last_scraped": "2026-03-18T22:02:11.722692"
+    },
+    {
+      "platform": "Minecraft",
+      "source_type": "marketplace",
+      "source_name": "G2G",
+      "listings_count": 574,
+      "avg_price_usd": 63.19,
+      "verified_sellers_pct": 0.37,
+      "avg_account_age_days": 1769,
+      "last_scraped": "2026-03-20T03:02:11.722695"
+    },
+    {
+      "platform": "Minecraft",
+      "source_type": "marketplace",
+      "source_name": "Z2U",
+      "listings_count": 1442,
+      "avg_price_usd": 78.09,
+      "verified_sellers_pct": 0.76,
+      "avg_account_age_days": 1478,
+      "last_scraped": "2026-03-22T23:02:11.722696"
+    },
+    {
+      "platform": "Minecraft",
+      "source_type": "marketplace",
+      "source_name": "IGVault",
+      "listings_count": 1108,
+      "avg_price_usd": 116.03,
+      "verified_sellers_pct": 0.32,
+      "avg_account_age_days": 1685,
+      "last_scraped": "2026-03-18T21:02:11.722698"
+    },
+    {
+      "platform": "Minecraft",
+      "source_type": "marketplace",
+      "source_name": "EpicNPC",
+      "listings_count": 1243,
+      "avg_price_usd": 73.13,
+      "verified_sellers_pct": 0.36,
+      "avg_account_age_days": 532,
+      "last_scraped": "2026-03-23T16:02:11.722700"
+    },
+    {
+      "platform": "Minecraft",
+      "source_type": "marketplace",
+      "source_name": "Gameflip",
+      "listings_count": 692,
+      "avg_price_usd": 91.3,
+      "verified_sellers_pct": 0.56,
+      "avg_account_age_days": 1398,
+      "last_scraped": "2026-03-20T13:02:11.722702"
+    },
+    {
+      "platform": "Minecraft",
+      "source_type": "marketplace",
+      "source_name": "SEAgm",
+      "listings_count": 756,
+      "avg_price_usd": 42.38,
+      "verified_sellers_pct": 0.49,
+      "avg_account_age_days": 756,
+      "last_scraped": "2026-03-21T20:02:11.722711"
+    },
+    {
+      "platform": "Minecraft",
+      "source_type": "marketplace",
+      "source_name": "Mulefactory",
+      "listings_count": 1324,
+      "avg_price_usd": 85.64,
+      "verified_sellers_pct": 0.32,
+      "avg_account_age_days": 50,
+      "last_scraped": "2026-03-19T02:02:11.722713"
+    },
+    {
+      "platform": "Minecraft",
+      "source_type": "forum",
+      "source_name": "OGUsers",
+      "listings_count": 725,
+      "avg_price_usd": 61.19,
+      "verified_sellers_pct": 0.71,
+      "avg_account_age_days": 1444,
+      "last_scraped": "2026-03-19T13:02:11.722715"
+    },
+    {
+      "platform": "Minecraft",
+      "source_type": "forum",
+      "source_name": "Nulled.to",
+      "listings_count": 501,
+      "avg_price_usd": 96.19,
+      "verified_sellers_pct": 0.17,
+      "avg_account_age_days": 483,
+      "last_scraped": "2026-03-20T07:02:11.722717"
+    },
+    {
+      "platform": "Minecraft",
+      "source_type": "forum",
+      "source_name": "Sythe.org",
+      "listings_count": 320,
+      "avg_price_usd": 71.88,
+      "verified_sellers_pct": 0.48,
+      "avg_account_age_days": 1117,
+      "last_scraped": "2026-03-20T22:02:11.722724"
+    },
+    {
+      "platform": "Minecraft",
+      "source_type": "forum",
+      "source_name": "MPGH",
+      "listings_count": 751,
+      "avg_price_usd": 43.04,
+      "verified_sellers_pct": 0.66,
+      "avg_account_age_days": 584,
+      "last_scraped": "2026-03-21T08:02:11.722727"
+    },
+    {
+      "platform": "Minecraft",
+      "source_type": "forum",
+      "source_name": "UnknownCheats",
+      "listings_count": 138,
+      "avg_price_usd": 27.15,
+      "verified_sellers_pct": 0.2,
+      "avg_account_age_days": 1127,
+      "last_scraped": "2026-03-22T15:02:11.722729"
+    },
+    {
+      "platform": "Minecraft",
+      "source_type": "forum",
+      "source_name": "RaidForums Archive",
+      "listings_count": 743,
+      "avg_price_usd": 36.8,
+      "verified_sellers_pct": 0.57,
+      "avg_account_age_days": 1586,
+      "last_scraped": "2026-03-19T00:02:11.722731"
+    },
+    {
+      "platform": "Minecraft",
+      "source_type": "forum",
+      "source_name": "HackForums",
+      "listings_count": 980,
+      "avg_price_usd": 100.75,
+      "verified_sellers_pct": 0.34,
+      "avg_account_age_days": 769,
+      "last_scraped": "2026-03-22T17:02:11.722733"
+    },
+    {
+      "platform": "Minecraft",
+      "source_type": "forum",
+      "source_name": "Cracked.io",
+      "listings_count": 713,
+      "avg_price_usd": 19.56,
+      "verified_sellers_pct": 0.14,
+      "avg_account_age_days": 141,
+      "last_scraped": "2026-03-18T17:02:11.722735"
+    },
+    {
+      "platform": "Minecraft",
+      "source_type": "forum",
+      "source_name": "BreachForums",
+      "listings_count": 945,
+      "avg_price_usd": 78.36,
+      "verified_sellers_pct": 0.7,
+      "avg_account_age_days": 240,
+      "last_scraped": "2026-03-24T11:02:11.722737"
+    },
+    {
+      "platform": "Minecraft",
+      "source_type": "social",
+      "source_name": "Telegram",
+      "listings_count": 360,
+      "avg_price_usd": 55.65,
+      "verified_sellers_pct": 0.25,
+      "avg_account_age_days": 135,
+      "last_scraped": "2026-03-21T22:02:11.722738"
+    },
+    {
+      "platform": "Minecraft",
+      "source_type": "social",
+      "source_name": "Twitter/X",
+      "listings_count": 619,
+      "avg_price_usd": 51.08,
+      "verified_sellers_pct": 0.16,
+      "avg_account_age_days": 1319,
+      "last_scraped": "2026-03-24T01:02:11.722740"
+    },
+    {
+      "platform": "Minecraft",
+      "source_type": "social",
+      "source_name": "Reddit",
+      "listings_count": 611,
+      "avg_price_usd": 114.15,
+      "verified_sellers_pct": 0.17,
+      "avg_account_age_days": 538,
+      "last_scraped": "2026-03-23T08:02:11.722742"
+    },
+    {
+      "platform": "Minecraft",
+      "source_type": "social",
+      "source_name": "TikTok",
+      "listings_count": 320,
+      "avg_price_usd": 73.55,
+      "verified_sellers_pct": 0.59,
+      "avg_account_age_days": 1618,
+      "last_scraped": "2026-03-19T01:02:11.722744"
+    },
+    {
+      "platform": "Minecraft",
+      "source_type": "social",
+      "source_name": "Facebook Marketplace",
+      "listings_count": 682,
+      "avg_price_usd": 39.2,
+      "verified_sellers_pct": 0.57,
+      "avg_account_age_days": 908,
+      "last_scraped": "2026-03-21T08:02:11.722745"
+    },
+    {
+      "platform": "Minecraft",
+      "source_type": "social",
+      "source_name": "WhatsApp Groups",
+      "listings_count": 59,
+      "avg_price_usd": 115.41,
+      "verified_sellers_pct": 0.18,
+      "avg_account_age_days": 1592,
+      "last_scraped": "2026-03-22T09:02:11.722747"
+    },
+    {
+      "platform": "Minecraft",
+      "source_type": "social",
+      "source_name": "Instagram",
+      "listings_count": 209,
+      "avg_price_usd": 14.34,
+      "verified_sellers_pct": 0.29,
+      "avg_account_age_days": 1160,
+      "last_scraped": "2026-03-23T19:02:11.722749"
+    },
+    {
+      "platform": "Steam",
+      "source_type": "marketplace",
+      "source_name": "PlayerAuctions",
+      "listings_count": 630,
+      "avg_price_usd": 84.28,
+      "verified_sellers_pct": 0.48,
+      "avg_account_age_days": 96,
+      "last_scraped": "2026-03-22T03:02:11.722751"
+    },
+    {
+      "platform": "Steam",
+      "source_type": "marketplace",
+      "source_name": "G2G",
+      "listings_count": 445,
+      "avg_price_usd": 103.85,
+      "verified_sellers_pct": 0.16,
+      "avg_account_age_days": 508,
+      "last_scraped": "2026-03-21T19:02:11.722753"
+    },
+    {
+      "platform": "Steam",
+      "source_type": "marketplace",
+      "source_name": "Z2U",
+      "listings_count": 1001,
+      "avg_price_usd": 112.37,
+      "verified_sellers_pct": 0.44,
+      "avg_account_age_days": 1145,
+      "last_scraped": "2026-03-22T05:02:11.722755"
+    },
+    {
+      "platform": "Steam",
+      "source_type": "marketplace",
+      "source_name": "IGVault",
+      "listings_count": 1365,
+      "avg_price_usd": 100.06,
+      "verified_sellers_pct": 0.16,
+      "avg_account_age_days": 369,
+      "last_scraped": "2026-03-21T08:02:11.722757"
+    },
+    {
+      "platform": "Steam",
+      "source_type": "marketplace",
+      "source_name": "AccountWarehouse",
+      "listings_count": 1241,
+      "avg_price_usd": 110.94,
+      "verified_sellers_pct": 0.45,
+      "avg_account_age_days": 989,
+      "last_scraped": "2026-03-21T09:02:11.722759"
+    },
+    {
+      "platform": "Steam",
+      "source_type": "marketplace",
+      "source_name": "EpicNPC",
+      "listings_count": 1415,
+      "avg_price_usd": 62.55,
+      "verified_sellers_pct": 0.5,
+      "avg_account_age_days": 194,
+      "last_scraped": "2026-03-18T05:02:11.722760"
+    },
+    {
+      "platform": "Steam",
+      "source_type": "marketplace",
+      "source_name": "Gameflip",
+      "listings_count": 665,
+      "avg_price_usd": 42.07,
+      "verified_sellers_pct": 0.3,
+      "avg_account_age_days": 217,
+      "last_scraped": "2026-03-22T04:02:11.722762"
+    },
+    {
+      "platform": "Steam",
+      "source_type": "forum",
+      "source_name": "V3rmillion",
+      "listings_count": 951,
+      "avg_price_usd": 119.95,
+      "verified_sellers_pct": 0.64,
+      "avg_account_age_days": 581,
+      "last_scraped": "2026-03-18T11:02:11.722764"
+    },
+    {
+      "platform": "Steam",
+      "source_type": "forum",
+      "source_name": "OGUsers",
+      "listings_count": 761,
+      "avg_price_usd": 59.11,
+      "verified_sellers_pct": 0.62,
+      "avg_account_age_days": 1906,
+      "last_scraped": "2026-03-21T15:02:11.722766"
+    },
+    {
+      "platform": "Steam",
+      "source_type": "forum",
+      "source_name": "Nulled.to",
+      "listings_count": 593,
+      "avg_price_usd": 78.0,
+      "verified_sellers_pct": 0.49,
+      "avg_account_age_days": 216,
+      "last_scraped": "2026-03-19T14:02:11.722768"
+    },
+    {
+      "platform": "Steam",
+      "source_type": "forum",
+      "source_name": "Sythe.org",
+      "listings_count": 346,
+      "avg_price_usd": 82.07,
+      "verified_sellers_pct": 0.79,
+      "avg_account_age_days": 705,
+      "last_scraped": "2026-03-20T05:02:11.722770"
+    },
+    {
+      "platform": "Steam",
+      "source_type": "forum",
+      "source_name": "MPGH",
+      "listings_count": 302,
+      "avg_price_usd": 113.7,
+      "verified_sellers_pct": 0.75,
+      "avg_account_age_days": 1156,
+      "last_scraped": "2026-03-24T05:02:11.722772"
+    },
+    {
+      "platform": "Steam",
+      "source_type": "forum",
+      "source_name": "UnknownCheats",
+      "listings_count": 328,
+      "avg_price_usd": 42.18,
+      "verified_sellers_pct": 0.88,
+      "avg_account_age_days": 857,
+      "last_scraped": "2026-03-19T03:02:11.722773"
+    },
+    {
+      "platform": "Steam",
+      "source_type": "forum",
+      "source_name": "HackForums",
+      "listings_count": 871,
+      "avg_price_usd": 58.13,
+      "verified_sellers_pct": 0.14,
+      "avg_account_age_days": 1091,
+      "last_scraped": "2026-03-20T18:02:11.722775"
+    },
+    {
+      "platform": "Steam",
+      "source_type": "forum",
+      "source_name": "Cracked.io",
+      "listings_count": 508,
+      "avg_price_usd": 55.83,
+      "verified_sellers_pct": 0.14,
+      "avg_account_age_days": 576,
+      "last_scraped": "2026-03-18T18:02:11.722777"
+    },
+    {
+      "platform": "Steam",
+      "source_type": "forum",
+      "source_name": "BreachForums",
+      "listings_count": 302,
+      "avg_price_usd": 106.3,
+      "verified_sellers_pct": 0.49,
+      "avg_account_age_days": 89,
+      "last_scraped": "2026-03-17T21:02:11.722779"
+    },
+    {
+      "platform": "Steam",
+      "source_type": "social",
+      "source_name": "Telegram",
+      "listings_count": 190,
+      "avg_price_usd": 23.21,
+      "verified_sellers_pct": 0.54,
+      "avg_account_age_days": 1161,
+      "last_scraped": "2026-03-20T06:02:11.722781"
+    },
+    {
+      "platform": "Steam",
+      "source_type": "social",
+      "source_name": "Discord",
+      "listings_count": 744,
+      "avg_price_usd": 109.99,
+      "verified_sellers_pct": 0.47,
+      "avg_account_age_days": 270,
+      "last_scraped": "2026-03-17T17:02:11.722783"
+    },
+    {
+      "platform": "Steam",
+      "source_type": "social",
+      "source_name": "Reddit",
+      "listings_count": 541,
+      "avg_price_usd": 63.52,
+      "verified_sellers_pct": 0.32,
+      "avg_account_age_days": 1739,
+      "last_scraped": "2026-03-19T11:02:11.722785"
+    },
+    {
+      "platform": "Steam",
+      "source_type": "social",
+      "source_name": "Facebook Marketplace",
+      "listings_count": 420,
+      "avg_price_usd": 49.11,
+      "verified_sellers_pct": 0.84,
+      "avg_account_age_days": 1070,
+      "last_scraped": "2026-03-23T04:02:11.722787"
+    },
+    {
+      "platform": "Steam",
+      "source_type": "social",
+      "source_name": "Instagram",
+      "listings_count": 595,
+      "avg_price_usd": 52.72,
+      "verified_sellers_pct": 0.85,
+      "avg_account_age_days": 1069,
+      "last_scraped": "2026-03-21T18:02:11.722789"
+    }
+  ],
+  "keyword_trends": [
+    {
+      "month": "2025-04",
+      "platform": "Roblox",
+      "keyword": "robux",
+      "mention_count": 499,
+      "avg_listing_price_usd": 126.43,
+      "sentiment_score": 0.34
+    },
+    {
+      "month": "2025-05",
+      "platform": "Roblox",
+      "keyword": "robux",
+      "mention_count": 542,
+      "avg_listing_price_usd": 69.75,
+      "sentiment_score": 0.23
+    },
+    {
+      "month": "2025-05",
+      "platform": "Roblox",
+      "keyword": "robux",
+      "mention_count": 506,
+      "avg_listing_price_usd": 59.7,
+      "sentiment_score": 0.73
+    },
+    {
+      "month": "2025-06",
+      "platform": "Roblox",
+      "keyword": "robux",
+      "mention_count": 600,
+      "avg_listing_price_usd": 39.63,
+      "sentiment_score": 0.12
+    },
+    {
+      "month": "2025-07",
+      "platform": "Roblox",
+      "keyword": "robux",
+      "mention_count": 448,
+      "avg_listing_price_usd": 51.14,
+      "sentiment_score": 0.22
+    },
+    {
+      "month": "2025-08",
+      "platform": "Roblox",
+      "keyword": "robux",
+      "mention_count": 452,
+      "avg_listing_price_usd": 148.32,
+      "sentiment_score": 0.57
+    },
+    {
+      "month": "2025-09",
+      "platform": "Roblox",
+      "keyword": "robux",
+      "mention_count": 370,
+      "avg_listing_price_usd": 144.9,
+      "sentiment_score": -0.16
+    },
+    {
+      "month": "2025-10",
+      "platform": "Roblox",
+      "keyword": "robux",
+      "mention_count": 460,
+      "avg_listing_price_usd": 19.55,
+      "sentiment_score": 0.63
+    },
+    {
+      "month": "2025-11",
+      "platform": "Roblox",
+      "keyword": "robux",
+      "mention_count": 493,
+      "avg_listing_price_usd": 7.23,
+      "sentiment_score": -0.14
+    },
+    {
+      "month": "2025-12",
+      "platform": "Roblox",
+      "keyword": "robux",
+      "mention_count": 663,
+      "avg_listing_price_usd": 15.85,
+      "sentiment_score": 0.56
+    },
+    {
+      "month": "2026-01",
+      "platform": "Roblox",
+      "keyword": "robux",
+      "mention_count": 445,
+      "avg_listing_price_usd": 62.64,
+      "sentiment_score": -0.21
+    },
+    {
+      "month": "2026-02",
+      "platform": "Roblox",
+      "keyword": "robux",
+      "mention_count": 470,
+      "avg_listing_price_usd": 82.38,
+      "sentiment_score": 0.75
+    },
+    {
+      "month": "2025-04",
+      "platform": "Roblox",
+      "keyword": "limiteds",
+      "mention_count": 392,
+      "avg_listing_price_usd": 131.5,
+      "sentiment_score": -0.26
+    },
+    {
+      "month": "2025-05",
+      "platform": "Roblox",
+      "keyword": "limiteds",
+      "mention_count": 361,
+      "avg_listing_price_usd": 138.53,
+      "sentiment_score": 0.8
+    },
+    {
+      "month": "2025-05",
+      "platform": "Roblox",
+      "keyword": "limiteds",
+      "mention_count": 335,
+      "avg_listing_price_usd": 19.27,
+      "sentiment_score": 0.4
+    },
+    {
+      "month": "2025-06",
+      "platform": "Roblox",
+      "keyword": "limiteds",
+      "mention_count": 347,
+      "avg_listing_price_usd": 105.63,
+      "sentiment_score": 0.69
+    },
+    {
+      "month": "2025-07",
+      "platform": "Roblox",
+      "keyword": "limiteds",
+      "mention_count": 376,
+      "avg_listing_price_usd": 47.54,
+      "sentiment_score": 0.11
+    },
+    {
+      "month": "2025-08",
+      "platform": "Roblox",
+      "keyword": "limiteds",
+      "mention_count": 327,
+      "avg_listing_price_usd": 87.06,
+      "sentiment_score": 0.57
+    },
+    {
+      "month": "2025-09",
+      "platform": "Roblox",
+      "keyword": "limiteds",
+      "mention_count": 239,
+      "avg_listing_price_usd": 131.27,
+      "sentiment_score": 0.38
+    },
+    {
+      "month": "2025-10",
+      "platform": "Roblox",
+      "keyword": "limiteds",
+      "mention_count": 404,
+      "avg_listing_price_usd": 25.75,
+      "sentiment_score": 0.21
+    },
+    {
+      "month": "2025-11",
+      "platform": "Roblox",
+      "keyword": "limiteds",
+      "mention_count": 275,
+      "avg_listing_price_usd": 6.36,
+      "sentiment_score": 0.59
+    },
+    {
+      "month": "2025-12",
+      "platform": "Roblox",
+      "keyword": "limiteds",
+      "mention_count": 446,
+      "avg_listing_price_usd": 27.91,
+      "sentiment_score": 0.19
+    },
+    {
+      "month": "2026-01",
+      "platform": "Roblox",
+      "keyword": "limiteds",
+      "mention_count": 349,
+      "avg_listing_price_usd": 97.65,
+      "sentiment_score": 0.17
+    },
+    {
+      "month": "2026-02",
+      "platform": "Roblox",
+      "keyword": "limiteds",
+      "mention_count": 382,
+      "avg_listing_price_usd": 33.89,
+      "sentiment_score": 0.12
+    },
+    {
+      "month": "2025-04",
+      "platform": "Roblox",
+      "keyword": "korblox",
+      "mention_count": 247,
+      "avg_listing_price_usd": 57.05,
+      "sentiment_score": 0.03
+    },
+    {
+      "month": "2025-05",
+      "platform": "Roblox",
+      "keyword": "korblox",
+      "mention_count": 192,
+      "avg_listing_price_usd": 125.36,
+      "sentiment_score": 0.14
+    },
+    {
+      "month": "2025-05",
+      "platform": "Roblox",
+      "keyword": "korblox",
+      "mention_count": 314,
+      "avg_listing_price_usd": 117.86,
+      "sentiment_score": 0.77
+    },
+    {
+      "month": "2025-06",
+      "platform": "Roblox",
+      "keyword": "korblox",
+      "mention_count": 325,
+      "avg_listing_price_usd": 125.76,
+      "sentiment_score": 0.69
+    },
+    {
+      "month": "2025-07",
+      "platform": "Roblox",
+      "keyword": "korblox",
+      "mention_count": 237,
+      "avg_listing_price_usd": 121.28,
+      "sentiment_score": -0.06
+    },
+    {
+      "month": "2025-08",
+      "platform": "Roblox",
+      "keyword": "korblox",
+      "mention_count": 217,
+      "avg_listing_price_usd": 114.56,
+      "sentiment_score": 0.54
+    },
+    {
+      "month": "2025-09",
+      "platform": "Roblox",
+      "keyword": "korblox",
+      "mention_count": 223,
+      "avg_listing_price_usd": 19.09,
+      "sentiment_score": 0.39
+    },
+    {
+      "month": "2025-10",
+      "platform": "Roblox",
+      "keyword": "korblox",
+      "mention_count": 280,
+      "avg_listing_price_usd": 9.84,
+      "sentiment_score": 0.1
+    },
+    {
+      "month": "2025-11",
+      "platform": "Roblox",
+      "keyword": "korblox",
+      "mention_count": 302,
+      "avg_listing_price_usd": 52.37,
+      "sentiment_score": 0.16
+    },
+    {
+      "month": "2025-12",
+      "platform": "Roblox",
+      "keyword": "korblox",
+      "mention_count": 289,
+      "avg_listing_price_usd": 132.09,
+      "sentiment_score": 0.1
+    },
+    {
+      "month": "2026-01",
+      "platform": "Roblox",
+      "keyword": "korblox",
+      "mention_count": 240,
+      "avg_listing_price_usd": 28.86,
+      "sentiment_score": 0.71
+    },
+    {
+      "month": "2026-02",
+      "platform": "Roblox",
+      "keyword": "korblox",
+      "mention_count": 427,
+      "avg_listing_price_usd": 47.8,
+      "sentiment_score": 0.66
+    },
+    {
+      "month": "2025-04",
+      "platform": "Roblox",
+      "keyword": "headless",
+      "mention_count": 550,
+      "avg_listing_price_usd": 25.41,
+      "sentiment_score": 0.76
+    },
+    {
+      "month": "2025-05",
+      "platform": "Roblox",
+      "keyword": "headless",
+      "mention_count": 498,
+      "avg_listing_price_usd": 147.09,
+      "sentiment_score": 0.76
+    },
+    {
+      "month": "2025-05",
+      "platform": "Roblox",
+      "keyword": "headless",
+      "mention_count": 409,
+      "avg_listing_price_usd": 119.65,
+      "sentiment_score": -0.28
+    },
+    {
+      "month": "2025-06",
+      "platform": "Roblox",
+      "keyword": "headless",
+      "mention_count": 426,
+      "avg_listing_price_usd": 102.56,
+      "sentiment_score": 0.44
+    },
+    {
+      "month": "2025-07",
+      "platform": "Roblox",
+      "keyword": "headless",
+      "mention_count": 530,
+      "avg_listing_price_usd": 141.34,
+      "sentiment_score": -0.18
+    },
+    {
+      "month": "2025-08",
+      "platform": "Roblox",
+      "keyword": "headless",
+      "mention_count": 297,
+      "avg_listing_price_usd": 133.21,
+      "sentiment_score": 0.32
+    },
+    {
+      "month": "2025-09",
+      "platform": "Roblox",
+      "keyword": "headless",
+      "mention_count": 405,
+      "avg_listing_price_usd": 14.17,
+      "sentiment_score": 0.61
+    },
+    {
+      "month": "2025-10",
+      "platform": "Roblox",
+      "keyword": "headless",
+      "mention_count": 436,
+      "avg_listing_price_usd": 64.2,
+      "sentiment_score": -0.15
+    },
+    {
+      "month": "2025-11",
+      "platform": "Roblox",
+      "keyword": "headless",
+      "mention_count": 449,
+      "avg_listing_price_usd": 76.43,
+      "sentiment_score": -0.19
+    },
+    {
+      "month": "2025-12",
+      "platform": "Roblox",
+      "keyword": "headless",
+      "mention_count": 398,
+      "avg_listing_price_usd": 70.78,
+      "sentiment_score": 0.44
+    },
+    {
+      "month": "2026-01",
+      "platform": "Roblox",
+      "keyword": "headless",
+      "mention_count": 624,
+      "avg_listing_price_usd": 65.77,
+      "sentiment_score": 0.52
+    },
+    {
+      "month": "2026-02",
+      "platform": "Roblox",
+      "keyword": "headless",
+      "mention_count": 362,
+      "avg_listing_price_usd": 19.36,
+      "sentiment_score": 0.24
+    },
+    {
+      "month": "2025-04",
+      "platform": "Roblox",
+      "keyword": "account dump",
+      "mention_count": 197,
+      "avg_listing_price_usd": 105.09,
+      "sentiment_score": -0.06
+    },
+    {
+      "month": "2025-05",
+      "platform": "Roblox",
+      "keyword": "account dump",
+      "mention_count": 192,
+      "avg_listing_price_usd": 57.59,
+      "sentiment_score": 0.78
+    },
+    {
+      "month": "2025-05",
+      "platform": "Roblox",
+      "keyword": "account dump",
+      "mention_count": 282,
+      "avg_listing_price_usd": 98.5,
+      "sentiment_score": -0.23
+    },
+    {
+      "month": "2025-06",
+      "platform": "Roblox",
+      "keyword": "account dump",
+      "mention_count": 287,
+      "avg_listing_price_usd": 142.61,
+      "sentiment_score": 0.61
+    },
+    {
+      "month": "2025-07",
+      "platform": "Roblox",
+      "keyword": "account dump",
+      "mention_count": 178,
+      "avg_listing_price_usd": 97.73,
+      "sentiment_score": 0.77
+    },
+    {
+      "month": "2025-08",
+      "platform": "Roblox",
+      "keyword": "account dump",
+      "mention_count": 190,
+      "avg_listing_price_usd": 148.38,
+      "sentiment_score": 0.57
+    },
+    {
+      "month": "2025-09",
+      "platform": "Roblox",
+      "keyword": "account dump",
+      "mention_count": 259,
+      "avg_listing_price_usd": 85.36,
+      "sentiment_score": 0.35
+    },
+    {
+      "month": "2025-10",
+      "platform": "Roblox",
+      "keyword": "account dump",
+      "mention_count": 214,
+      "avg_listing_price_usd": 117.28,
+      "sentiment_score": 0.57
+    },
+    {
+      "month": "2025-11",
+      "platform": "Roblox",
+      "keyword": "account dump",
+      "mention_count": 210,
+      "avg_listing_price_usd": 147.68,
+      "sentiment_score": 0.79
+    },
+    {
+      "month": "2025-12",
+      "platform": "Roblox",
+      "keyword": "account dump",
+      "mention_count": 282,
+      "avg_listing_price_usd": 20.94,
+      "sentiment_score": 0.65
+    },
+    {
+      "month": "2026-01",
+      "platform": "Roblox",
+      "keyword": "account dump",
+      "mention_count": 185,
+      "avg_listing_price_usd": 119.32,
+      "sentiment_score": 0.35
+    },
+    {
+      "month": "2026-02",
+      "platform": "Roblox",
+      "keyword": "account dump",
+      "mention_count": 161,
+      "avg_listing_price_usd": 23.38,
+      "sentiment_score": 0.16
+    },
+    {
+      "month": "2025-04",
+      "platform": "Roblox",
+      "keyword": "rich account",
+      "mention_count": 76,
+      "avg_listing_price_usd": 117.81,
+      "sentiment_score": 0.26
+    },
+    {
+      "month": "2025-05",
+      "platform": "Roblox",
+      "keyword": "rich account",
+      "mention_count": 77,
+      "avg_listing_price_usd": 142.09,
+      "sentiment_score": -0.25
+    },
+    {
+      "month": "2025-05",
+      "platform": "Roblox",
+      "keyword": "rich account",
+      "mention_count": 98,
+      "avg_listing_price_usd": 80.61,
+      "sentiment_score": 0.2
+    },
+    {
+      "month": "2025-06",
+      "platform": "Roblox",
+      "keyword": "rich account",
+      "mention_count": 61,
+      "avg_listing_price_usd": 74.45,
+      "sentiment_score": 0.14
+    },
+    {
+      "month": "2025-07",
+      "platform": "Roblox",
+      "keyword": "rich account",
+      "mention_count": 81,
+      "avg_listing_price_usd": 136.91,
+      "sentiment_score": -0.22
+    },
+    {
+      "month": "2025-08",
+      "platform": "Roblox",
+      "keyword": "rich account",
+      "mention_count": 77,
+      "avg_listing_price_usd": 14.52,
+      "sentiment_score": 0.0
+    },
+    {
+      "month": "2025-09",
+      "platform": "Roblox",
+      "keyword": "rich account",
+      "mention_count": 84,
+      "avg_listing_price_usd": 52.15,
+      "sentiment_score": 0.79
+    },
+    {
+      "month": "2025-10",
+      "platform": "Roblox",
+      "keyword": "rich account",
+      "mention_count": 78,
+      "avg_listing_price_usd": 92.79,
+      "sentiment_score": -0.19
+    },
+    {
+      "month": "2025-11",
+      "platform": "Roblox",
+      "keyword": "rich account",
+      "mention_count": 104,
+      "avg_listing_price_usd": 99.38,
+      "sentiment_score": 0.55
+    },
+    {
+      "month": "2025-12",
+      "platform": "Roblox",
+      "keyword": "rich account",
+      "mention_count": 72,
+      "avg_listing_price_usd": 70.48,
+      "sentiment_score": -0.05
+    },
+    {
+      "month": "2026-01",
+      "platform": "Roblox",
+      "keyword": "rich account",
+      "mention_count": 73,
+      "avg_listing_price_usd": 65.32,
+      "sentiment_score": -0.2
+    },
+    {
+      "month": "2026-02",
+      "platform": "Roblox",
+      "keyword": "rich account",
+      "mention_count": 86,
+      "avg_listing_price_usd": 59.27,
+      "sentiment_score": -0.13
+    },
+    {
+      "month": "2025-04",
+      "platform": "Roblox",
+      "keyword": "blox fruits",
+      "mention_count": 371,
+      "avg_listing_price_usd": 17.38,
+      "sentiment_score": 0.18
+    },
+    {
+      "month": "2025-05",
+      "platform": "Roblox",
+      "keyword": "blox fruits",
+      "mention_count": 460,
+      "avg_listing_price_usd": 23.87,
+      "sentiment_score": -0.23
+    },
+    {
+      "month": "2025-05",
+      "platform": "Roblox",
+      "keyword": "blox fruits",
+      "mention_count": 533,
+      "avg_listing_price_usd": 102.15,
+      "sentiment_score": 0.15
+    },
+    {
+      "month": "2025-06",
+      "platform": "Roblox",
+      "keyword": "blox fruits",
+      "mention_count": 659,
+      "avg_listing_price_usd": 66.33,
+      "sentiment_score": 0.71
+    },
+    {
+      "month": "2025-07",
+      "platform": "Roblox",
+      "keyword": "blox fruits",
+      "mention_count": 404,
+      "avg_listing_price_usd": 50.31,
+      "sentiment_score": -0.19
+    },
+    {
+      "month": "2025-08",
+      "platform": "Roblox",
+      "keyword": "blox fruits",
+      "mention_count": 398,
+      "avg_listing_price_usd": 74.92,
+      "sentiment_score": 0.63
+    },
+    {
+      "month": "2025-09",
+      "platform": "Roblox",
+      "keyword": "blox fruits",
+      "mention_count": 502,
+      "avg_listing_price_usd": 21.66,
+      "sentiment_score": 0.01
+    },
+    {
+      "month": "2025-10",
+      "platform": "Roblox",
+      "keyword": "blox fruits",
+      "mention_count": 447,
+      "avg_listing_price_usd": 86.34,
+      "sentiment_score": 0.54
+    },
+    {
+      "month": "2025-11",
+      "platform": "Roblox",
+      "keyword": "blox fruits",
+      "mention_count": 583,
+      "avg_listing_price_usd": 85.73,
+      "sentiment_score": 0.37
+    },
+    {
+      "month": "2025-12",
+      "platform": "Roblox",
+      "keyword": "blox fruits",
+      "mention_count": 602,
+      "avg_listing_price_usd": 9.2,
+      "sentiment_score": 0.0
+    },
+    {
+      "month": "2026-01",
+      "platform": "Roblox",
+      "keyword": "blox fruits",
+      "mention_count": 709,
+      "avg_listing_price_usd": 55.9,
+      "sentiment_score": -0.1
+    },
+    {
+      "month": "2026-02",
+      "platform": "Roblox",
+      "keyword": "blox fruits",
+      "mention_count": 475,
+      "avg_listing_price_usd": 15.09,
+      "sentiment_score": 0.52
+    },
+    {
+      "month": "2025-04",
+      "platform": "Roblox",
+      "keyword": "adopt me pets",
+      "mention_count": 35,
+      "avg_listing_price_usd": 59.55,
+      "sentiment_score": 0.2
+    },
+    {
+      "month": "2025-05",
+      "platform": "Roblox",
+      "keyword": "adopt me pets",
+      "mention_count": 30,
+      "avg_listing_price_usd": 52.04,
+      "sentiment_score": 0.74
+    },
+    {
+      "month": "2025-05",
+      "platform": "Roblox",
+      "keyword": "adopt me pets",
+      "mention_count": 43,
+      "avg_listing_price_usd": 27.56,
+      "sentiment_score": 0.53
+    },
+    {
+      "month": "2025-06",
+      "platform": "Roblox",
+      "keyword": "adopt me pets",
+      "mention_count": 25,
+      "avg_listing_price_usd": 69.25,
+      "sentiment_score": 0.17
+    },
+    {
+      "month": "2025-07",
+      "platform": "Roblox",
+      "keyword": "adopt me pets",
+      "mention_count": 34,
+      "avg_listing_price_usd": 36.26,
+      "sentiment_score": 0.26
+    },
+    {
+      "month": "2025-08",
+      "platform": "Roblox",
+      "keyword": "adopt me pets",
+      "mention_count": 26,
+      "avg_listing_price_usd": 103.34,
+      "sentiment_score": 0.35
+    },
+    {
+      "month": "2025-09",
+      "platform": "Roblox",
+      "keyword": "adopt me pets",
+      "mention_count": 31,
+      "avg_listing_price_usd": 36.98,
+      "sentiment_score": 0.78
+    },
+    {
+      "month": "2025-10",
+      "platform": "Roblox",
+      "keyword": "adopt me pets",
+      "mention_count": 25,
+      "avg_listing_price_usd": 142.07,
+      "sentiment_score": 0.54
+    },
+    {
+      "month": "2025-11",
+      "platform": "Roblox",
+      "keyword": "adopt me pets",
+      "mention_count": 34,
+      "avg_listing_price_usd": 22.4,
+      "sentiment_score": 0.25
+    },
+    {
+      "month": "2025-12",
+      "platform": "Roblox",
+      "keyword": "adopt me pets",
+      "mention_count": 27,
+      "avg_listing_price_usd": 82.22,
+      "sentiment_score": -0.05
+    },
+    {
+      "month": "2026-01",
+      "platform": "Roblox",
+      "keyword": "adopt me pets",
+      "mention_count": 41,
+      "avg_listing_price_usd": 56.35,
+      "sentiment_score": 0.14
+    },
+    {
+      "month": "2026-02",
+      "platform": "Roblox",
+      "keyword": "adopt me pets",
+      "mention_count": 38,
+      "avg_listing_price_usd": 71.66,
+      "sentiment_score": -0.21
+    },
+    {
+      "month": "2025-04",
+      "platform": "Roblox",
+      "keyword": "roblox OG",
+      "mention_count": 187,
+      "avg_listing_price_usd": 107.88,
+      "sentiment_score": 0.16
+    },
+    {
+      "month": "2025-05",
+      "platform": "Roblox",
+      "keyword": "roblox OG",
+      "mention_count": 126,
+      "avg_listing_price_usd": 52.09,
+      "sentiment_score": 0.58
+    },
+    {
+      "month": "2025-05",
+      "platform": "Roblox",
+      "keyword": "roblox OG",
+      "mention_count": 219,
+      "avg_listing_price_usd": 138.37,
+      "sentiment_score": -0.2
+    },
+    {
+      "month": "2025-06",
+      "platform": "Roblox",
+      "keyword": "roblox OG",
+      "mention_count": 160,
+      "avg_listing_price_usd": 90.39,
+      "sentiment_score": 0.28
+    },
+    {
+      "month": "2025-07",
+      "platform": "Roblox",
+      "keyword": "roblox OG",
+      "mention_count": 159,
+      "avg_listing_price_usd": 54.23,
+      "sentiment_score": 0.07
+    },
+    {
+      "month": "2025-08",
+      "platform": "Roblox",
+      "keyword": "roblox OG",
+      "mention_count": 172,
+      "avg_listing_price_usd": 21.53,
+      "sentiment_score": 0.26
+    },
+    {
+      "month": "2025-09",
+      "platform": "Roblox",
+      "keyword": "roblox OG",
+      "mention_count": 184,
+      "avg_listing_price_usd": 110.47,
+      "sentiment_score": 0.6
+    },
+    {
+      "month": "2025-10",
+      "platform": "Roblox",
+      "keyword": "roblox OG",
+      "mention_count": 169,
+      "avg_listing_price_usd": 26.23,
+      "sentiment_score": -0.08
+    },
+    {
+      "month": "2025-11",
+      "platform": "Roblox",
+      "keyword": "roblox OG",
+      "mention_count": 222,
+      "avg_listing_price_usd": 100.05,
+      "sentiment_score": -0.11
+    },
+    {
+      "month": "2025-12",
+      "platform": "Roblox",
+      "keyword": "roblox OG",
+      "mention_count": 204,
+      "avg_listing_price_usd": 114.39,
+      "sentiment_score": 0.54
+    },
+    {
+      "month": "2026-01",
+      "platform": "Roblox",
+      "keyword": "roblox OG",
+      "mention_count": 230,
+      "avg_listing_price_usd": 86.85,
+      "sentiment_score": 0.4
+    },
+    {
+      "month": "2026-02",
+      "platform": "Roblox",
+      "keyword": "roblox OG",
+      "mention_count": 241,
+      "avg_listing_price_usd": 95.95,
+      "sentiment_score": -0.13
+    },
+    {
+      "month": "2025-04",
+      "platform": "Roblox",
+      "keyword": "verified email",
+      "mention_count": 58,
+      "avg_listing_price_usd": 120.47,
+      "sentiment_score": 0.35
+    },
+    {
+      "month": "2025-05",
+      "platform": "Roblox",
+      "keyword": "verified email",
+      "mention_count": 40,
+      "avg_listing_price_usd": 71.95,
+      "sentiment_score": -0.26
+    },
+    {
+      "month": "2025-05",
+      "platform": "Roblox",
+      "keyword": "verified email",
+      "mention_count": 46,
+      "avg_listing_price_usd": 98.48,
+      "sentiment_score": 0.78
+    },
+    {
+      "month": "2025-06",
+      "platform": "Roblox",
+      "keyword": "verified email",
+      "mention_count": 54,
+      "avg_listing_price_usd": 60.75,
+      "sentiment_score": 0.34
+    },
+    {
+      "month": "2025-07",
+      "platform": "Roblox",
+      "keyword": "verified email",
+      "mention_count": 67,
+      "avg_listing_price_usd": 10.95,
+      "sentiment_score": 0.7
+    },
+    {
+      "month": "2025-08",
+      "platform": "Roblox",
+      "keyword": "verified email",
+      "mention_count": 45,
+      "avg_listing_price_usd": 92.73,
+      "sentiment_score": 0.25
+    },
+    {
+      "month": "2025-09",
+      "platform": "Roblox",
+      "keyword": "verified email",
+      "mention_count": 59,
+      "avg_listing_price_usd": 122.59,
+      "sentiment_score": 0.62
+    },
+    {
+      "month": "2025-10",
+      "platform": "Roblox",
+      "keyword": "verified email",
+      "mention_count": 47,
+      "avg_listing_price_usd": 98.69,
+      "sentiment_score": -0.26
+    },
+    {
+      "month": "2025-11",
+      "platform": "Roblox",
+      "keyword": "verified email",
+      "mention_count": 77,
+      "avg_listing_price_usd": 80.99,
+      "sentiment_score": 0.37
+    },
+    {
+      "month": "2025-12",
+      "platform": "Roblox",
+      "keyword": "verified email",
+      "mention_count": 66,
+      "avg_listing_price_usd": 61.18,
+      "sentiment_score": 0.55
+    },
+    {
+      "month": "2026-01",
+      "platform": "Roblox",
+      "keyword": "verified email",
+      "mention_count": 44,
+      "avg_listing_price_usd": 96.48,
+      "sentiment_score": 0.07
+    },
+    {
+      "month": "2026-02",
+      "platform": "Roblox",
+      "keyword": "verified email",
+      "mention_count": 54,
+      "avg_listing_price_usd": 61.05,
+      "sentiment_score": -0.02
+    },
+    {
+      "month": "2025-04",
+      "platform": "Roblox",
+      "keyword": "premium",
+      "mention_count": 567,
+      "avg_listing_price_usd": 131.63,
+      "sentiment_score": 0.07
+    },
+    {
+      "month": "2025-05",
+      "platform": "Roblox",
+      "keyword": "premium",
+      "mention_count": 360,
+      "avg_listing_price_usd": 55.72,
+      "sentiment_score": 0.76
+    },
+    {
+      "month": "2025-05",
+      "platform": "Roblox",
+      "keyword": "premium",
+      "mention_count": 437,
+      "avg_listing_price_usd": 91.28,
+      "sentiment_score": 0.73
+    },
+    {
+      "month": "2025-06",
+      "platform": "Roblox",
+      "keyword": "premium",
+      "mention_count": 417,
+      "avg_listing_price_usd": 119.79,
+      "sentiment_score": 0.59
+    },
+    {
+      "month": "2025-07",
+      "platform": "Roblox",
+      "keyword": "premium",
+      "mention_count": 570,
+      "avg_listing_price_usd": 112.12,
+      "sentiment_score": 0.45
+    },
+    {
+      "month": "2025-08",
+      "platform": "Roblox",
+      "keyword": "premium",
+      "mention_count": 509,
+      "avg_listing_price_usd": 66.39,
+      "sentiment_score": 0.1
+    },
+    {
+      "month": "2025-09",
+      "platform": "Roblox",
+      "keyword": "premium",
+      "mention_count": 365,
+      "avg_listing_price_usd": 36.06,
+      "sentiment_score": 0.74
+    },
+    {
+      "month": "2025-10",
+      "platform": "Roblox",
+      "keyword": "premium",
+      "mention_count": 390,
+      "avg_listing_price_usd": 24.95,
+      "sentiment_score": -0.22
+    },
+    {
+      "month": "2025-11",
+      "platform": "Roblox",
+      "keyword": "premium",
+      "mention_count": 398,
+      "avg_listing_price_usd": 116.78,
+      "sentiment_score": 0.62
+    },
+    {
+      "month": "2025-12",
+      "platform": "Roblox",
+      "keyword": "premium",
+      "mention_count": 389,
+      "avg_listing_price_usd": 53.83,
+      "sentiment_score": 0.54
+    },
+    {
+      "month": "2026-01",
+      "platform": "Roblox",
+      "keyword": "premium",
+      "mention_count": 374,
+      "avg_listing_price_usd": 28.53,
+      "sentiment_score": 0.61
+    },
+    {
+      "month": "2026-02",
+      "platform": "Roblox",
+      "keyword": "premium",
+      "mention_count": 632,
+      "avg_listing_price_usd": 29.0,
+      "sentiment_score": 0.18
+    },
+    {
+      "month": "2025-04",
+      "platform": "Roblox",
+      "keyword": "voice chat enabled",
+      "mention_count": 260,
+      "avg_listing_price_usd": 145.59,
+      "sentiment_score": 0.37
+    },
+    {
+      "month": "2025-05",
+      "platform": "Roblox",
+      "keyword": "voice chat enabled",
+      "mention_count": 273,
+      "avg_listing_price_usd": 38.93,
+      "sentiment_score": -0.04
+    },
+    {
+      "month": "2025-05",
+      "platform": "Roblox",
+      "keyword": "voice chat enabled",
+      "mention_count": 281,
+      "avg_listing_price_usd": 136.08,
+      "sentiment_score": -0.09
+    },
+    {
+      "month": "2025-06",
+      "platform": "Roblox",
+      "keyword": "voice chat enabled",
+      "mention_count": 248,
+      "avg_listing_price_usd": 68.89,
+      "sentiment_score": 0.55
+    },
+    {
+      "month": "2025-07",
+      "platform": "Roblox",
+      "keyword": "voice chat enabled",
+      "mention_count": 244,
+      "avg_listing_price_usd": 65.71,
+      "sentiment_score": -0.12
+    },
+    {
+      "month": "2025-08",
+      "platform": "Roblox",
+      "keyword": "voice chat enabled",
+      "mention_count": 234,
+      "avg_listing_price_usd": 131.59,
+      "sentiment_score": -0.24
+    },
+    {
+      "month": "2025-09",
+      "platform": "Roblox",
+      "keyword": "voice chat enabled",
+      "mention_count": 216,
+      "avg_listing_price_usd": 140.47,
+      "sentiment_score": 0.48
+    },
+    {
+      "month": "2025-10",
+      "platform": "Roblox",
+      "keyword": "voice chat enabled",
+      "mention_count": 184,
+      "avg_listing_price_usd": 17.16,
+      "sentiment_score": -0.12
+    },
+    {
+      "month": "2025-11",
+      "platform": "Roblox",
+      "keyword": "voice chat enabled",
+      "mention_count": 235,
+      "avg_listing_price_usd": 125.5,
+      "sentiment_score": -0.2
+    },
+    {
+      "month": "2025-12",
+      "platform": "Roblox",
+      "keyword": "voice chat enabled",
+      "mention_count": 326,
+      "avg_listing_price_usd": 133.27,
+      "sentiment_score": 0.72
+    },
+    {
+      "month": "2026-01",
+      "platform": "Roblox",
+      "keyword": "voice chat enabled",
+      "mention_count": 217,
+      "avg_listing_price_usd": 59.22,
+      "sentiment_score": 0.12
+    },
+    {
+      "month": "2026-02",
+      "platform": "Roblox",
+      "keyword": "voice chat enabled",
+      "mention_count": 163,
+      "avg_listing_price_usd": 51.21,
+      "sentiment_score": -0.19
+    },
+    {
+      "month": "2025-04",
+      "platform": "Roblox",
+      "keyword": "display name",
+      "mention_count": 452,
+      "avg_listing_price_usd": 24.95,
+      "sentiment_score": 0.02
+    },
+    {
+      "month": "2025-05",
+      "platform": "Roblox",
+      "keyword": "display name",
+      "mention_count": 437,
+      "avg_listing_price_usd": 25.12,
+      "sentiment_score": 0.48
+    },
+    {
+      "month": "2025-05",
+      "platform": "Roblox",
+      "keyword": "display name",
+      "mention_count": 271,
+      "avg_listing_price_usd": 16.49,
+      "sentiment_score": -0.02
+    },
+    {
+      "month": "2025-06",
+      "platform": "Roblox",
+      "keyword": "display name",
+      "mention_count": 417,
+      "avg_listing_price_usd": 110.45,
+      "sentiment_score": 0.28
+    },
+    {
+      "month": "2025-07",
+      "platform": "Roblox",
+      "keyword": "display name",
+      "mention_count": 319,
+      "avg_listing_price_usd": 48.67,
+      "sentiment_score": -0.25
+    },
+    {
+      "month": "2025-08",
+      "platform": "Roblox",
+      "keyword": "display name",
+      "mention_count": 454,
+      "avg_listing_price_usd": 71.28,
+      "sentiment_score": -0.18
+    },
+    {
+      "month": "2025-09",
+      "platform": "Roblox",
+      "keyword": "display name",
+      "mention_count": 458,
+      "avg_listing_price_usd": 7.38,
+      "sentiment_score": 0.27
+    },
+    {
+      "month": "2025-10",
+      "platform": "Roblox",
+      "keyword": "display name",
+      "mention_count": 288,
+      "avg_listing_price_usd": 67.24,
+      "sentiment_score": 0.38
+    },
+    {
+      "month": "2025-11",
+      "platform": "Roblox",
+      "keyword": "display name",
+      "mention_count": 346,
+      "avg_listing_price_usd": 101.33,
+      "sentiment_score": -0.21
+    },
+    {
+      "month": "2025-12",
+      "platform": "Roblox",
+      "keyword": "display name",
+      "mention_count": 346,
+      "avg_listing_price_usd": 81.28,
+      "sentiment_score": 0.26
+    },
+    {
+      "month": "2026-01",
+      "platform": "Roblox",
+      "keyword": "display name",
+      "mention_count": 494,
+      "avg_listing_price_usd": 61.62,
+      "sentiment_score": 0.22
+    },
+    {
+      "month": "2026-02",
+      "platform": "Roblox",
+      "keyword": "display name",
+      "mention_count": 549,
+      "avg_listing_price_usd": 41.78,
+      "sentiment_score": -0.28
+    },
+    {
+      "month": "2025-04",
+      "platform": "Roblox",
+      "keyword": "banned unban",
+      "mention_count": 357,
+      "avg_listing_price_usd": 100.28,
+      "sentiment_score": -0.19
+    },
+    {
+      "month": "2025-05",
+      "platform": "Roblox",
+      "keyword": "banned unban",
+      "mention_count": 491,
+      "avg_listing_price_usd": 24.34,
+      "sentiment_score": 0.09
+    },
+    {
+      "month": "2025-05",
+      "platform": "Roblox",
+      "keyword": "banned unban",
+      "mention_count": 456,
+      "avg_listing_price_usd": 125.41,
+      "sentiment_score": 0.45
+    },
+    {
+      "month": "2025-06",
+      "platform": "Roblox",
+      "keyword": "banned unban",
+      "mention_count": 447,
+      "avg_listing_price_usd": 31.43,
+      "sentiment_score": -0.15
+    },
+    {
+      "month": "2025-07",
+      "platform": "Roblox",
+      "keyword": "banned unban",
+      "mention_count": 563,
+      "avg_listing_price_usd": 10.36,
+      "sentiment_score": -0.08
+    },
+    {
+      "month": "2025-08",
+      "platform": "Roblox",
+      "keyword": "banned unban",
+      "mention_count": 563,
+      "avg_listing_price_usd": 50.76,
+      "sentiment_score": 0.04
+    },
+    {
+      "month": "2025-09",
+      "platform": "Roblox",
+      "keyword": "banned unban",
+      "mention_count": 502,
+      "avg_listing_price_usd": 73.64,
+      "sentiment_score": -0.26
+    },
+    {
+      "month": "2025-10",
+      "platform": "Roblox",
+      "keyword": "banned unban",
+      "mention_count": 395,
+      "avg_listing_price_usd": 130.01,
+      "sentiment_score": -0.25
+    },
+    {
+      "month": "2025-11",
+      "platform": "Roblox",
+      "keyword": "banned unban",
+      "mention_count": 396,
+      "avg_listing_price_usd": 120.9,
+      "sentiment_score": 0.18
+    },
+    {
+      "month": "2025-12",
+      "platform": "Roblox",
+      "keyword": "banned unban",
+      "mention_count": 407,
+      "avg_listing_price_usd": 143.69,
+      "sentiment_score": 0.07
+    },
+    {
+      "month": "2026-01",
+      "platform": "Roblox",
+      "keyword": "banned unban",
+      "mention_count": 429,
+      "avg_listing_price_usd": 58.27,
+      "sentiment_score": 0.58
+    },
+    {
+      "month": "2026-02",
+      "platform": "Roblox",
+      "keyword": "banned unban",
+      "mention_count": 297,
+      "avg_listing_price_usd": 66.55,
+      "sentiment_score": 0.17
+    },
+    {
+      "month": "2025-04",
+      "platform": "Roblox",
+      "keyword": "cookie log",
+      "mention_count": 386,
+      "avg_listing_price_usd": 19.88,
+      "sentiment_score": 0.06
+    },
+    {
+      "month": "2025-05",
+      "platform": "Roblox",
+      "keyword": "cookie log",
+      "mention_count": 424,
+      "avg_listing_price_usd": 109.06,
+      "sentiment_score": -0.12
+    },
+    {
+      "month": "2025-05",
+      "platform": "Roblox",
+      "keyword": "cookie log",
+      "mention_count": 428,
+      "avg_listing_price_usd": 110.39,
+      "sentiment_score": 0.7
+    },
+    {
+      "month": "2025-06",
+      "platform": "Roblox",
+      "keyword": "cookie log",
+      "mention_count": 435,
+      "avg_listing_price_usd": 97.72,
+      "sentiment_score": 0.57
+    },
+    {
+      "month": "2025-07",
+      "platform": "Roblox",
+      "keyword": "cookie log",
+      "mention_count": 458,
+      "avg_listing_price_usd": 63.9,
+      "sentiment_score": 0.26
+    },
+    {
+      "month": "2025-08",
+      "platform": "Roblox",
+      "keyword": "cookie log",
+      "mention_count": 376,
+      "avg_listing_price_usd": 9.52,
+      "sentiment_score": 0.63
+    },
+    {
+      "month": "2025-09",
+      "platform": "Roblox",
+      "keyword": "cookie log",
+      "mention_count": 454,
+      "avg_listing_price_usd": 23.3,
+      "sentiment_score": -0.04
+    },
+    {
+      "month": "2025-10",
+      "platform": "Roblox",
+      "keyword": "cookie log",
+      "mention_count": 433,
+      "avg_listing_price_usd": 142.67,
+      "sentiment_score": -0.26
+    },
+    {
+      "month": "2025-11",
+      "platform": "Roblox",
+      "keyword": "cookie log",
+      "mention_count": 392,
+      "avg_listing_price_usd": 58.79,
+      "sentiment_score": 0.19
+    },
+    {
+      "month": "2025-12",
+      "platform": "Roblox",
+      "keyword": "cookie log",
+      "mention_count": 303,
+      "avg_listing_price_usd": 58.21,
+      "sentiment_score": 0.05
+    },
+    {
+      "month": "2026-01",
+      "platform": "Roblox",
+      "keyword": "cookie log",
+      "mention_count": 534,
+      "avg_listing_price_usd": 8.76,
+      "sentiment_score": -0.1
+    },
+    {
+      "month": "2026-02",
+      "platform": "Roblox",
+      "keyword": "cookie log",
+      "mention_count": 580,
+      "avg_listing_price_usd": 22.08,
+      "sentiment_score": 0.55
+    },
+    {
+      "month": "2025-04",
+      "platform": "Fortnite",
+      "keyword": "og skins",
+      "mention_count": 493,
+      "avg_listing_price_usd": 46.41,
+      "sentiment_score": 0.71
+    },
+    {
+      "month": "2025-05",
+      "platform": "Fortnite",
+      "keyword": "og skins",
+      "mention_count": 295,
+      "avg_listing_price_usd": 128.66,
+      "sentiment_score": 0.2
+    },
+    {
+      "month": "2025-05",
+      "platform": "Fortnite",
+      "keyword": "og skins",
+      "mention_count": 382,
+      "avg_listing_price_usd": 17.73,
+      "sentiment_score": 0.45
+    },
+    {
+      "month": "2025-06",
+      "platform": "Fortnite",
+      "keyword": "og skins",
+      "mention_count": 357,
+      "avg_listing_price_usd": 55.38,
+      "sentiment_score": -0.23
+    },
+    {
+      "month": "2025-07",
+      "platform": "Fortnite",
+      "keyword": "og skins",
+      "mention_count": 480,
+      "avg_listing_price_usd": 128.45,
+      "sentiment_score": 0.48
+    },
+    {
+      "month": "2025-08",
+      "platform": "Fortnite",
+      "keyword": "og skins",
+      "mention_count": 456,
+      "avg_listing_price_usd": 120.09,
+      "sentiment_score": 0.26
+    },
+    {
+      "month": "2025-09",
+      "platform": "Fortnite",
+      "keyword": "og skins",
+      "mention_count": 290,
+      "avg_listing_price_usd": 25.14,
+      "sentiment_score": 0.57
+    },
+    {
+      "month": "2025-10",
+      "platform": "Fortnite",
+      "keyword": "og skins",
+      "mention_count": 349,
+      "avg_listing_price_usd": 58.49,
+      "sentiment_score": 0.58
+    },
+    {
+      "month": "2025-11",
+      "platform": "Fortnite",
+      "keyword": "og skins",
+      "mention_count": 426,
+      "avg_listing_price_usd": 17.5,
+      "sentiment_score": 0.04
+    },
+    {
+      "month": "2025-12",
+      "platform": "Fortnite",
+      "keyword": "og skins",
+      "mention_count": 526,
+      "avg_listing_price_usd": 81.23,
+      "sentiment_score": 0.55
+    },
+    {
+      "month": "2026-01",
+      "platform": "Fortnite",
+      "keyword": "og skins",
+      "mention_count": 332,
+      "avg_listing_price_usd": 146.0,
+      "sentiment_score": 0.41
+    },
+    {
+      "month": "2026-02",
+      "platform": "Fortnite",
+      "keyword": "og skins",
+      "mention_count": 430,
+      "avg_listing_price_usd": 54.95,
+      "sentiment_score": 0.67
+    },
+    {
+      "month": "2025-04",
+      "platform": "Fortnite",
+      "keyword": "renegade raider",
+      "mention_count": 441,
+      "avg_listing_price_usd": 116.33,
+      "sentiment_score": -0.16
+    },
+    {
+      "month": "2025-05",
+      "platform": "Fortnite",
+      "keyword": "renegade raider",
+      "mention_count": 513,
+      "avg_listing_price_usd": 125.55,
+      "sentiment_score": 0.27
+    },
+    {
+      "month": "2025-05",
+      "platform": "Fortnite",
+      "keyword": "renegade raider",
+      "mention_count": 331,
+      "avg_listing_price_usd": 140.54,
+      "sentiment_score": -0.05
+    },
+    {
+      "month": "2025-06",
+      "platform": "Fortnite",
+      "keyword": "renegade raider",
+      "mention_count": 452,
+      "avg_listing_price_usd": 46.19,
+      "sentiment_score": -0.21
+    },
+    {
+      "month": "2025-07",
+      "platform": "Fortnite",
+      "keyword": "renegade raider",
+      "mention_count": 515,
+      "avg_listing_price_usd": 44.8,
+      "sentiment_score": 0.39
+    },
+    {
+      "month": "2025-08",
+      "platform": "Fortnite",
+      "keyword": "renegade raider",
+      "mention_count": 330,
+      "avg_listing_price_usd": 97.94,
+      "sentiment_score": 0.35
+    },
+    {
+      "month": "2025-09",
+      "platform": "Fortnite",
+      "keyword": "renegade raider",
+      "mention_count": 351,
+      "avg_listing_price_usd": 95.55,
+      "sentiment_score": 0.69
+    },
+    {
+      "month": "2025-10",
+      "platform": "Fortnite",
+      "keyword": "renegade raider",
+      "mention_count": 516,
+      "avg_listing_price_usd": 10.97,
+      "sentiment_score": 0.65
+    },
+    {
+      "month": "2025-11",
+      "platform": "Fortnite",
+      "keyword": "renegade raider",
+      "mention_count": 475,
+      "avg_listing_price_usd": 116.8,
+      "sentiment_score": -0.01
+    },
+    {
+      "month": "2025-12",
+      "platform": "Fortnite",
+      "keyword": "renegade raider",
+      "mention_count": 406,
+      "avg_listing_price_usd": 94.63,
+      "sentiment_score": -0.27
+    },
+    {
+      "month": "2026-01",
+      "platform": "Fortnite",
+      "keyword": "renegade raider",
+      "mention_count": 518,
+      "avg_listing_price_usd": 98.08,
+      "sentiment_score": 0.03
+    },
+    {
+      "month": "2026-02",
+      "platform": "Fortnite",
+      "keyword": "renegade raider",
+      "mention_count": 460,
+      "avg_listing_price_usd": 63.88,
+      "sentiment_score": 0.2
+    },
+    {
+      "month": "2025-04",
+      "platform": "Fortnite",
+      "keyword": "black knight",
+      "mention_count": 358,
+      "avg_listing_price_usd": 75.22,
+      "sentiment_score": -0.08
+    },
+    {
+      "month": "2025-05",
+      "platform": "Fortnite",
+      "keyword": "black knight",
+      "mention_count": 333,
+      "avg_listing_price_usd": 109.16,
+      "sentiment_score": 0.51
+    },
+    {
+      "month": "2025-05",
+      "platform": "Fortnite",
+      "keyword": "black knight",
+      "mention_count": 496,
+      "avg_listing_price_usd": 23.96,
+      "sentiment_score": 0.11
+    },
+    {
+      "month": "2025-06",
+      "platform": "Fortnite",
+      "keyword": "black knight",
+      "mention_count": 338,
+      "avg_listing_price_usd": 72.64,
+      "sentiment_score": -0.01
+    },
+    {
+      "month": "2025-07",
+      "platform": "Fortnite",
+      "keyword": "black knight",
+      "mention_count": 274,
+      "avg_listing_price_usd": 47.08,
+      "sentiment_score": 0.12
+    },
+    {
+      "month": "2025-08",
+      "platform": "Fortnite",
+      "keyword": "black knight",
+      "mention_count": 329,
+      "avg_listing_price_usd": 130.47,
+      "sentiment_score": -0.12
+    },
+    {
+      "month": "2025-09",
+      "platform": "Fortnite",
+      "keyword": "black knight",
+      "mention_count": 382,
+      "avg_listing_price_usd": 50.34,
+      "sentiment_score": 0.54
+    },
+    {
+      "month": "2025-10",
+      "platform": "Fortnite",
+      "keyword": "black knight",
+      "mention_count": 386,
+      "avg_listing_price_usd": 77.32,
+      "sentiment_score": 0.04
+    },
+    {
+      "month": "2025-11",
+      "platform": "Fortnite",
+      "keyword": "black knight",
+      "mention_count": 412,
+      "avg_listing_price_usd": 78.29,
+      "sentiment_score": 0.76
+    },
+    {
+      "month": "2025-12",
+      "platform": "Fortnite",
+      "keyword": "black knight",
+      "mention_count": 315,
+      "avg_listing_price_usd": 12.33,
+      "sentiment_score": 0.24
+    },
+    {
+      "month": "2026-01",
+      "platform": "Fortnite",
+      "keyword": "black knight",
+      "mention_count": 488,
+      "avg_listing_price_usd": 73.24,
+      "sentiment_score": 0.29
+    },
+    {
+      "month": "2026-02",
+      "platform": "Fortnite",
+      "keyword": "black knight",
+      "mention_count": 429,
+      "avg_listing_price_usd": 132.96,
+      "sentiment_score": 0.5
+    },
+    {
+      "month": "2025-04",
+      "platform": "Fortnite",
+      "keyword": "galaxy skin",
+      "mention_count": 298,
+      "avg_listing_price_usd": 12.42,
+      "sentiment_score": 0.32
+    },
+    {
+      "month": "2025-05",
+      "platform": "Fortnite",
+      "keyword": "galaxy skin",
+      "mention_count": 358,
+      "avg_listing_price_usd": 61.02,
+      "sentiment_score": 0.2
+    },
+    {
+      "month": "2025-05",
+      "platform": "Fortnite",
+      "keyword": "galaxy skin",
+      "mention_count": 497,
+      "avg_listing_price_usd": 95.37,
+      "sentiment_score": 0.37
+    },
+    {
+      "month": "2025-06",
+      "platform": "Fortnite",
+      "keyword": "galaxy skin",
+      "mention_count": 300,
+      "avg_listing_price_usd": 59.11,
+      "sentiment_score": 0.79
+    },
+    {
+      "month": "2025-07",
+      "platform": "Fortnite",
+      "keyword": "galaxy skin",
+      "mention_count": 387,
+      "avg_listing_price_usd": 25.92,
+      "sentiment_score": 0.36
+    },
+    {
+      "month": "2025-08",
+      "platform": "Fortnite",
+      "keyword": "galaxy skin",
+      "mention_count": 297,
+      "avg_listing_price_usd": 10.64,
+      "sentiment_score": 0.48
+    },
+    {
+      "month": "2025-09",
+      "platform": "Fortnite",
+      "keyword": "galaxy skin",
+      "mention_count": 457,
+      "avg_listing_price_usd": 26.6,
+      "sentiment_score": 0.68
+    },
+    {
+      "month": "2025-10",
+      "platform": "Fortnite",
+      "keyword": "galaxy skin",
+      "mention_count": 478,
+      "avg_listing_price_usd": 51.19,
+      "sentiment_score": 0.13
+    },
+    {
+      "month": "2025-11",
+      "platform": "Fortnite",
+      "keyword": "galaxy skin",
+      "mention_count": 531,
+      "avg_listing_price_usd": 91.09,
+      "sentiment_score": 0.26
+    },
+    {
+      "month": "2025-12",
+      "platform": "Fortnite",
+      "keyword": "galaxy skin",
+      "mention_count": 425,
+      "avg_listing_price_usd": 86.62,
+      "sentiment_score": 0.22
+    },
+    {
+      "month": "2026-01",
+      "platform": "Fortnite",
+      "keyword": "galaxy skin",
+      "mention_count": 310,
+      "avg_listing_price_usd": 20.89,
+      "sentiment_score": 0.16
+    },
+    {
+      "month": "2026-02",
+      "platform": "Fortnite",
+      "keyword": "galaxy skin",
+      "mention_count": 487,
+      "avg_listing_price_usd": 131.45,
+      "sentiment_score": 0.39
+    },
+    {
+      "month": "2025-04",
+      "platform": "Fortnite",
+      "keyword": "v-bucks",
+      "mention_count": 416,
+      "avg_listing_price_usd": 118.52,
+      "sentiment_score": 0.55
+    },
+    {
+      "month": "2025-05",
+      "platform": "Fortnite",
+      "keyword": "v-bucks",
+      "mention_count": 370,
+      "avg_listing_price_usd": 89.61,
+      "sentiment_score": -0.11
+    },
+    {
+      "month": "2025-05",
+      "platform": "Fortnite",
+      "keyword": "v-bucks",
+      "mention_count": 354,
+      "avg_listing_price_usd": 126.97,
+      "sentiment_score": -0.14
+    },
+    {
+      "month": "2025-06",
+      "platform": "Fortnite",
+      "keyword": "v-bucks",
+      "mention_count": 241,
+      "avg_listing_price_usd": 142.49,
+      "sentiment_score": -0.18
+    },
+    {
+      "month": "2025-07",
+      "platform": "Fortnite",
+      "keyword": "v-bucks",
+      "mention_count": 270,
+      "avg_listing_price_usd": 26.96,
+      "sentiment_score": 0.46
+    },
+    {
+      "month": "2025-08",
+      "platform": "Fortnite",
+      "keyword": "v-bucks",
+      "mention_count": 379,
+      "avg_listing_price_usd": 138.48,
+      "sentiment_score": 0.66
+    },
+    {
+      "month": "2025-09",
+      "platform": "Fortnite",
+      "keyword": "v-bucks",
+      "mention_count": 259,
+      "avg_listing_price_usd": 25.02,
+      "sentiment_score": -0.07
+    },
+    {
+      "month": "2025-10",
+      "platform": "Fortnite",
+      "keyword": "v-bucks",
+      "mention_count": 348,
+      "avg_listing_price_usd": 81.19,
+      "sentiment_score": 0.05
+    },
+    {
+      "month": "2025-11",
+      "platform": "Fortnite",
+      "keyword": "v-bucks",
+      "mention_count": 374,
+      "avg_listing_price_usd": 54.64,
+      "sentiment_score": 0.09
+    },
+    {
+      "month": "2025-12",
+      "platform": "Fortnite",
+      "keyword": "v-bucks",
+      "mention_count": 419,
+      "avg_listing_price_usd": 98.28,
+      "sentiment_score": 0.46
+    },
+    {
+      "month": "2026-01",
+      "platform": "Fortnite",
+      "keyword": "v-bucks",
+      "mention_count": 288,
+      "avg_listing_price_usd": 40.75,
+      "sentiment_score": 0.31
+    },
+    {
+      "month": "2026-02",
+      "platform": "Fortnite",
+      "keyword": "v-bucks",
+      "mention_count": 383,
+      "avg_listing_price_usd": 48.15,
+      "sentiment_score": 0.02
+    },
+    {
+      "month": "2025-04",
+      "platform": "Fortnite",
+      "keyword": "stacked account",
+      "mention_count": 125,
+      "avg_listing_price_usd": 74.57,
+      "sentiment_score": 0.32
+    },
+    {
+      "month": "2025-05",
+      "platform": "Fortnite",
+      "keyword": "stacked account",
+      "mention_count": 145,
+      "avg_listing_price_usd": 46.73,
+      "sentiment_score": 0.33
+    },
+    {
+      "month": "2025-05",
+      "platform": "Fortnite",
+      "keyword": "stacked account",
+      "mention_count": 157,
+      "avg_listing_price_usd": 62.21,
+      "sentiment_score": 0.08
+    },
+    {
+      "month": "2025-06",
+      "platform": "Fortnite",
+      "keyword": "stacked account",
+      "mention_count": 103,
+      "avg_listing_price_usd": 11.1,
+      "sentiment_score": 0.75
+    },
+    {
+      "month": "2025-07",
+      "platform": "Fortnite",
+      "keyword": "stacked account",
+      "mention_count": 149,
+      "avg_listing_price_usd": 100.12,
+      "sentiment_score": 0.52
+    },
+    {
+      "month": "2025-08",
+      "platform": "Fortnite",
+      "keyword": "stacked account",
+      "mention_count": 144,
+      "avg_listing_price_usd": 44.31,
+      "sentiment_score": 0.32
+    },
+    {
+      "month": "2025-09",
+      "platform": "Fortnite",
+      "keyword": "stacked account",
+      "mention_count": 93,
+      "avg_listing_price_usd": 112.43,
+      "sentiment_score": -0.04
+    },
+    {
+      "month": "2025-10",
+      "platform": "Fortnite",
+      "keyword": "stacked account",
+      "mention_count": 140,
+      "avg_listing_price_usd": 37.72,
+      "sentiment_score": -0.04
+    },
+    {
+      "month": "2025-11",
+      "platform": "Fortnite",
+      "keyword": "stacked account",
+      "mention_count": 101,
+      "avg_listing_price_usd": 73.5,
+      "sentiment_score": 0.45
+    },
+    {
+      "month": "2025-12",
+      "platform": "Fortnite",
+      "keyword": "stacked account",
+      "mention_count": 145,
+      "avg_listing_price_usd": 146.8,
+      "sentiment_score": -0.13
+    },
+    {
+      "month": "2026-01",
+      "platform": "Fortnite",
+      "keyword": "stacked account",
+      "mention_count": 171,
+      "avg_listing_price_usd": 73.98,
+      "sentiment_score": 0.42
+    },
+    {
+      "month": "2026-02",
+      "platform": "Fortnite",
+      "keyword": "stacked account",
+      "mention_count": 127,
+      "avg_listing_price_usd": 46.39,
+      "sentiment_score": -0.23
+    },
+    {
+      "month": "2025-04",
+      "platform": "Fortnite",
+      "keyword": "season 1",
+      "mention_count": 431,
+      "avg_listing_price_usd": 82.6,
+      "sentiment_score": 0.5
+    },
+    {
+      "month": "2025-05",
+      "platform": "Fortnite",
+      "keyword": "season 1",
+      "mention_count": 526,
+      "avg_listing_price_usd": 30.38,
+      "sentiment_score": 0.67
+    },
+    {
+      "month": "2025-05",
+      "platform": "Fortnite",
+      "keyword": "season 1",
+      "mention_count": 507,
+      "avg_listing_price_usd": 149.59,
+      "sentiment_score": 0.14
+    },
+    {
+      "month": "2025-06",
+      "platform": "Fortnite",
+      "keyword": "season 1",
+      "mention_count": 527,
+      "avg_listing_price_usd": 144.51,
+      "sentiment_score": 0.72
+    },
+    {
+      "month": "2025-07",
+      "platform": "Fortnite",
+      "keyword": "season 1",
+      "mention_count": 314,
+      "avg_listing_price_usd": 87.35,
+      "sentiment_score": -0.18
+    },
+    {
+      "month": "2025-08",
+      "platform": "Fortnite",
+      "keyword": "season 1",
+      "mention_count": 403,
+      "avg_listing_price_usd": 148.42,
+      "sentiment_score": 0.3
+    },
+    {
+      "month": "2025-09",
+      "platform": "Fortnite",
+      "keyword": "season 1",
+      "mention_count": 533,
+      "avg_listing_price_usd": 128.4,
+      "sentiment_score": 0.21
+    },
+    {
+      "month": "2025-10",
+      "platform": "Fortnite",
+      "keyword": "season 1",
+      "mention_count": 297,
+      "avg_listing_price_usd": 28.56,
+      "sentiment_score": 0.2
+    },
+    {
+      "month": "2025-11",
+      "platform": "Fortnite",
+      "keyword": "season 1",
+      "mention_count": 319,
+      "avg_listing_price_usd": 111.81,
+      "sentiment_score": 0.57
+    },
+    {
+      "month": "2025-12",
+      "platform": "Fortnite",
+      "keyword": "season 1",
+      "mention_count": 506,
+      "avg_listing_price_usd": 30.45,
+      "sentiment_score": 0.64
+    },
+    {
+      "month": "2026-01",
+      "platform": "Fortnite",
+      "keyword": "season 1",
+      "mention_count": 596,
+      "avg_listing_price_usd": 79.72,
+      "sentiment_score": -0.2
+    },
+    {
+      "month": "2026-02",
+      "platform": "Fortnite",
+      "keyword": "season 1",
+      "mention_count": 376,
+      "avg_listing_price_usd": 25.39,
+      "sentiment_score": 0.06
+    },
+    {
+      "month": "2025-04",
+      "platform": "Fortnite",
+      "keyword": "save the world",
+      "mention_count": 136,
+      "avg_listing_price_usd": 69.78,
+      "sentiment_score": -0.01
+    },
+    {
+      "month": "2025-05",
+      "platform": "Fortnite",
+      "keyword": "save the world",
+      "mention_count": 153,
+      "avg_listing_price_usd": 88.07,
+      "sentiment_score": -0.01
+    },
+    {
+      "month": "2025-05",
+      "platform": "Fortnite",
+      "keyword": "save the world",
+      "mention_count": 123,
+      "avg_listing_price_usd": 101.83,
+      "sentiment_score": 0.21
+    },
+    {
+      "month": "2025-06",
+      "platform": "Fortnite",
+      "keyword": "save the world",
+      "mention_count": 158,
+      "avg_listing_price_usd": 138.85,
+      "sentiment_score": 0.68
+    },
+    {
+      "month": "2025-07",
+      "platform": "Fortnite",
+      "keyword": "save the world",
+      "mention_count": 173,
+      "avg_listing_price_usd": 97.61,
+      "sentiment_score": 0.73
+    },
+    {
+      "month": "2025-08",
+      "platform": "Fortnite",
+      "keyword": "save the world",
+      "mention_count": 121,
+      "avg_listing_price_usd": 143.82,
+      "sentiment_score": 0.23
+    },
+    {
+      "month": "2025-09",
+      "platform": "Fortnite",
+      "keyword": "save the world",
+      "mention_count": 192,
+      "avg_listing_price_usd": 59.18,
+      "sentiment_score": 0.47
+    },
+    {
+      "month": "2025-10",
+      "platform": "Fortnite",
+      "keyword": "save the world",
+      "mention_count": 195,
+      "avg_listing_price_usd": 121.29,
+      "sentiment_score": 0.61
+    },
+    {
+      "month": "2025-11",
+      "platform": "Fortnite",
+      "keyword": "save the world",
+      "mention_count": 182,
+      "avg_listing_price_usd": 91.39,
+      "sentiment_score": 0.57
+    },
+    {
+      "month": "2025-12",
+      "platform": "Fortnite",
+      "keyword": "save the world",
+      "mention_count": 156,
+      "avg_listing_price_usd": 57.46,
+      "sentiment_score": 0.71
+    },
+    {
+      "month": "2026-01",
+      "platform": "Fortnite",
+      "keyword": "save the world",
+      "mention_count": 154,
+      "avg_listing_price_usd": 135.92,
+      "sentiment_score": -0.08
+    },
+    {
+      "month": "2026-02",
+      "platform": "Fortnite",
+      "keyword": "save the world",
+      "mention_count": 124,
+      "avg_listing_price_usd": 128.9,
+      "sentiment_score": 0.19
+    },
+    {
+      "month": "2025-04",
+      "platform": "Fortnite",
+      "keyword": "aerial assault",
+      "mention_count": 386,
+      "avg_listing_price_usd": 18.19,
+      "sentiment_score": 0.26
+    },
+    {
+      "month": "2025-05",
+      "platform": "Fortnite",
+      "keyword": "aerial assault",
+      "mention_count": 363,
+      "avg_listing_price_usd": 79.42,
+      "sentiment_score": 0.2
+    },
+    {
+      "month": "2025-05",
+      "platform": "Fortnite",
+      "keyword": "aerial assault",
+      "mention_count": 349,
+      "avg_listing_price_usd": 122.0,
+      "sentiment_score": 0.5
+    },
+    {
+      "month": "2025-06",
+      "platform": "Fortnite",
+      "keyword": "aerial assault",
+      "mention_count": 437,
+      "avg_listing_price_usd": 113.14,
+      "sentiment_score": 0.34
+    },
+    {
+      "month": "2025-07",
+      "platform": "Fortnite",
+      "keyword": "aerial assault",
+      "mention_count": 313,
+      "avg_listing_price_usd": 14.25,
+      "sentiment_score": 0.79
+    },
+    {
+      "month": "2025-08",
+      "platform": "Fortnite",
+      "keyword": "aerial assault",
+      "mention_count": 303,
+      "avg_listing_price_usd": 140.4,
+      "sentiment_score": -0.27
+    },
+    {
+      "month": "2025-09",
+      "platform": "Fortnite",
+      "keyword": "aerial assault",
+      "mention_count": 428,
+      "avg_listing_price_usd": 116.05,
+      "sentiment_score": 0.78
+    },
+    {
+      "month": "2025-10",
+      "platform": "Fortnite",
+      "keyword": "aerial assault",
+      "mention_count": 375,
+      "avg_listing_price_usd": 148.96,
+      "sentiment_score": 0.12
+    },
+    {
+      "month": "2025-11",
+      "platform": "Fortnite",
+      "keyword": "aerial assault",
+      "mention_count": 529,
+      "avg_listing_price_usd": 59.47,
+      "sentiment_score": 0.45
+    },
+    {
+      "month": "2025-12",
+      "platform": "Fortnite",
+      "keyword": "aerial assault",
+      "mention_count": 413,
+      "avg_listing_price_usd": 99.76,
+      "sentiment_score": 0.08
+    },
+    {
+      "month": "2026-01",
+      "platform": "Fortnite",
+      "keyword": "aerial assault",
+      "mention_count": 341,
+      "avg_listing_price_usd": 81.68,
+      "sentiment_score": 0.5
+    },
+    {
+      "month": "2026-02",
+      "platform": "Fortnite",
+      "keyword": "aerial assault",
+      "mention_count": 237,
+      "avg_listing_price_usd": 8.3,
+      "sentiment_score": 0.03
+    },
+    {
+      "month": "2025-04",
+      "platform": "Fortnite",
+      "keyword": "account merge",
+      "mention_count": 347,
+      "avg_listing_price_usd": 60.0,
+      "sentiment_score": -0.05
+    },
+    {
+      "month": "2025-05",
+      "platform": "Fortnite",
+      "keyword": "account merge",
+      "mention_count": 289,
+      "avg_listing_price_usd": 32.33,
+      "sentiment_score": 0.66
+    },
+    {
+      "month": "2025-05",
+      "platform": "Fortnite",
+      "keyword": "account merge",
+      "mention_count": 269,
+      "avg_listing_price_usd": 100.73,
+      "sentiment_score": 0.38
+    },
+    {
+      "month": "2025-06",
+      "platform": "Fortnite",
+      "keyword": "account merge",
+      "mention_count": 479,
+      "avg_listing_price_usd": 39.9,
+      "sentiment_score": -0.23
+    },
+    {
+      "month": "2025-07",
+      "platform": "Fortnite",
+      "keyword": "account merge",
+      "mention_count": 363,
+      "avg_listing_price_usd": 102.44,
+      "sentiment_score": 0.66
+    },
+    {
+      "month": "2025-08",
+      "platform": "Fortnite",
+      "keyword": "account merge",
+      "mention_count": 255,
+      "avg_listing_price_usd": 68.65,
+      "sentiment_score": 0.29
+    },
+    {
+      "month": "2025-09",
+      "platform": "Fortnite",
+      "keyword": "account merge",
+      "mention_count": 461,
+      "avg_listing_price_usd": 25.32,
+      "sentiment_score": 0.79
+    },
+    {
+      "month": "2025-10",
+      "platform": "Fortnite",
+      "keyword": "account merge",
+      "mention_count": 432,
+      "avg_listing_price_usd": 88.54,
+      "sentiment_score": 0.34
+    },
+    {
+      "month": "2025-11",
+      "platform": "Fortnite",
+      "keyword": "account merge",
+      "mention_count": 487,
+      "avg_listing_price_usd": 39.35,
+      "sentiment_score": 0.66
+    },
+    {
+      "month": "2025-12",
+      "platform": "Fortnite",
+      "keyword": "account merge",
+      "mention_count": 449,
+      "avg_listing_price_usd": 64.97,
+      "sentiment_score": 0.0
+    },
+    {
+      "month": "2026-01",
+      "platform": "Fortnite",
+      "keyword": "account merge",
+      "mention_count": 409,
+      "avg_listing_price_usd": 111.61,
+      "sentiment_score": -0.11
+    },
+    {
+      "month": "2026-02",
+      "platform": "Fortnite",
+      "keyword": "account merge",
+      "mention_count": 424,
+      "avg_listing_price_usd": 11.8,
+      "sentiment_score": 0.08
+    },
+    {
+      "month": "2025-04",
+      "platform": "Fortnite",
+      "keyword": "full access",
+      "mention_count": 408,
+      "avg_listing_price_usd": 51.22,
+      "sentiment_score": 0.16
+    },
+    {
+      "month": "2025-05",
+      "platform": "Fortnite",
+      "keyword": "full access",
+      "mention_count": 319,
+      "avg_listing_price_usd": 114.39,
+      "sentiment_score": 0.22
+    },
+    {
+      "month": "2025-05",
+      "platform": "Fortnite",
+      "keyword": "full access",
+      "mention_count": 318,
+      "avg_listing_price_usd": 107.6,
+      "sentiment_score": 0.59
+    },
+    {
+      "month": "2025-06",
+      "platform": "Fortnite",
+      "keyword": "full access",
+      "mention_count": 385,
+      "avg_listing_price_usd": 145.33,
+      "sentiment_score": 0.31
+    },
+    {
+      "month": "2025-07",
+      "platform": "Fortnite",
+      "keyword": "full access",
+      "mention_count": 282,
+      "avg_listing_price_usd": 34.48,
+      "sentiment_score": 0.41
+    },
+    {
+      "month": "2025-08",
+      "platform": "Fortnite",
+      "keyword": "full access",
+      "mention_count": 467,
+      "avg_listing_price_usd": 18.41,
+      "sentiment_score": 0.5
+    },
+    {
+      "month": "2025-09",
+      "platform": "Fortnite",
+      "keyword": "full access",
+      "mention_count": 284,
+      "avg_listing_price_usd": 102.68,
+      "sentiment_score": 0.36
+    },
+    {
+      "month": "2025-10",
+      "platform": "Fortnite",
+      "keyword": "full access",
+      "mention_count": 322,
+      "avg_listing_price_usd": 115.45,
+      "sentiment_score": 0.5
+    },
+    {
+      "month": "2025-11",
+      "platform": "Fortnite",
+      "keyword": "full access",
+      "mention_count": 362,
+      "avg_listing_price_usd": 131.07,
+      "sentiment_score": 0.07
+    },
+    {
+      "month": "2025-12",
+      "platform": "Fortnite",
+      "keyword": "full access",
+      "mention_count": 299,
+      "avg_listing_price_usd": 140.89,
+      "sentiment_score": 0.76
+    },
+    {
+      "month": "2026-01",
+      "platform": "Fortnite",
+      "keyword": "full access",
+      "mention_count": 400,
+      "avg_listing_price_usd": 74.44,
+      "sentiment_score": -0.03
+    },
+    {
+      "month": "2026-02",
+      "platform": "Fortnite",
+      "keyword": "full access",
+      "mention_count": 314,
+      "avg_listing_price_usd": 137.69,
+      "sentiment_score": 0.31
+    },
+    {
+      "month": "2025-04",
+      "platform": "Minecraft",
+      "keyword": "java edition",
+      "mention_count": 408,
+      "avg_listing_price_usd": 99.06,
+      "sentiment_score": 0.04
+    },
+    {
+      "month": "2025-05",
+      "platform": "Minecraft",
+      "keyword": "java edition",
+      "mention_count": 511,
+      "avg_listing_price_usd": 72.57,
+      "sentiment_score": 0.58
+    },
+    {
+      "month": "2025-05",
+      "platform": "Minecraft",
+      "keyword": "java edition",
+      "mention_count": 495,
+      "avg_listing_price_usd": 51.43,
+      "sentiment_score": -0.08
+    },
+    {
+      "month": "2025-06",
+      "platform": "Minecraft",
+      "keyword": "java edition",
+      "mention_count": 300,
+      "avg_listing_price_usd": 130.29,
+      "sentiment_score": 0.52
+    },
+    {
+      "month": "2025-07",
+      "platform": "Minecraft",
+      "keyword": "java edition",
+      "mention_count": 402,
+      "avg_listing_price_usd": 89.68,
+      "sentiment_score": 0.49
+    },
+    {
+      "month": "2025-08",
+      "platform": "Minecraft",
+      "keyword": "java edition",
+      "mention_count": 333,
+      "avg_listing_price_usd": 38.35,
+      "sentiment_score": 0.33
+    },
+    {
+      "month": "2025-09",
+      "platform": "Minecraft",
+      "keyword": "java edition",
+      "mention_count": 413,
+      "avg_listing_price_usd": 141.8,
+      "sentiment_score": 0.07
+    },
+    {
+      "month": "2025-10",
+      "platform": "Minecraft",
+      "keyword": "java edition",
+      "mention_count": 458,
+      "avg_listing_price_usd": 109.92,
+      "sentiment_score": 0.51
+    },
+    {
+      "month": "2025-11",
+      "platform": "Minecraft",
+      "keyword": "java edition",
+      "mention_count": 484,
+      "avg_listing_price_usd": 56.07,
+      "sentiment_score": -0.15
+    },
+    {
+      "month": "2025-12",
+      "platform": "Minecraft",
+      "keyword": "java edition",
+      "mention_count": 356,
+      "avg_listing_price_usd": 133.96,
+      "sentiment_score": 0.79
+    },
+    {
+      "month": "2026-01",
+      "platform": "Minecraft",
+      "keyword": "java edition",
+      "mention_count": 521,
+      "avg_listing_price_usd": 126.66,
+      "sentiment_score": -0.22
+    },
+    {
+      "month": "2026-02",
+      "platform": "Minecraft",
+      "keyword": "java edition",
+      "mention_count": 362,
+      "avg_listing_price_usd": 5.93,
+      "sentiment_score": -0.15
+    },
+    {
+      "month": "2025-04",
+      "platform": "Minecraft",
+      "keyword": "bedrock",
+      "mention_count": 384,
+      "avg_listing_price_usd": 6.33,
+      "sentiment_score": 0.26
+    },
+    {
+      "month": "2025-05",
+      "platform": "Minecraft",
+      "keyword": "bedrock",
+      "mention_count": 365,
+      "avg_listing_price_usd": 101.68,
+      "sentiment_score": 0.38
+    },
+    {
+      "month": "2025-05",
+      "platform": "Minecraft",
+      "keyword": "bedrock",
+      "mention_count": 341,
+      "avg_listing_price_usd": 5.96,
+      "sentiment_score": 0.31
+    },
+    {
+      "month": "2025-06",
+      "platform": "Minecraft",
+      "keyword": "bedrock",
+      "mention_count": 331,
+      "avg_listing_price_usd": 44.84,
+      "sentiment_score": 0.78
+    },
+    {
+      "month": "2025-07",
+      "platform": "Minecraft",
+      "keyword": "bedrock",
+      "mention_count": 380,
+      "avg_listing_price_usd": 102.73,
+      "sentiment_score": 0.59
+    },
+    {
+      "month": "2025-08",
+      "platform": "Minecraft",
+      "keyword": "bedrock",
+      "mention_count": 289,
+      "avg_listing_price_usd": 18.97,
+      "sentiment_score": -0.14
+    },
+    {
+      "month": "2025-09",
+      "platform": "Minecraft",
+      "keyword": "bedrock",
+      "mention_count": 329,
+      "avg_listing_price_usd": 123.21,
+      "sentiment_score": -0.01
+    },
+    {
+      "month": "2025-10",
+      "platform": "Minecraft",
+      "keyword": "bedrock",
+      "mention_count": 315,
+      "avg_listing_price_usd": 63.87,
+      "sentiment_score": 0.32
+    },
+    {
+      "month": "2025-11",
+      "platform": "Minecraft",
+      "keyword": "bedrock",
+      "mention_count": 341,
+      "avg_listing_price_usd": 104.19,
+      "sentiment_score": 0.63
+    },
+    {
+      "month": "2025-12",
+      "platform": "Minecraft",
+      "keyword": "bedrock",
+      "mention_count": 455,
+      "avg_listing_price_usd": 115.14,
+      "sentiment_score": -0.2
+    },
+    {
+      "month": "2026-01",
+      "platform": "Minecraft",
+      "keyword": "bedrock",
+      "mention_count": 349,
+      "avg_listing_price_usd": 13.14,
+      "sentiment_score": -0.29
+    },
+    {
+      "month": "2026-02",
+      "platform": "Minecraft",
+      "keyword": "bedrock",
+      "mention_count": 306,
+      "avg_listing_price_usd": 67.92,
+      "sentiment_score": 0.56
+    },
+    {
+      "month": "2025-04",
+      "platform": "Minecraft",
+      "keyword": "hypixel rank",
+      "mention_count": 396,
+      "avg_listing_price_usd": 134.74,
+      "sentiment_score": 0.71
+    },
+    {
+      "month": "2025-05",
+      "platform": "Minecraft",
+      "keyword": "hypixel rank",
+      "mention_count": 380,
+      "avg_listing_price_usd": 105.38,
+      "sentiment_score": 0.32
+    },
+    {
+      "month": "2025-05",
+      "platform": "Minecraft",
+      "keyword": "hypixel rank",
+      "mention_count": 383,
+      "avg_listing_price_usd": 104.24,
+      "sentiment_score": 0.01
+    },
+    {
+      "month": "2025-06",
+      "platform": "Minecraft",
+      "keyword": "hypixel rank",
+      "mention_count": 344,
+      "avg_listing_price_usd": 31.01,
+      "sentiment_score": 0.64
+    },
+    {
+      "month": "2025-07",
+      "platform": "Minecraft",
+      "keyword": "hypixel rank",
+      "mention_count": 238,
+      "avg_listing_price_usd": 25.91,
+      "sentiment_score": 0.6
+    },
+    {
+      "month": "2025-08",
+      "platform": "Minecraft",
+      "keyword": "hypixel rank",
+      "mention_count": 422,
+      "avg_listing_price_usd": 48.4,
+      "sentiment_score": 0.32
+    },
+    {
+      "month": "2025-09",
+      "platform": "Minecraft",
+      "keyword": "hypixel rank",
+      "mention_count": 389,
+      "avg_listing_price_usd": 103.17,
+      "sentiment_score": 0.29
+    },
+    {
+      "month": "2025-10",
+      "platform": "Minecraft",
+      "keyword": "hypixel rank",
+      "mention_count": 351,
+      "avg_listing_price_usd": 119.62,
+      "sentiment_score": 0.46
+    },
+    {
+      "month": "2025-11",
+      "platform": "Minecraft",
+      "keyword": "hypixel rank",
+      "mention_count": 316,
+      "avg_listing_price_usd": 55.15,
+      "sentiment_score": -0.19
+    },
+    {
+      "month": "2025-12",
+      "platform": "Minecraft",
+      "keyword": "hypixel rank",
+      "mention_count": 215,
+      "avg_listing_price_usd": 92.75,
+      "sentiment_score": 0.38
+    },
+    {
+      "month": "2026-01",
+      "platform": "Minecraft",
+      "keyword": "hypixel rank",
+      "mention_count": 428,
+      "avg_listing_price_usd": 52.32,
+      "sentiment_score": 0.4
+    },
+    {
+      "month": "2026-02",
+      "platform": "Minecraft",
+      "keyword": "hypixel rank",
+      "mention_count": 352,
+      "avg_listing_price_usd": 38.08,
+      "sentiment_score": 0.31
+    },
+    {
+      "month": "2025-04",
+      "platform": "Minecraft",
+      "keyword": "optifine cape",
+      "mention_count": 234,
+      "avg_listing_price_usd": 100.8,
+      "sentiment_score": -0.21
+    },
+    {
+      "month": "2025-05",
+      "platform": "Minecraft",
+      "keyword": "optifine cape",
+      "mention_count": 252,
+      "avg_listing_price_usd": 108.4,
+      "sentiment_score": -0.21
+    },
+    {
+      "month": "2025-05",
+      "platform": "Minecraft",
+      "keyword": "optifine cape",
+      "mention_count": 234,
+      "avg_listing_price_usd": 96.92,
+      "sentiment_score": 0.51
+    },
+    {
+      "month": "2025-06",
+      "platform": "Minecraft",
+      "keyword": "optifine cape",
+      "mention_count": 160,
+      "avg_listing_price_usd": 5.75,
+      "sentiment_score": 0.04
+    },
+    {
+      "month": "2025-07",
+      "platform": "Minecraft",
+      "keyword": "optifine cape",
+      "mention_count": 181,
+      "avg_listing_price_usd": 24.21,
+      "sentiment_score": -0.09
+    },
+    {
+      "month": "2025-08",
+      "platform": "Minecraft",
+      "keyword": "optifine cape",
+      "mention_count": 221,
+      "avg_listing_price_usd": 64.17,
+      "sentiment_score": -0.27
+    },
+    {
+      "month": "2025-09",
+      "platform": "Minecraft",
+      "keyword": "optifine cape",
+      "mention_count": 158,
+      "avg_listing_price_usd": 91.72,
+      "sentiment_score": 0.06
+    },
+    {
+      "month": "2025-10",
+      "platform": "Minecraft",
+      "keyword": "optifine cape",
+      "mention_count": 184,
+      "avg_listing_price_usd": 61.23,
+      "sentiment_score": -0.21
+    },
+    {
+      "month": "2025-11",
+      "platform": "Minecraft",
+      "keyword": "optifine cape",
+      "mention_count": 307,
+      "avg_listing_price_usd": 146.84,
+      "sentiment_score": 0.33
+    },
+    {
+      "month": "2025-12",
+      "platform": "Minecraft",
+      "keyword": "optifine cape",
+      "mention_count": 179,
+      "avg_listing_price_usd": 25.13,
+      "sentiment_score": 0.03
+    },
+    {
+      "month": "2026-01",
+      "platform": "Minecraft",
+      "keyword": "optifine cape",
+      "mention_count": 162,
+      "avg_listing_price_usd": 68.03,
+      "sentiment_score": 0.16
+    },
+    {
+      "month": "2026-02",
+      "platform": "Minecraft",
+      "keyword": "optifine cape",
+      "mention_count": 164,
+      "avg_listing_price_usd": 41.5,
+      "sentiment_score": -0.03
+    },
+    {
+      "month": "2025-04",
+      "platform": "Minecraft",
+      "keyword": "minecon cape",
+      "mention_count": 363,
+      "avg_listing_price_usd": 71.39,
+      "sentiment_score": -0.15
+    },
+    {
+      "month": "2025-05",
+      "platform": "Minecraft",
+      "keyword": "minecon cape",
+      "mention_count": 313,
+      "avg_listing_price_usd": 127.03,
+      "sentiment_score": 0.12
+    },
+    {
+      "month": "2025-05",
+      "platform": "Minecraft",
+      "keyword": "minecon cape",
+      "mention_count": 340,
+      "avg_listing_price_usd": 67.44,
+      "sentiment_score": 0.61
+    },
+    {
+      "month": "2025-06",
+      "platform": "Minecraft",
+      "keyword": "minecon cape",
+      "mention_count": 370,
+      "avg_listing_price_usd": 48.56,
+      "sentiment_score": 0.36
+    },
+    {
+      "month": "2025-07",
+      "platform": "Minecraft",
+      "keyword": "minecon cape",
+      "mention_count": 352,
+      "avg_listing_price_usd": 30.76,
+      "sentiment_score": 0.14
+    },
+    {
+      "month": "2025-08",
+      "platform": "Minecraft",
+      "keyword": "minecon cape",
+      "mention_count": 381,
+      "avg_listing_price_usd": 96.77,
+      "sentiment_score": 0.76
+    },
+    {
+      "month": "2025-09",
+      "platform": "Minecraft",
+      "keyword": "minecon cape",
+      "mention_count": 333,
+      "avg_listing_price_usd": 45.64,
+      "sentiment_score": 0.56
+    },
+    {
+      "month": "2025-10",
+      "platform": "Minecraft",
+      "keyword": "minecon cape",
+      "mention_count": 423,
+      "avg_listing_price_usd": 33.97,
+      "sentiment_score": 0.8
+    },
+    {
+      "month": "2025-11",
+      "platform": "Minecraft",
+      "keyword": "minecon cape",
+      "mention_count": 365,
+      "avg_listing_price_usd": 8.9,
+      "sentiment_score": 0.5
+    },
+    {
+      "month": "2025-12",
+      "platform": "Minecraft",
+      "keyword": "minecon cape",
+      "mention_count": 337,
+      "avg_listing_price_usd": 120.66,
+      "sentiment_score": 0.61
+    },
+    {
+      "month": "2026-01",
+      "platform": "Minecraft",
+      "keyword": "minecon cape",
+      "mention_count": 354,
+      "avg_listing_price_usd": 120.28,
+      "sentiment_score": 0.44
+    },
+    {
+      "month": "2026-02",
+      "platform": "Minecraft",
+      "keyword": "minecon cape",
+      "mention_count": 263,
+      "avg_listing_price_usd": 41.64,
+      "sentiment_score": -0.13
+    },
+    {
+      "month": "2025-04",
+      "platform": "Minecraft",
+      "keyword": "migrated",
+      "mention_count": 175,
+      "avg_listing_price_usd": 148.65,
+      "sentiment_score": 0.23
+    },
+    {
+      "month": "2025-05",
+      "platform": "Minecraft",
+      "keyword": "migrated",
+      "mention_count": 236,
+      "avg_listing_price_usd": 138.46,
+      "sentiment_score": 0.46
+    },
+    {
+      "month": "2025-05",
+      "platform": "Minecraft",
+      "keyword": "migrated",
+      "mention_count": 280,
+      "avg_listing_price_usd": 57.13,
+      "sentiment_score": 0.69
+    },
+    {
+      "month": "2025-06",
+      "platform": "Minecraft",
+      "keyword": "migrated",
+      "mention_count": 259,
+      "avg_listing_price_usd": 17.32,
+      "sentiment_score": 0.55
+    },
+    {
+      "month": "2025-07",
+      "platform": "Minecraft",
+      "keyword": "migrated",
+      "mention_count": 224,
+      "avg_listing_price_usd": 98.81,
+      "sentiment_score": -0.25
+    },
+    {
+      "month": "2025-08",
+      "platform": "Minecraft",
+      "keyword": "migrated",
+      "mention_count": 292,
+      "avg_listing_price_usd": 62.94,
+      "sentiment_score": 0.53
+    },
+    {
+      "month": "2025-09",
+      "platform": "Minecraft",
+      "keyword": "migrated",
+      "mention_count": 258,
+      "avg_listing_price_usd": 6.53,
+      "sentiment_score": -0.02
+    },
+    {
+      "month": "2025-10",
+      "platform": "Minecraft",
+      "keyword": "migrated",
+      "mention_count": 246,
+      "avg_listing_price_usd": 89.18,
+      "sentiment_score": 0.33
+    },
+    {
+      "month": "2025-11",
+      "platform": "Minecraft",
+      "keyword": "migrated",
+      "mention_count": 223,
+      "avg_listing_price_usd": 116.99,
+      "sentiment_score": 0.35
+    },
+    {
+      "month": "2025-12",
+      "platform": "Minecraft",
+      "keyword": "migrated",
+      "mention_count": 222,
+      "avg_listing_price_usd": 8.56,
+      "sentiment_score": -0.18
+    },
+    {
+      "month": "2026-01",
+      "platform": "Minecraft",
+      "keyword": "migrated",
+      "mention_count": 303,
+      "avg_listing_price_usd": 21.83,
+      "sentiment_score": 0.73
+    },
+    {
+      "month": "2026-02",
+      "platform": "Minecraft",
+      "keyword": "migrated",
+      "mention_count": 184,
+      "avg_listing_price_usd": 71.02,
+      "sentiment_score": -0.07
+    },
+    {
+      "month": "2025-04",
+      "platform": "Minecraft",
+      "keyword": "unmigrated",
+      "mention_count": 202,
+      "avg_listing_price_usd": 109.69,
+      "sentiment_score": 0.2
+    },
+    {
+      "month": "2025-05",
+      "platform": "Minecraft",
+      "keyword": "unmigrated",
+      "mention_count": 191,
+      "avg_listing_price_usd": 108.06,
+      "sentiment_score": -0.28
+    },
+    {
+      "month": "2025-05",
+      "platform": "Minecraft",
+      "keyword": "unmigrated",
+      "mention_count": 203,
+      "avg_listing_price_usd": 121.01,
+      "sentiment_score": 0.72
+    },
+    {
+      "month": "2025-06",
+      "platform": "Minecraft",
+      "keyword": "unmigrated",
+      "mention_count": 281,
+      "avg_listing_price_usd": 85.03,
+      "sentiment_score": 0.06
+    },
+    {
+      "month": "2025-07",
+      "platform": "Minecraft",
+      "keyword": "unmigrated",
+      "mention_count": 262,
+      "avg_listing_price_usd": 120.67,
+      "sentiment_score": 0.39
+    },
+    {
+      "month": "2025-08",
+      "platform": "Minecraft",
+      "keyword": "unmigrated",
+      "mention_count": 279,
+      "avg_listing_price_usd": 62.36,
+      "sentiment_score": 0.51
+    },
+    {
+      "month": "2025-09",
+      "platform": "Minecraft",
+      "keyword": "unmigrated",
+      "mention_count": 290,
+      "avg_listing_price_usd": 67.29,
+      "sentiment_score": -0.3
+    },
+    {
+      "month": "2025-10",
+      "platform": "Minecraft",
+      "keyword": "unmigrated",
+      "mention_count": 218,
+      "avg_listing_price_usd": 107.05,
+      "sentiment_score": 0.58
+    },
+    {
+      "month": "2025-11",
+      "platform": "Minecraft",
+      "keyword": "unmigrated",
+      "mention_count": 333,
+      "avg_listing_price_usd": 82.85,
+      "sentiment_score": 0.1
+    },
+    {
+      "month": "2025-12",
+      "platform": "Minecraft",
+      "keyword": "unmigrated",
+      "mention_count": 189,
+      "avg_listing_price_usd": 102.25,
+      "sentiment_score": 0.24
+    },
+    {
+      "month": "2026-01",
+      "platform": "Minecraft",
+      "keyword": "unmigrated",
+      "mention_count": 293,
+      "avg_listing_price_usd": 61.35,
+      "sentiment_score": 0.13
+    },
+    {
+      "month": "2026-02",
+      "platform": "Minecraft",
+      "keyword": "unmigrated",
+      "mention_count": 211,
+      "avg_listing_price_usd": 71.39,
+      "sentiment_score": -0.11
+    },
+    {
+      "month": "2025-04",
+      "platform": "Minecraft",
+      "keyword": "NFA",
+      "mention_count": 319,
+      "avg_listing_price_usd": 94.1,
+      "sentiment_score": -0.21
+    },
+    {
+      "month": "2025-05",
+      "platform": "Minecraft",
+      "keyword": "NFA",
+      "mention_count": 277,
+      "avg_listing_price_usd": 49.28,
+      "sentiment_score": -0.1
+    },
+    {
+      "month": "2025-05",
+      "platform": "Minecraft",
+      "keyword": "NFA",
+      "mention_count": 375,
+      "avg_listing_price_usd": 65.64,
+      "sentiment_score": -0.15
+    },
+    {
+      "month": "2025-06",
+      "platform": "Minecraft",
+      "keyword": "NFA",
+      "mention_count": 294,
+      "avg_listing_price_usd": 97.15,
+      "sentiment_score": 0.46
+    },
+    {
+      "month": "2025-07",
+      "platform": "Minecraft",
+      "keyword": "NFA",
+      "mention_count": 492,
+      "avg_listing_price_usd": 85.46,
+      "sentiment_score": 0.24
+    },
+    {
+      "month": "2025-08",
+      "platform": "Minecraft",
+      "keyword": "NFA",
+      "mention_count": 306,
+      "avg_listing_price_usd": 70.4,
+      "sentiment_score": -0.24
+    },
+    {
+      "month": "2025-09",
+      "platform": "Minecraft",
+      "keyword": "NFA",
+      "mention_count": 254,
+      "avg_listing_price_usd": 24.8,
+      "sentiment_score": 0.6
+    },
+    {
+      "month": "2025-10",
+      "platform": "Minecraft",
+      "keyword": "NFA",
+      "mention_count": 425,
+      "avg_listing_price_usd": 76.77,
+      "sentiment_score": 0.45
+    },
+    {
+      "month": "2025-11",
+      "platform": "Minecraft",
+      "keyword": "NFA",
+      "mention_count": 440,
+      "avg_listing_price_usd": 75.86,
+      "sentiment_score": -0.21
+    },
+    {
+      "month": "2025-12",
+      "platform": "Minecraft",
+      "keyword": "NFA",
+      "mention_count": 362,
+      "avg_listing_price_usd": 47.35,
+      "sentiment_score": 0.0
+    },
+    {
+      "month": "2026-01",
+      "platform": "Minecraft",
+      "keyword": "NFA",
+      "mention_count": 308,
+      "avg_listing_price_usd": 71.31,
+      "sentiment_score": 0.52
+    },
+    {
+      "month": "2026-02",
+      "platform": "Minecraft",
+      "keyword": "NFA",
+      "mention_count": 437,
+      "avg_listing_price_usd": 21.42,
+      "sentiment_score": -0.17
+    },
+    {
+      "month": "2025-04",
+      "platform": "Minecraft",
+      "keyword": "SFA",
+      "mention_count": 538,
+      "avg_listing_price_usd": 83.6,
+      "sentiment_score": 0.53
+    },
+    {
+      "month": "2025-05",
+      "platform": "Minecraft",
+      "keyword": "SFA",
+      "mention_count": 407,
+      "avg_listing_price_usd": 36.69,
+      "sentiment_score": 0.17
+    },
+    {
+      "month": "2025-05",
+      "platform": "Minecraft",
+      "keyword": "SFA",
+      "mention_count": 467,
+      "avg_listing_price_usd": 40.89,
+      "sentiment_score": 0.66
+    },
+    {
+      "month": "2025-06",
+      "platform": "Minecraft",
+      "keyword": "SFA",
+      "mention_count": 340,
+      "avg_listing_price_usd": 130.02,
+      "sentiment_score": -0.2
+    },
+    {
+      "month": "2025-07",
+      "platform": "Minecraft",
+      "keyword": "SFA",
+      "mention_count": 345,
+      "avg_listing_price_usd": 122.72,
+      "sentiment_score": -0.07
+    },
+    {
+      "month": "2025-08",
+      "platform": "Minecraft",
+      "keyword": "SFA",
+      "mention_count": 495,
+      "avg_listing_price_usd": 129.85,
+      "sentiment_score": 0.37
+    },
+    {
+      "month": "2025-09",
+      "platform": "Minecraft",
+      "keyword": "SFA",
+      "mention_count": 448,
+      "avg_listing_price_usd": 118.8,
+      "sentiment_score": 0.59
+    },
+    {
+      "month": "2025-10",
+      "platform": "Minecraft",
+      "keyword": "SFA",
+      "mention_count": 484,
+      "avg_listing_price_usd": 82.18,
+      "sentiment_score": 0.36
+    },
+    {
+      "month": "2025-11",
+      "platform": "Minecraft",
+      "keyword": "SFA",
+      "mention_count": 494,
+      "avg_listing_price_usd": 47.43,
+      "sentiment_score": 0.33
+    },
+    {
+      "month": "2025-12",
+      "platform": "Minecraft",
+      "keyword": "SFA",
+      "mention_count": 506,
+      "avg_listing_price_usd": 135.52,
+      "sentiment_score": 0.6
+    },
+    {
+      "month": "2026-01",
+      "platform": "Minecraft",
+      "keyword": "SFA",
+      "mention_count": 425,
+      "avg_listing_price_usd": 64.68,
+      "sentiment_score": -0.23
+    },
+    {
+      "month": "2026-02",
+      "platform": "Minecraft",
+      "keyword": "SFA",
+      "mention_count": 429,
+      "avg_listing_price_usd": 106.71,
+      "sentiment_score": -0.15
+    },
+    {
+      "month": "2025-04",
+      "platform": "Minecraft",
+      "keyword": "full access",
+      "mention_count": 112,
+      "avg_listing_price_usd": 115.41,
+      "sentiment_score": 0.44
+    },
+    {
+      "month": "2025-05",
+      "platform": "Minecraft",
+      "keyword": "full access",
+      "mention_count": 98,
+      "avg_listing_price_usd": 43.96,
+      "sentiment_score": 0.16
+    },
+    {
+      "month": "2025-05",
+      "platform": "Minecraft",
+      "keyword": "full access",
+      "mention_count": 101,
+      "avg_listing_price_usd": 132.62,
+      "sentiment_score": -0.2
+    },
+    {
+      "month": "2025-06",
+      "platform": "Minecraft",
+      "keyword": "full access",
+      "mention_count": 82,
+      "avg_listing_price_usd": 140.77,
+      "sentiment_score": 0.11
+    },
+    {
+      "month": "2025-07",
+      "platform": "Minecraft",
+      "keyword": "full access",
+      "mention_count": 91,
+      "avg_listing_price_usd": 5.36,
+      "sentiment_score": 0.55
+    },
+    {
+      "month": "2025-08",
+      "platform": "Minecraft",
+      "keyword": "full access",
+      "mention_count": 114,
+      "avg_listing_price_usd": 71.48,
+      "sentiment_score": 0.43
+    },
+    {
+      "month": "2025-09",
+      "platform": "Minecraft",
+      "keyword": "full access",
+      "mention_count": 68,
+      "avg_listing_price_usd": 82.49,
+      "sentiment_score": -0.06
+    },
+    {
+      "month": "2025-10",
+      "platform": "Minecraft",
+      "keyword": "full access",
+      "mention_count": 78,
+      "avg_listing_price_usd": 43.94,
+      "sentiment_score": 0.61
+    },
+    {
+      "month": "2025-11",
+      "platform": "Minecraft",
+      "keyword": "full access",
+      "mention_count": 96,
+      "avg_listing_price_usd": 87.09,
+      "sentiment_score": 0.23
+    },
+    {
+      "month": "2025-12",
+      "platform": "Minecraft",
+      "keyword": "full access",
+      "mention_count": 102,
+      "avg_listing_price_usd": 12.02,
+      "sentiment_score": -0.19
+    },
+    {
+      "month": "2026-01",
+      "platform": "Minecraft",
+      "keyword": "full access",
+      "mention_count": 106,
+      "avg_listing_price_usd": 23.01,
+      "sentiment_score": 0.64
+    },
+    {
+      "month": "2026-02",
+      "platform": "Minecraft",
+      "keyword": "full access",
+      "mention_count": 67,
+      "avg_listing_price_usd": 143.91,
+      "sentiment_score": -0.08
+    },
+    {
+      "month": "2025-04",
+      "platform": "Minecraft",
+      "keyword": "alt accounts",
+      "mention_count": 457,
+      "avg_listing_price_usd": 48.77,
+      "sentiment_score": 0.66
+    },
+    {
+      "month": "2025-05",
+      "platform": "Minecraft",
+      "keyword": "alt accounts",
+      "mention_count": 286,
+      "avg_listing_price_usd": 57.26,
+      "sentiment_score": -0.21
+    },
+    {
+      "month": "2025-05",
+      "platform": "Minecraft",
+      "keyword": "alt accounts",
+      "mention_count": 414,
+      "avg_listing_price_usd": 12.51,
+      "sentiment_score": 0.39
+    },
+    {
+      "month": "2025-06",
+      "platform": "Minecraft",
+      "keyword": "alt accounts",
+      "mention_count": 446,
+      "avg_listing_price_usd": 67.24,
+      "sentiment_score": -0.2
+    },
+    {
+      "month": "2025-07",
+      "platform": "Minecraft",
+      "keyword": "alt accounts",
+      "mention_count": 292,
+      "avg_listing_price_usd": 16.3,
+      "sentiment_score": 0.35
+    },
+    {
+      "month": "2025-08",
+      "platform": "Minecraft",
+      "keyword": "alt accounts",
+      "mention_count": 368,
+      "avg_listing_price_usd": 6.17,
+      "sentiment_score": 0.08
+    },
+    {
+      "month": "2025-09",
+      "platform": "Minecraft",
+      "keyword": "alt accounts",
+      "mention_count": 420,
+      "avg_listing_price_usd": 105.63,
+      "sentiment_score": 0.23
+    },
+    {
+      "month": "2025-10",
+      "platform": "Minecraft",
+      "keyword": "alt accounts",
+      "mention_count": 266,
+      "avg_listing_price_usd": 121.86,
+      "sentiment_score": -0.19
+    },
+    {
+      "month": "2025-11",
+      "platform": "Minecraft",
+      "keyword": "alt accounts",
+      "mention_count": 323,
+      "avg_listing_price_usd": 60.49,
+      "sentiment_score": 0.59
+    },
+    {
+      "month": "2025-12",
+      "platform": "Minecraft",
+      "keyword": "alt accounts",
+      "mention_count": 475,
+      "avg_listing_price_usd": 103.18,
+      "sentiment_score": -0.22
+    },
+    {
+      "month": "2026-01",
+      "platform": "Minecraft",
+      "keyword": "alt accounts",
+      "mention_count": 423,
+      "avg_listing_price_usd": 28.8,
+      "sentiment_score": 0.09
+    },
+    {
+      "month": "2026-02",
+      "platform": "Minecraft",
+      "keyword": "alt accounts",
+      "mention_count": 390,
+      "avg_listing_price_usd": 138.38,
+      "sentiment_score": 0.38
+    },
+    {
+      "month": "2025-04",
+      "platform": "Steam",
+      "keyword": "csgo skins",
+      "mention_count": 184,
+      "avg_listing_price_usd": 19.57,
+      "sentiment_score": 0.53
+    },
+    {
+      "month": "2025-05",
+      "platform": "Steam",
+      "keyword": "csgo skins",
+      "mention_count": 230,
+      "avg_listing_price_usd": 144.67,
+      "sentiment_score": 0.05
+    },
+    {
+      "month": "2025-05",
+      "platform": "Steam",
+      "keyword": "csgo skins",
+      "mention_count": 208,
+      "avg_listing_price_usd": 17.22,
+      "sentiment_score": 0.31
+    },
+    {
+      "month": "2025-06",
+      "platform": "Steam",
+      "keyword": "csgo skins",
+      "mention_count": 268,
+      "avg_listing_price_usd": 117.95,
+      "sentiment_score": 0.46
+    },
+    {
+      "month": "2025-07",
+      "platform": "Steam",
+      "keyword": "csgo skins",
+      "mention_count": 289,
+      "avg_listing_price_usd": 48.74,
+      "sentiment_score": 0.27
+    },
+    {
+      "month": "2025-08",
+      "platform": "Steam",
+      "keyword": "csgo skins",
+      "mention_count": 289,
+      "avg_listing_price_usd": 47.85,
+      "sentiment_score": -0.24
+    },
+    {
+      "month": "2025-09",
+      "platform": "Steam",
+      "keyword": "csgo skins",
+      "mention_count": 352,
+      "avg_listing_price_usd": 76.76,
+      "sentiment_score": -0.18
+    },
+    {
+      "month": "2025-10",
+      "platform": "Steam",
+      "keyword": "csgo skins",
+      "mention_count": 267,
+      "avg_listing_price_usd": 81.6,
+      "sentiment_score": 0.78
+    },
+    {
+      "month": "2025-11",
+      "platform": "Steam",
+      "keyword": "csgo skins",
+      "mention_count": 370,
+      "avg_listing_price_usd": 24.14,
+      "sentiment_score": 0.65
+    },
+    {
+      "month": "2025-12",
+      "platform": "Steam",
+      "keyword": "csgo skins",
+      "mention_count": 240,
+      "avg_listing_price_usd": 104.03,
+      "sentiment_score": 0.54
+    },
+    {
+      "month": "2026-01",
+      "platform": "Steam",
+      "keyword": "csgo skins",
+      "mention_count": 351,
+      "avg_listing_price_usd": 7.42,
+      "sentiment_score": -0.23
+    },
+    {
+      "month": "2026-02",
+      "platform": "Steam",
+      "keyword": "csgo skins",
+      "mention_count": 166,
+      "avg_listing_price_usd": 13.77,
+      "sentiment_score": 0.57
+    },
+    {
+      "month": "2025-04",
+      "platform": "Steam",
+      "keyword": "steam wallet",
+      "mention_count": 314,
+      "avg_listing_price_usd": 116.23,
+      "sentiment_score": 0.17
+    },
+    {
+      "month": "2025-05",
+      "platform": "Steam",
+      "keyword": "steam wallet",
+      "mention_count": 302,
+      "avg_listing_price_usd": 82.96,
+      "sentiment_score": -0.13
+    },
+    {
+      "month": "2025-05",
+      "platform": "Steam",
+      "keyword": "steam wallet",
+      "mention_count": 203,
+      "avg_listing_price_usd": 138.53,
+      "sentiment_score": 0.77
+    },
+    {
+      "month": "2025-06",
+      "platform": "Steam",
+      "keyword": "steam wallet",
+      "mention_count": 242,
+      "avg_listing_price_usd": 90.03,
+      "sentiment_score": 0.54
+    },
+    {
+      "month": "2025-07",
+      "platform": "Steam",
+      "keyword": "steam wallet",
+      "mention_count": 315,
+      "avg_listing_price_usd": 49.97,
+      "sentiment_score": 0.18
+    },
+    {
+      "month": "2025-08",
+      "platform": "Steam",
+      "keyword": "steam wallet",
+      "mention_count": 262,
+      "avg_listing_price_usd": 40.45,
+      "sentiment_score": 0.72
+    },
+    {
+      "month": "2025-09",
+      "platform": "Steam",
+      "keyword": "steam wallet",
+      "mention_count": 276,
+      "avg_listing_price_usd": 12.98,
+      "sentiment_score": 0.43
+    },
+    {
+      "month": "2025-10",
+      "platform": "Steam",
+      "keyword": "steam wallet",
+      "mention_count": 241,
+      "avg_listing_price_usd": 6.84,
+      "sentiment_score": -0.15
+    },
+    {
+      "month": "2025-11",
+      "platform": "Steam",
+      "keyword": "steam wallet",
+      "mention_count": 242,
+      "avg_listing_price_usd": 55.27,
+      "sentiment_score": 0.27
+    },
+    {
+      "month": "2025-12",
+      "platform": "Steam",
+      "keyword": "steam wallet",
+      "mention_count": 276,
+      "avg_listing_price_usd": 58.92,
+      "sentiment_score": 0.52
+    },
+    {
+      "month": "2026-01",
+      "platform": "Steam",
+      "keyword": "steam wallet",
+      "mention_count": 380,
+      "avg_listing_price_usd": 22.12,
+      "sentiment_score": 0.69
+    },
+    {
+      "month": "2026-02",
+      "platform": "Steam",
+      "keyword": "steam wallet",
+      "mention_count": 259,
+      "avg_listing_price_usd": 80.96,
+      "sentiment_score": -0.01
+    },
+    {
+      "month": "2025-04",
+      "platform": "Steam",
+      "keyword": "game library",
+      "mention_count": 314,
+      "avg_listing_price_usd": 79.06,
+      "sentiment_score": -0.24
+    },
+    {
+      "month": "2025-05",
+      "platform": "Steam",
+      "keyword": "game library",
+      "mention_count": 256,
+      "avg_listing_price_usd": 27.81,
+      "sentiment_score": 0.55
+    },
+    {
+      "month": "2025-05",
+      "platform": "Steam",
+      "keyword": "game library",
+      "mention_count": 362,
+      "avg_listing_price_usd": 21.72,
+      "sentiment_score": 0.51
+    },
+    {
+      "month": "2025-06",
+      "platform": "Steam",
+      "keyword": "game library",
+      "mention_count": 363,
+      "avg_listing_price_usd": 6.78,
+      "sentiment_score": -0.25
+    },
+    {
+      "month": "2025-07",
+      "platform": "Steam",
+      "keyword": "game library",
+      "mention_count": 392,
+      "avg_listing_price_usd": 30.95,
+      "sentiment_score": 0.76
+    },
+    {
+      "month": "2025-08",
+      "platform": "Steam",
+      "keyword": "game library",
+      "mention_count": 344,
+      "avg_listing_price_usd": 108.53,
+      "sentiment_score": 0.42
+    },
+    {
+      "month": "2025-09",
+      "platform": "Steam",
+      "keyword": "game library",
+      "mention_count": 255,
+      "avg_listing_price_usd": 137.8,
+      "sentiment_score": 0.05
+    },
+    {
+      "month": "2025-10",
+      "platform": "Steam",
+      "keyword": "game library",
+      "mention_count": 369,
+      "avg_listing_price_usd": 22.31,
+      "sentiment_score": 0.44
+    },
+    {
+      "month": "2025-11",
+      "platform": "Steam",
+      "keyword": "game library",
+      "mention_count": 232,
+      "avg_listing_price_usd": 79.79,
+      "sentiment_score": -0.25
+    },
+    {
+      "month": "2025-12",
+      "platform": "Steam",
+      "keyword": "game library",
+      "mention_count": 386,
+      "avg_listing_price_usd": 130.57,
+      "sentiment_score": 0.55
+    },
+    {
+      "month": "2026-01",
+      "platform": "Steam",
+      "keyword": "game library",
+      "mention_count": 228,
+      "avg_listing_price_usd": 71.23,
+      "sentiment_score": 0.11
+    },
+    {
+      "month": "2026-02",
+      "platform": "Steam",
+      "keyword": "game library",
+      "mention_count": 350,
+      "avg_listing_price_usd": 112.24,
+      "sentiment_score": -0.03
+    },
+    {
+      "month": "2025-04",
+      "platform": "Steam",
+      "keyword": "VAC clean",
+      "mention_count": 207,
+      "avg_listing_price_usd": 117.03,
+      "sentiment_score": -0.09
+    },
+    {
+      "month": "2025-05",
+      "platform": "Steam",
+      "keyword": "VAC clean",
+      "mention_count": 245,
+      "avg_listing_price_usd": 40.54,
+      "sentiment_score": -0.29
+    },
+    {
+      "month": "2025-05",
+      "platform": "Steam",
+      "keyword": "VAC clean",
+      "mention_count": 174,
+      "avg_listing_price_usd": 55.23,
+      "sentiment_score": 0.62
+    },
+    {
+      "month": "2025-06",
+      "platform": "Steam",
+      "keyword": "VAC clean",
+      "mention_count": 280,
+      "avg_listing_price_usd": 5.21,
+      "sentiment_score": 0.42
+    },
+    {
+      "month": "2025-07",
+      "platform": "Steam",
+      "keyword": "VAC clean",
+      "mention_count": 254,
+      "avg_listing_price_usd": 20.07,
+      "sentiment_score": 0.28
+    },
+    {
+      "month": "2025-08",
+      "platform": "Steam",
+      "keyword": "VAC clean",
+      "mention_count": 200,
+      "avg_listing_price_usd": 13.68,
+      "sentiment_score": 0.8
+    },
+    {
+      "month": "2025-09",
+      "platform": "Steam",
+      "keyword": "VAC clean",
+      "mention_count": 169,
+      "avg_listing_price_usd": 138.58,
+      "sentiment_score": 0.69
+    },
+    {
+      "month": "2025-10",
+      "platform": "Steam",
+      "keyword": "VAC clean",
+      "mention_count": 241,
+      "avg_listing_price_usd": 59.01,
+      "sentiment_score": 0.77
+    },
+    {
+      "month": "2025-11",
+      "platform": "Steam",
+      "keyword": "VAC clean",
+      "mention_count": 140,
+      "avg_listing_price_usd": 24.36,
+      "sentiment_score": 0.6
+    },
+    {
+      "month": "2025-12",
+      "platform": "Steam",
+      "keyword": "VAC clean",
+      "mention_count": 190,
+      "avg_listing_price_usd": 68.07,
+      "sentiment_score": 0.76
+    },
+    {
+      "month": "2026-01",
+      "platform": "Steam",
+      "keyword": "VAC clean",
+      "mention_count": 166,
+      "avg_listing_price_usd": 50.68,
+      "sentiment_score": 0.58
+    },
+    {
+      "month": "2026-02",
+      "platform": "Steam",
+      "keyword": "VAC clean",
+      "mention_count": 270,
+      "avg_listing_price_usd": 51.12,
+      "sentiment_score": -0.0
+    },
+    {
+      "month": "2025-04",
+      "platform": "Steam",
+      "keyword": "prime",
+      "mention_count": 45,
+      "avg_listing_price_usd": 116.67,
+      "sentiment_score": -0.18
+    },
+    {
+      "month": "2025-05",
+      "platform": "Steam",
+      "keyword": "prime",
+      "mention_count": 55,
+      "avg_listing_price_usd": 50.53,
+      "sentiment_score": -0.17
+    },
+    {
+      "month": "2025-05",
+      "platform": "Steam",
+      "keyword": "prime",
+      "mention_count": 67,
+      "avg_listing_price_usd": 70.53,
+      "sentiment_score": 0.21
+    },
+    {
+      "month": "2025-06",
+      "platform": "Steam",
+      "keyword": "prime",
+      "mention_count": 46,
+      "avg_listing_price_usd": 122.1,
+      "sentiment_score": 0.03
+    },
+    {
+      "month": "2025-07",
+      "platform": "Steam",
+      "keyword": "prime",
+      "mention_count": 64,
+      "avg_listing_price_usd": 36.18,
+      "sentiment_score": 0.64
+    },
+    {
+      "month": "2025-08",
+      "platform": "Steam",
+      "keyword": "prime",
+      "mention_count": 61,
+      "avg_listing_price_usd": 145.42,
+      "sentiment_score": 0.14
+    },
+    {
+      "month": "2025-09",
+      "platform": "Steam",
+      "keyword": "prime",
+      "mention_count": 46,
+      "avg_listing_price_usd": 123.91,
+      "sentiment_score": -0.11
+    },
+    {
+      "month": "2025-10",
+      "platform": "Steam",
+      "keyword": "prime",
+      "mention_count": 81,
+      "avg_listing_price_usd": 85.61,
+      "sentiment_score": 0.31
+    },
+    {
+      "month": "2025-11",
+      "platform": "Steam",
+      "keyword": "prime",
+      "mention_count": 39,
+      "avg_listing_price_usd": 120.1,
+      "sentiment_score": -0.17
+    },
+    {
+      "month": "2025-12",
+      "platform": "Steam",
+      "keyword": "prime",
+      "mention_count": 59,
+      "avg_listing_price_usd": 37.23,
+      "sentiment_score": -0.08
+    },
+    {
+      "month": "2026-01",
+      "platform": "Steam",
+      "keyword": "prime",
+      "mention_count": 64,
+      "avg_listing_price_usd": 140.95,
+      "sentiment_score": -0.21
+    },
+    {
+      "month": "2026-02",
+      "platform": "Steam",
+      "keyword": "prime",
+      "mention_count": 78,
+      "avg_listing_price_usd": 15.87,
+      "sentiment_score": 0.8
+    },
+    {
+      "month": "2025-04",
+      "platform": "Steam",
+      "keyword": "high level",
+      "mention_count": 116,
+      "avg_listing_price_usd": 23.67,
+      "sentiment_score": 0.7
+    },
+    {
+      "month": "2025-05",
+      "platform": "Steam",
+      "keyword": "high level",
+      "mention_count": 110,
+      "avg_listing_price_usd": 11.19,
+      "sentiment_score": 0.21
+    },
+    {
+      "month": "2025-05",
+      "platform": "Steam",
+      "keyword": "high level",
+      "mention_count": 123,
+      "avg_listing_price_usd": 124.14,
+      "sentiment_score": 0.13
+    },
+    {
+      "month": "2025-06",
+      "platform": "Steam",
+      "keyword": "high level",
+      "mention_count": 128,
+      "avg_listing_price_usd": 30.06,
+      "sentiment_score": -0.06
+    },
+    {
+      "month": "2025-07",
+      "platform": "Steam",
+      "keyword": "high level",
+      "mention_count": 101,
+      "avg_listing_price_usd": 133.1,
+      "sentiment_score": -0.26
+    },
+    {
+      "month": "2025-08",
+      "platform": "Steam",
+      "keyword": "high level",
+      "mention_count": 107,
+      "avg_listing_price_usd": 47.79,
+      "sentiment_score": 0.15
+    },
+    {
+      "month": "2025-09",
+      "platform": "Steam",
+      "keyword": "high level",
+      "mention_count": 92,
+      "avg_listing_price_usd": 45.57,
+      "sentiment_score": -0.15
+    },
+    {
+      "month": "2025-10",
+      "platform": "Steam",
+      "keyword": "high level",
+      "mention_count": 140,
+      "avg_listing_price_usd": 81.24,
+      "sentiment_score": 0.39
+    },
+    {
+      "month": "2025-11",
+      "platform": "Steam",
+      "keyword": "high level",
+      "mention_count": 161,
+      "avg_listing_price_usd": 148.46,
+      "sentiment_score": 0.56
+    },
+    {
+      "month": "2025-12",
+      "platform": "Steam",
+      "keyword": "high level",
+      "mention_count": 122,
+      "avg_listing_price_usd": 75.28,
+      "sentiment_score": 0.7
+    },
+    {
+      "month": "2026-01",
+      "platform": "Steam",
+      "keyword": "high level",
+      "mention_count": 117,
+      "avg_listing_price_usd": 31.07,
+      "sentiment_score": 0.05
+    },
+    {
+      "month": "2026-02",
+      "platform": "Steam",
+      "keyword": "high level",
+      "mention_count": 137,
+      "avg_listing_price_usd": 117.89,
+      "sentiment_score": -0.24
+    },
+    {
+      "month": "2025-04",
+      "platform": "Steam",
+      "keyword": "inventory value",
+      "mention_count": 302,
+      "avg_listing_price_usd": 149.94,
+      "sentiment_score": 0.77
+    },
+    {
+      "month": "2025-05",
+      "platform": "Steam",
+      "keyword": "inventory value",
+      "mention_count": 281,
+      "avg_listing_price_usd": 43.65,
+      "sentiment_score": 0.6
+    },
+    {
+      "month": "2025-05",
+      "platform": "Steam",
+      "keyword": "inventory value",
+      "mention_count": 199,
+      "avg_listing_price_usd": 149.48,
+      "sentiment_score": -0.06
+    },
+    {
+      "month": "2025-06",
+      "platform": "Steam",
+      "keyword": "inventory value",
+      "mention_count": 324,
+      "avg_listing_price_usd": 56.45,
+      "sentiment_score": 0.62
+    },
+    {
+      "month": "2025-07",
+      "platform": "Steam",
+      "keyword": "inventory value",
+      "mention_count": 225,
+      "avg_listing_price_usd": 90.92,
+      "sentiment_score": 0.59
+    },
+    {
+      "month": "2025-08",
+      "platform": "Steam",
+      "keyword": "inventory value",
+      "mention_count": 346,
+      "avg_listing_price_usd": 9.09,
+      "sentiment_score": 0.47
+    },
+    {
+      "month": "2025-09",
+      "platform": "Steam",
+      "keyword": "inventory value",
+      "mention_count": 308,
+      "avg_listing_price_usd": 86.65,
+      "sentiment_score": -0.09
+    },
+    {
+      "month": "2025-10",
+      "platform": "Steam",
+      "keyword": "inventory value",
+      "mention_count": 375,
+      "avg_listing_price_usd": 76.37,
+      "sentiment_score": 0.04
+    },
+    {
+      "month": "2025-11",
+      "platform": "Steam",
+      "keyword": "inventory value",
+      "mention_count": 202,
+      "avg_listing_price_usd": 38.73,
+      "sentiment_score": -0.06
+    },
+    {
+      "month": "2025-12",
+      "platform": "Steam",
+      "keyword": "inventory value",
+      "mention_count": 191,
+      "avg_listing_price_usd": 138.09,
+      "sentiment_score": -0.08
+    },
+    {
+      "month": "2026-01",
+      "platform": "Steam",
+      "keyword": "inventory value",
+      "mention_count": 261,
+      "avg_listing_price_usd": 138.22,
+      "sentiment_score": 0.63
+    },
+    {
+      "month": "2026-02",
+      "platform": "Steam",
+      "keyword": "inventory value",
+      "mention_count": 179,
+      "avg_listing_price_usd": 90.06,
+      "sentiment_score": 0.71
+    },
+    {
+      "month": "2025-04",
+      "platform": "Steam",
+      "keyword": "rare items",
+      "mention_count": 422,
+      "avg_listing_price_usd": 57.91,
+      "sentiment_score": -0.22
+    },
+    {
+      "month": "2025-05",
+      "platform": "Steam",
+      "keyword": "rare items",
+      "mention_count": 462,
+      "avg_listing_price_usd": 89.97,
+      "sentiment_score": 0.07
+    },
+    {
+      "month": "2025-05",
+      "platform": "Steam",
+      "keyword": "rare items",
+      "mention_count": 531,
+      "avg_listing_price_usd": 111.19,
+      "sentiment_score": 0.18
+    },
+    {
+      "month": "2025-06",
+      "platform": "Steam",
+      "keyword": "rare items",
+      "mention_count": 425,
+      "avg_listing_price_usd": 51.01,
+      "sentiment_score": 0.48
+    },
+    {
+      "month": "2025-07",
+      "platform": "Steam",
+      "keyword": "rare items",
+      "mention_count": 527,
+      "avg_listing_price_usd": 93.99,
+      "sentiment_score": 0.09
+    },
+    {
+      "month": "2025-08",
+      "platform": "Steam",
+      "keyword": "rare items",
+      "mention_count": 521,
+      "avg_listing_price_usd": 59.87,
+      "sentiment_score": 0.51
+    },
+    {
+      "month": "2025-09",
+      "platform": "Steam",
+      "keyword": "rare items",
+      "mention_count": 326,
+      "avg_listing_price_usd": 5.26,
+      "sentiment_score": 0.47
+    },
+    {
+      "month": "2025-10",
+      "platform": "Steam",
+      "keyword": "rare items",
+      "mention_count": 528,
+      "avg_listing_price_usd": 116.77,
+      "sentiment_score": 0.32
+    },
+    {
+      "month": "2025-11",
+      "platform": "Steam",
+      "keyword": "rare items",
+      "mention_count": 343,
+      "avg_listing_price_usd": 122.28,
+      "sentiment_score": 0.37
+    },
+    {
+      "month": "2025-12",
+      "platform": "Steam",
+      "keyword": "rare items",
+      "mention_count": 345,
+      "avg_listing_price_usd": 76.95,
+      "sentiment_score": 0.06
+    },
+    {
+      "month": "2026-01",
+      "platform": "Steam",
+      "keyword": "rare items",
+      "mention_count": 327,
+      "avg_listing_price_usd": 51.33,
+      "sentiment_score": 0.4
+    },
+    {
+      "month": "2026-02",
+      "platform": "Steam",
+      "keyword": "rare items",
+      "mention_count": 624,
+      "avg_listing_price_usd": 102.15,
+      "sentiment_score": 0.5
+    },
+    {
+      "month": "2025-04",
+      "platform": "Steam",
+      "keyword": "old account",
+      "mention_count": 164,
+      "avg_listing_price_usd": 41.18,
+      "sentiment_score": -0.23
+    },
+    {
+      "month": "2025-05",
+      "platform": "Steam",
+      "keyword": "old account",
+      "mention_count": 145,
+      "avg_listing_price_usd": 5.19,
+      "sentiment_score": 0.12
+    },
+    {
+      "month": "2025-05",
+      "platform": "Steam",
+      "keyword": "old account",
+      "mention_count": 251,
+      "avg_listing_price_usd": 133.26,
+      "sentiment_score": 0.24
+    },
+    {
+      "month": "2025-06",
+      "platform": "Steam",
+      "keyword": "old account",
+      "mention_count": 195,
+      "avg_listing_price_usd": 19.71,
+      "sentiment_score": 0.23
+    },
+    {
+      "month": "2025-07",
+      "platform": "Steam",
+      "keyword": "old account",
+      "mention_count": 224,
+      "avg_listing_price_usd": 104.64,
+      "sentiment_score": -0.12
+    },
+    {
+      "month": "2025-08",
+      "platform": "Steam",
+      "keyword": "old account",
+      "mention_count": 214,
+      "avg_listing_price_usd": 47.76,
+      "sentiment_score": 0.05
+    },
+    {
+      "month": "2025-09",
+      "platform": "Steam",
+      "keyword": "old account",
+      "mention_count": 161,
+      "avg_listing_price_usd": 29.67,
+      "sentiment_score": 0.11
+    },
+    {
+      "month": "2025-10",
+      "platform": "Steam",
+      "keyword": "old account",
+      "mention_count": 215,
+      "avg_listing_price_usd": 135.23,
+      "sentiment_score": -0.2
+    },
+    {
+      "month": "2025-11",
+      "platform": "Steam",
+      "keyword": "old account",
+      "mention_count": 217,
+      "avg_listing_price_usd": 75.0,
+      "sentiment_score": -0.27
+    },
+    {
+      "month": "2025-12",
+      "platform": "Steam",
+      "keyword": "old account",
+      "mention_count": 183,
+      "avg_listing_price_usd": 134.01,
+      "sentiment_score": -0.13
+    },
+    {
+      "month": "2026-01",
+      "platform": "Steam",
+      "keyword": "old account",
+      "mention_count": 137,
+      "avg_listing_price_usd": 32.55,
+      "sentiment_score": 0.47
+    },
+    {
+      "month": "2026-02",
+      "platform": "Steam",
+      "keyword": "old account",
+      "mention_count": 249,
+      "avg_listing_price_usd": 43.46,
+      "sentiment_score": 0.01
+    },
+    {
+      "month": "2025-04",
+      "platform": "Steam",
+      "keyword": "badge level",
+      "mention_count": 131,
+      "avg_listing_price_usd": 84.7,
+      "sentiment_score": 0.24
+    },
+    {
+      "month": "2025-05",
+      "platform": "Steam",
+      "keyword": "badge level",
+      "mention_count": 97,
+      "avg_listing_price_usd": 17.71,
+      "sentiment_score": 0.61
+    },
+    {
+      "month": "2025-05",
+      "platform": "Steam",
+      "keyword": "badge level",
+      "mention_count": 141,
+      "avg_listing_price_usd": 19.06,
+      "sentiment_score": -0.07
+    },
+    {
+      "month": "2025-06",
+      "platform": "Steam",
+      "keyword": "badge level",
+      "mention_count": 186,
+      "avg_listing_price_usd": 73.67,
+      "sentiment_score": -0.17
+    },
+    {
+      "month": "2025-07",
+      "platform": "Steam",
+      "keyword": "badge level",
+      "mention_count": 147,
+      "avg_listing_price_usd": 134.76,
+      "sentiment_score": -0.01
+    },
+    {
+      "month": "2025-08",
+      "platform": "Steam",
+      "keyword": "badge level",
+      "mention_count": 138,
+      "avg_listing_price_usd": 58.8,
+      "sentiment_score": 0.12
+    },
+    {
+      "month": "2025-09",
+      "platform": "Steam",
+      "keyword": "badge level",
+      "mention_count": 97,
+      "avg_listing_price_usd": 68.76,
+      "sentiment_score": -0.01
+    },
+    {
+      "month": "2025-10",
+      "platform": "Steam",
+      "keyword": "badge level",
+      "mention_count": 165,
+      "avg_listing_price_usd": 26.91,
+      "sentiment_score": 0.47
+    },
+    {
+      "month": "2025-11",
+      "platform": "Steam",
+      "keyword": "badge level",
+      "mention_count": 139,
+      "avg_listing_price_usd": 122.19,
+      "sentiment_score": 0.16
+    },
+    {
+      "month": "2025-12",
+      "platform": "Steam",
+      "keyword": "badge level",
+      "mention_count": 133,
+      "avg_listing_price_usd": 13.84,
+      "sentiment_score": 0.13
+    },
+    {
+      "month": "2026-01",
+      "platform": "Steam",
+      "keyword": "badge level",
+      "mention_count": 189,
+      "avg_listing_price_usd": 104.62,
+      "sentiment_score": 0.73
+    },
+    {
+      "month": "2026-02",
+      "platform": "Steam",
+      "keyword": "badge level",
+      "mention_count": 128,
+      "avg_listing_price_usd": 48.33,
+      "sentiment_score": 0.13
+    }
+  ],
+  "regional_data": [
+    {
+      "platform": "Roblox",
+      "region": "North America",
+      "listings_count": 920,
+      "avg_price_usd": 66.62,
+      "dominant_language": "Portuguese",
+      "seller_count": 400,
+      "pct_of_total": 0.28
+    },
+    {
+      "platform": "Roblox",
+      "region": "Europe",
+      "listings_count": 880,
+      "avg_price_usd": 23.47,
+      "dominant_language": "Indonesian",
+      "seller_count": 294,
+      "pct_of_total": 0.268
+    },
+    {
+      "platform": "Roblox",
+      "region": "Southeast Asia",
+      "listings_count": 635,
+      "avg_price_usd": 35.25,
+      "dominant_language": "Russian",
+      "seller_count": 206,
+      "pct_of_total": 0.194
+    },
+    {
+      "platform": "Roblox",
+      "region": "Latin America",
+      "listings_count": 313,
+      "avg_price_usd": 41.63,
+      "dominant_language": "Turkish",
+      "seller_count": 106,
+      "pct_of_total": 0.095
+    },
+    {
+      "platform": "Roblox",
+      "region": "Middle East",
+      "listings_count": 235,
+      "avg_price_usd": 19.49,
+      "dominant_language": "German",
+      "seller_count": 82,
+      "pct_of_total": 0.072
+    },
+    {
+      "platform": "Roblox",
+      "region": "East Asia",
+      "listings_count": 327,
+      "avg_price_usd": 56.14,
+      "dominant_language": "Spanish",
+      "seller_count": 103,
+      "pct_of_total": 0.1
+    },
+    {
+      "platform": "Roblox",
+      "region": "South Asia",
+      "listings_count": 135,
+      "avg_price_usd": 19.92,
+      "dominant_language": "Chinese",
+      "seller_count": 54,
+      "pct_of_total": 0.041
+    },
+    {
+      "platform": "Roblox",
+      "region": "Africa",
+      "listings_count": 82,
+      "avg_price_usd": 6.22,
+      "dominant_language": "Korean",
+      "seller_count": 34,
+      "pct_of_total": 0.025
+    },
+    {
+      "platform": "Roblox",
+      "region": "Oceania",
+      "listings_count": 66,
+      "avg_price_usd": 37.27,
+      "dominant_language": "Turkish",
+      "seller_count": 21,
+      "pct_of_total": 0.02
+    },
+    {
+      "platform": "Fortnite",
+      "region": "North America",
+      "listings_count": 2252,
+      "avg_price_usd": 58.95,
+      "dominant_language": "English",
+      "seller_count": 1092,
+      "pct_of_total": 0.295
+    },
+    {
+      "platform": "Fortnite",
+      "region": "Europe",
+      "listings_count": 1982,
+      "avg_price_usd": 22.48,
+      "dominant_language": "Chinese",
+      "seller_count": 938,
+      "pct_of_total": 0.259
+    },
+    {
+      "platform": "Fortnite",
+      "region": "Southeast Asia",
+      "listings_count": 1407,
+      "avg_price_usd": 32.7,
+      "dominant_language": "Chinese",
+      "seller_count": 529,
+      "pct_of_total": 0.184
+    },
+    {
+      "platform": "Fortnite",
+      "region": "Latin America",
+      "listings_count": 757,
+      "avg_price_usd": 29.68,
+      "dominant_language": "English",
+      "seller_count": 253,
+      "pct_of_total": 0.099
+    },
+    {
+      "platform": "Fortnite",
+      "region": "Middle East",
+      "listings_count": 431,
+      "avg_price_usd": 38.54,
+      "dominant_language": "Vietnamese",
+      "seller_count": 189,
+      "pct_of_total": 0.057
+    },
+    {
+      "platform": "Fortnite",
+      "region": "East Asia",
+      "listings_count": 442,
+      "avg_price_usd": 55.03,
+      "dominant_language": "Arabic",
+      "seller_count": 193,
+      "pct_of_total": 0.058
+    },
+    {
+      "platform": "Fortnite",
+      "region": "South Asia",
+      "listings_count": 222,
+      "avg_price_usd": 18.19,
+      "dominant_language": "Chinese",
+      "seller_count": 106,
+      "pct_of_total": 0.029
+    },
+    {
+      "platform": "Fortnite",
+      "region": "Africa",
+      "listings_count": 108,
+      "avg_price_usd": 20.71,
+      "dominant_language": "Chinese",
+      "seller_count": 39,
+      "pct_of_total": 0.014
+    },
+    {
+      "platform": "Fortnite",
+      "region": "Oceania",
+      "listings_count": 184,
+      "avg_price_usd": 58.98,
+      "dominant_language": "Vietnamese",
+      "seller_count": 58,
+      "pct_of_total": 0.024
+    },
+    {
+      "platform": "Minecraft",
+      "region": "North America",
+      "listings_count": 1063,
+      "avg_price_usd": 70.61,
+      "dominant_language": "Spanish",
+      "seller_count": 483,
+      "pct_of_total": 0.219
+    },
+    {
+      "platform": "Minecraft",
+      "region": "Europe",
+      "listings_count": 1085,
+      "avg_price_usd": 54.97,
+      "dominant_language": "German",
+      "seller_count": 465,
+      "pct_of_total": 0.223
+    },
+    {
+      "platform": "Minecraft",
+      "region": "Southeast Asia",
+      "listings_count": 593,
+      "avg_price_usd": 14.71,
+      "dominant_language": "Turkish",
+      "seller_count": 265,
+      "pct_of_total": 0.122
+    },
+    {
+      "platform": "Minecraft",
+      "region": "Latin America",
+      "listings_count": 562,
+      "avg_price_usd": 37.82,
+      "dominant_language": "English",
+      "seller_count": 226,
+      "pct_of_total": 0.116
+    },
+    {
+      "platform": "Minecraft",
+      "region": "Middle East",
+      "listings_count": 232,
+      "avg_price_usd": 26.1,
+      "dominant_language": "French",
+      "seller_count": 88,
+      "pct_of_total": 0.048
+    },
+    {
+      "platform": "Minecraft",
+      "region": "East Asia",
+      "listings_count": 454,
+      "avg_price_usd": 38.59,
+      "dominant_language": "German",
+      "seller_count": 138,
+      "pct_of_total": 0.093
+    },
+    {
+      "platform": "Minecraft",
+      "region": "South Asia",
+      "listings_count": 158,
+      "avg_price_usd": 26.24,
+      "dominant_language": "English",
+      "seller_count": 55,
+      "pct_of_total": 0.033
+    },
+    {
+      "platform": "Minecraft",
+      "region": "Africa",
+      "listings_count": 94,
+      "avg_price_usd": 22.52,
+      "dominant_language": "Korean",
+      "seller_count": 31,
+      "pct_of_total": 0.019
+    },
+    {
+      "platform": "Minecraft",
+      "region": "Oceania",
+      "listings_count": 89,
+      "avg_price_usd": 39.48,
+      "dominant_language": "Turkish",
+      "seller_count": 38,
+      "pct_of_total": 0.018
+    },
+    {
+      "platform": "Steam",
+      "region": "North America",
+      "listings_count": 1246,
+      "avg_price_usd": 31.06,
+      "dominant_language": "Spanish",
+      "seller_count": 521,
+      "pct_of_total": 0.31
+    },
+    {
+      "platform": "Steam",
+      "region": "Europe",
+      "listings_count": 809,
+      "avg_price_usd": 62.3,
+      "dominant_language": "German",
+      "seller_count": 331,
+      "pct_of_total": 0.202
+    },
+    {
+      "platform": "Steam",
+      "region": "Southeast Asia",
+      "listings_count": 545,
+      "avg_price_usd": 31.62,
+      "dominant_language": "Chinese",
+      "seller_count": 245,
+      "pct_of_total": 0.136
+    },
+    {
+      "platform": "Steam",
+      "region": "Latin America",
+      "listings_count": 446,
+      "avg_price_usd": 19.48,
+      "dominant_language": "Turkish",
+      "seller_count": 138,
+      "pct_of_total": 0.111
+    },
+    {
+      "platform": "Steam",
+      "region": "Middle East",
+      "listings_count": 291,
+      "avg_price_usd": 45.08,
+      "dominant_language": "Russian",
+      "seller_count": 137,
+      "pct_of_total": 0.073
+    },
+    {
+      "platform": "Steam",
+      "region": "East Asia",
+      "listings_count": 349,
+      "avg_price_usd": 45.5,
+      "dominant_language": "Chinese",
+      "seller_count": 150,
+      "pct_of_total": 0.087
+    },
+    {
+      "platform": "Steam",
+      "region": "South Asia",
+      "listings_count": 161,
+      "avg_price_usd": 26.95,
+      "dominant_language": "Vietnamese",
+      "seller_count": 48,
+      "pct_of_total": 0.04
+    },
+    {
+      "platform": "Steam",
+      "region": "Africa",
+      "listings_count": 100,
+      "avg_price_usd": 17.65,
+      "dominant_language": "German",
+      "seller_count": 46,
+      "pct_of_total": 0.025
+    },
+    {
+      "platform": "Steam",
+      "region": "Oceania",
+      "listings_count": 66,
+      "avg_price_usd": 46.61,
+      "dominant_language": "Chinese",
+      "seller_count": 29,
+      "pct_of_total": 0.017
+    }
+  ],
+  "language_data": [
+    {
+      "platform": "Roblox",
+      "language": "English",
+      "listings_count": 2162,
+      "avg_price_usd": 39.67,
+      "avg_description_length": 222,
+      "pct_with_images": 0.75
+    },
+    {
+      "platform": "Roblox",
+      "language": "Spanish",
+      "listings_count": 437,
+      "avg_price_usd": 42.67,
+      "avg_description_length": 296,
+      "pct_with_images": 0.74
+    },
+    {
+      "platform": "Roblox",
+      "language": "Portuguese",
+      "listings_count": 228,
+      "avg_price_usd": 10.51,
+      "avg_description_length": 221,
+      "pct_with_images": 0.56
+    },
+    {
+      "platform": "Roblox",
+      "language": "Russian",
+      "listings_count": 483,
+      "avg_price_usd": 30.89,
+      "avg_description_length": 85,
+      "pct_with_images": 0.51
+    },
+    {
+      "platform": "Roblox",
+      "language": "Chinese",
+      "listings_count": 356,
+      "avg_price_usd": 54.84,
+      "avg_description_length": 171,
+      "pct_with_images": 0.37
+    },
+    {
+      "platform": "Roblox",
+      "language": "Arabic",
+      "listings_count": 296,
+      "avg_price_usd": 23.19,
+      "avg_description_length": 294,
+      "pct_with_images": 0.7
+    },
+    {
+      "platform": "Roblox",
+      "language": "Turkish",
+      "listings_count": 463,
+      "avg_price_usd": 56.24,
+      "avg_description_length": 101,
+      "pct_with_images": 0.67
+    },
+    {
+      "platform": "Roblox",
+      "language": "Indonesian",
+      "listings_count": 285,
+      "avg_price_usd": 28.16,
+      "avg_description_length": 244,
+      "pct_with_images": 0.46
+    },
+    {
+      "platform": "Roblox",
+      "language": "French",
+      "listings_count": 197,
+      "avg_price_usd": 34.02,
+      "avg_description_length": 143,
+      "pct_with_images": 0.65
+    },
+    {
+      "platform": "Roblox",
+      "language": "German",
+      "listings_count": 220,
+      "avg_price_usd": 73.46,
+      "avg_description_length": 213,
+      "pct_with_images": 0.53
+    },
+    {
+      "platform": "Roblox",
+      "language": "Vietnamese",
+      "listings_count": 154,
+      "avg_price_usd": 30.56,
+      "avg_description_length": 271,
+      "pct_with_images": 0.28
+    },
+    {
+      "platform": "Roblox",
+      "language": "Korean",
+      "listings_count": 70,
+      "avg_price_usd": 76.28,
+      "avg_description_length": 201,
+      "pct_with_images": 0.63
+    },
+    {
+      "platform": "Fortnite",
+      "language": "English",
+      "listings_count": 1407,
+      "avg_price_usd": 62.09,
+      "avg_description_length": 187,
+      "pct_with_images": 0.47
+    },
+    {
+      "platform": "Fortnite",
+      "language": "Spanish",
+      "listings_count": 732,
+      "avg_price_usd": 28.24,
+      "avg_description_length": 180,
+      "pct_with_images": 0.5
+    },
+    {
+      "platform": "Fortnite",
+      "language": "Portuguese",
+      "listings_count": 160,
+      "avg_price_usd": 70.65,
+      "avg_description_length": 66,
+      "pct_with_images": 0.51
+    },
+    {
+      "platform": "Fortnite",
+      "language": "Russian",
+      "listings_count": 261,
+      "avg_price_usd": 70.72,
+      "avg_description_length": 225,
+      "pct_with_images": 0.54
+    },
+    {
+      "platform": "Fortnite",
+      "language": "Chinese",
+      "listings_count": 295,
+      "avg_price_usd": 19.62,
+      "avg_description_length": 132,
+      "pct_with_images": 0.42
+    },
+    {
+      "platform": "Fortnite",
+      "language": "Arabic",
+      "listings_count": 434,
+      "avg_price_usd": 20.03,
+      "avg_description_length": 122,
+      "pct_with_images": 0.71
+    },
+    {
+      "platform": "Fortnite",
+      "language": "Turkish",
+      "listings_count": 246,
+      "avg_price_usd": 31.94,
+      "avg_description_length": 59,
+      "pct_with_images": 0.2
+    },
+    {
+      "platform": "Fortnite",
+      "language": "Indonesian",
+      "listings_count": 172,
+      "avg_price_usd": 50.34,
+      "avg_description_length": 111,
+      "pct_with_images": 0.52
+    },
+    {
+      "platform": "Fortnite",
+      "language": "French",
+      "listings_count": 159,
+      "avg_price_usd": 19.06,
+      "avg_description_length": 252,
+      "pct_with_images": 0.61
+    },
+    {
+      "platform": "Fortnite",
+      "language": "German",
+      "listings_count": 188,
+      "avg_price_usd": 36.83,
+      "avg_description_length": 49,
+      "pct_with_images": 0.55
+    },
+    {
+      "platform": "Fortnite",
+      "language": "Vietnamese",
+      "listings_count": 95,
+      "avg_price_usd": 72.44,
+      "avg_description_length": 127,
+      "pct_with_images": 0.21
+    },
+    {
+      "platform": "Fortnite",
+      "language": "Korean",
+      "listings_count": 63,
+      "avg_price_usd": 25.84,
+      "avg_description_length": 206,
+      "pct_with_images": 0.4
+    },
+    {
+      "platform": "Minecraft",
+      "language": "English",
+      "listings_count": 1942,
+      "avg_price_usd": 51.21,
+      "avg_description_length": 115,
+      "pct_with_images": 0.24
+    },
+    {
+      "platform": "Minecraft",
+      "language": "Spanish",
+      "listings_count": 357,
+      "avg_price_usd": 41.91,
+      "avg_description_length": 296,
+      "pct_with_images": 0.59
+    },
+    {
+      "platform": "Minecraft",
+      "language": "Portuguese",
+      "listings_count": 235,
+      "avg_price_usd": 33.99,
+      "avg_description_length": 280,
+      "pct_with_images": 0.43
+    },
+    {
+      "platform": "Minecraft",
+      "language": "Russian",
+      "listings_count": 434,
+      "avg_price_usd": 11.34,
+      "avg_description_length": 144,
+      "pct_with_images": 0.67
+    },
+    {
+      "platform": "Minecraft",
+      "language": "Chinese",
+      "listings_count": 169,
+      "avg_price_usd": 51.28,
+      "avg_description_length": 116,
+      "pct_with_images": 0.28
+    },
+    {
+      "platform": "Minecraft",
+      "language": "Arabic",
+      "listings_count": 168,
+      "avg_price_usd": 36.26,
+      "avg_description_length": 160,
+      "pct_with_images": 0.7
+    },
+    {
+      "platform": "Minecraft",
+      "language": "Turkish",
+      "listings_count": 197,
+      "avg_price_usd": 56.34,
+      "avg_description_length": 40,
+      "pct_with_images": 0.23
+    },
+    {
+      "platform": "Minecraft",
+      "language": "Indonesian",
+      "listings_count": 239,
+      "avg_price_usd": 36.62,
+      "avg_description_length": 159,
+      "pct_with_images": 0.51
+    },
+    {
+      "platform": "Minecraft",
+      "language": "French",
+      "listings_count": 83,
+      "avg_price_usd": 31.08,
+      "avg_description_length": 81,
+      "pct_with_images": 0.63
+    },
+    {
+      "platform": "Minecraft",
+      "language": "German",
+      "listings_count": 96,
+      "avg_price_usd": 39.32,
+      "avg_description_length": 83,
+      "pct_with_images": 0.53
+    },
+    {
+      "platform": "Minecraft",
+      "language": "Vietnamese",
+      "listings_count": 163,
+      "avg_price_usd": 17.98,
+      "avg_description_length": 84,
+      "pct_with_images": 0.52
+    },
+    {
+      "platform": "Minecraft",
+      "language": "Korean",
+      "listings_count": 104,
+      "avg_price_usd": 68.2,
+      "avg_description_length": 133,
+      "pct_with_images": 0.43
+    },
+    {
+      "platform": "Steam",
+      "language": "English",
+      "listings_count": 1429,
+      "avg_price_usd": 12.76,
+      "avg_description_length": 284,
+      "pct_with_images": 0.79
+    },
+    {
+      "platform": "Steam",
+      "language": "Spanish",
+      "listings_count": 760,
+      "avg_price_usd": 33.14,
+      "avg_description_length": 31,
+      "pct_with_images": 0.21
+    },
+    {
+      "platform": "Steam",
+      "language": "Portuguese",
+      "listings_count": 181,
+      "avg_price_usd": 68.47,
+      "avg_description_length": 282,
+      "pct_with_images": 0.3
+    },
+    {
+      "platform": "Steam",
+      "language": "Russian",
+      "listings_count": 459,
+      "avg_price_usd": 15.25,
+      "avg_description_length": 81,
+      "pct_with_images": 0.79
+    },
+    {
+      "platform": "Steam",
+      "language": "Chinese",
+      "listings_count": 574,
+      "avg_price_usd": 79.21,
+      "avg_description_length": 181,
+      "pct_with_images": 0.37
+    },
+    {
+      "platform": "Steam",
+      "language": "Arabic",
+      "listings_count": 144,
+      "avg_price_usd": 71.19,
+      "avg_description_length": 178,
+      "pct_with_images": 0.43
+    },
+    {
+      "platform": "Steam",
+      "language": "Turkish",
+      "listings_count": 421,
+      "avg_price_usd": 61.7,
+      "avg_description_length": 78,
+      "pct_with_images": 0.75
+    },
+    {
+      "platform": "Steam",
+      "language": "Indonesian",
+      "listings_count": 170,
+      "avg_price_usd": 69.64,
+      "avg_description_length": 117,
+      "pct_with_images": 0.41
+    },
+    {
+      "platform": "Steam",
+      "language": "French",
+      "listings_count": 249,
+      "avg_price_usd": 71.49,
+      "avg_description_length": 77,
+      "pct_with_images": 0.44
+    },
+    {
+      "platform": "Steam",
+      "language": "German",
+      "listings_count": 96,
+      "avg_price_usd": 38.05,
+      "avg_description_length": 263,
+      "pct_with_images": 0.38
+    },
+    {
+      "platform": "Steam",
+      "language": "Vietnamese",
+      "listings_count": 186,
+      "avg_price_usd": 65.99,
+      "avg_description_length": 115,
+      "pct_with_images": 0.27
+    },
+    {
+      "platform": "Steam",
+      "language": "Korean",
+      "listings_count": 70,
+      "avg_price_usd": 78.71,
+      "avg_description_length": 111,
+      "pct_with_images": 0.27
+    }
+  ],
+  "quality_distribution": [
+    {
+      "platform": "Roblox",
+      "quality_tier": "Premium/Stacked",
+      "listings_count": 935,
+      "pct_of_total": 0.12,
+      "avg_price_usd": 318.96,
+      "median_price_usd": 172.01
+    },
+    {
+      "platform": "Roblox",
+      "quality_tier": "Mid-Tier",
+      "listings_count": 2268,
+      "pct_of_total": 0.28,
+      "avg_price_usd": 66.75,
+      "median_price_usd": 38.34
+    },
+    {
+      "platform": "Roblox",
+      "quality_tier": "Basic/Starter",
+      "listings_count": 3042,
+      "pct_of_total": 0.35,
+      "avg_price_usd": 18.2,
+      "median_price_usd": 10.45
+    },
+    {
+      "platform": "Roblox",
+      "quality_tier": "Bulk/NFA",
+      "listings_count": 2190,
+      "pct_of_total": 0.25,
+      "avg_price_usd": 2.67,
+      "median_price_usd": 1.6
+    },
+    {
+      "platform": "Fortnite",
+      "quality_tier": "Premium/Stacked",
+      "listings_count": 1126,
+      "pct_of_total": 0.18,
+      "avg_price_usd": 106.6,
+      "median_price_usd": 217.54
+    },
+    {
+      "platform": "Fortnite",
+      "quality_tier": "Mid-Tier",
+      "listings_count": 1739,
+      "pct_of_total": 0.32,
+      "avg_price_usd": 72.1,
+      "median_price_usd": 35.74
+    },
+    {
+      "platform": "Fortnite",
+      "quality_tier": "Basic/Starter",
+      "listings_count": 2050,
+      "pct_of_total": 0.3,
+      "avg_price_usd": 15.86,
+      "median_price_usd": 6.68
+    },
+    {
+      "platform": "Fortnite",
+      "quality_tier": "Bulk/NFA",
+      "listings_count": 1447,
+      "pct_of_total": 0.2,
+      "avg_price_usd": 4.43,
+      "median_price_usd": 1.67
+    },
+    {
+      "platform": "Minecraft",
+      "quality_tier": "Premium/Stacked",
+      "listings_count": 296,
+      "pct_of_total": 0.08,
+      "avg_price_usd": 385.19,
+      "median_price_usd": 181.21
+    },
+    {
+      "platform": "Minecraft",
+      "quality_tier": "Mid-Tier",
+      "listings_count": 793,
+      "pct_of_total": 0.2,
+      "avg_price_usd": 58.48,
+      "median_price_usd": 24.46
+    },
+    {
+      "platform": "Minecraft",
+      "quality_tier": "Basic/Starter",
+      "listings_count": 1245,
+      "pct_of_total": 0.3,
+      "avg_price_usd": 18.38,
+      "median_price_usd": 9.6
+    },
+    {
+      "platform": "Minecraft",
+      "quality_tier": "Bulk/NFA",
+      "listings_count": 1355,
+      "pct_of_total": 0.42,
+      "avg_price_usd": 4.7,
+      "median_price_usd": 1.64
+    },
+    {
+      "platform": "Steam",
+      "quality_tier": "Premium/Stacked",
+      "listings_count": 1664,
+      "pct_of_total": 0.22,
+      "avg_price_usd": 445.15,
+      "median_price_usd": 95.72
+    },
+    {
+      "platform": "Steam",
+      "quality_tier": "Mid-Tier",
+      "listings_count": 2048,
+      "pct_of_total": 0.3,
+      "avg_price_usd": 34.45,
+      "median_price_usd": 49.1
+    },
+    {
+      "platform": "Steam",
+      "quality_tier": "Basic/Starter",
+      "listings_count": 1657,
+      "pct_of_total": 0.28,
+      "avg_price_usd": 8.34,
+      "median_price_usd": 9.82
+    },
+    {
+      "platform": "Steam",
+      "quality_tier": "Bulk/NFA",
+      "listings_count": 1329,
+      "pct_of_total": 0.2,
+      "avg_price_usd": 1.56,
+      "median_price_usd": 1.53
+    }
+  ],
+  "alerts": [
+    {
+      "timestamp": "2026-03-20T05:02:11.723867",
+      "alert_type": "regional_shift",
+      "platform": "Roblox",
+      "severity": "critical",
+      "description": "Significant shift in regional distribution for Roblox",
+      "details": {
+        "source": "Sythe.org",
+        "metric_value": 1.8,
+        "baseline_value": 1.87
+      }
+    },
+    {
+      "timestamp": "2026-03-16T11:02:11.723884",
+      "alert_type": "volume_surge",
+      "platform": "Steam",
+      "severity": "high",
+      "description": "Unusual increase in listing volume for Steam",
+      "details": {
+        "source": "Z2U",
+        "metric_value": 7.94,
+        "baseline_value": 0.62
+      }
+    },
+    {
+      "timestamp": "2026-03-15T16:02:11.723899",
+      "alert_type": "volume_surge",
+      "platform": "Fortnite",
+      "severity": "high",
+      "description": "Unusual increase in listing volume for Fortnite",
+      "details": {
+        "source": "Discord",
+        "metric_value": 4.43,
+        "baseline_value": 2.18
+      }
+    },
+    {
+      "timestamp": "2026-03-15T02:02:11.723872",
+      "alert_type": "new_source",
+      "platform": "Roblox",
+      "severity": "critical",
+      "description": "New marketplace or forum detected selling accounts for Roblox",
+      "details": {
+        "source": "V3rmillion",
+        "metric_value": 6.26,
+        "baseline_value": 2.05
+      }
+    },
+    {
+      "timestamp": "2026-03-07T15:02:11.723895",
+      "alert_type": "volume_surge",
+      "platform": "Minecraft",
+      "severity": "high",
+      "description": "Unusual increase in listing volume for Minecraft",
+      "details": {
+        "source": "Mulefactory",
+        "metric_value": 5.35,
+        "baseline_value": 0.83
+      }
+    },
+    {
+      "timestamp": "2026-03-05T09:02:11.723886",
+      "alert_type": "regional_shift",
+      "platform": "Roblox",
+      "severity": "critical",
+      "description": "Significant shift in regional distribution for Roblox",
+      "details": {
+        "source": "Discord",
+        "metric_value": 6.51,
+        "baseline_value": 1.76
+      }
+    },
+    {
+      "timestamp": "2026-03-05T07:02:11.723874",
+      "alert_type": "bulk_dump",
+      "platform": "Minecraft",
+      "severity": "low",
+      "description": "Large bulk account dump detected for Minecraft",
+      "details": {
+        "source": "Z2U",
+        "metric_value": 7.95,
+        "baseline_value": 1.05
+      }
+    },
+    {
+      "timestamp": "2026-03-03T14:02:11.723879",
+      "alert_type": "price_spike",
+      "platform": "Fortnite",
+      "severity": "medium",
+      "description": "Significant price increase detected for Fortnite",
+      "details": {
+        "source": "WhatsApp Groups",
+        "metric_value": 7.59,
+        "baseline_value": 2.3
+      }
+    },
+    {
+      "timestamp": "2026-03-03T08:02:11.723861",
+      "alert_type": "bulk_dump",
+      "platform": "Roblox",
+      "severity": "critical",
+      "description": "Large bulk account dump detected for Roblox",
+      "details": {
+        "source": "V3rmillion",
+        "metric_value": 2.51,
+        "baseline_value": 1.74
+      }
+    },
+    {
+      "timestamp": "2026-03-03T03:02:11.723902",
+      "alert_type": "regional_shift",
+      "platform": "Fortnite",
+      "severity": "high",
+      "description": "Significant shift in regional distribution for Fortnite",
+      "details": {
+        "source": "Twitter/X",
+        "metric_value": 2.48,
+        "baseline_value": 1.38
+      }
+    },
+    {
+      "timestamp": "2026-03-03T02:02:11.723893",
+      "alert_type": "regional_shift",
+      "platform": "Minecraft",
+      "severity": "critical",
+      "description": "Significant shift in regional distribution for Minecraft",
+      "details": {
+        "source": "Sythe.org",
+        "metric_value": 9.83,
+        "baseline_value": 2.79
+      }
+    },
+    {
+      "timestamp": "2026-03-02T22:02:11.723869",
+      "alert_type": "price_spike",
+      "platform": "Minecraft",
+      "severity": "medium",
+      "description": "Significant price increase detected for Minecraft",
+      "details": {
+        "source": "Telegram",
+        "metric_value": 7.21,
+        "baseline_value": 2.88
+      }
+    },
+    {
+      "timestamp": "2026-03-01T23:02:11.723888",
+      "alert_type": "bulk_dump",
+      "platform": "Roblox",
+      "severity": "low",
+      "description": "Large bulk account dump detected for Roblox",
+      "details": {
+        "source": "HackForums",
+        "metric_value": 9.45,
+        "baseline_value": 2.6
+      }
+    },
+    {
+      "timestamp": "2026-02-26T13:02:11.723881",
+      "alert_type": "price_spike",
+      "platform": "Minecraft",
+      "severity": "medium",
+      "description": "Significant price increase detected for Minecraft",
+      "details": {
+        "source": "EpicNPC",
+        "metric_value": 2.53,
+        "baseline_value": 2.63
+      }
+    },
+    {
+      "timestamp": "2026-02-25T14:02:11.723876",
+      "alert_type": "new_source",
+      "platform": "Minecraft",
+      "severity": "high",
+      "description": "New marketplace or forum detected selling accounts for Minecraft",
+      "details": {
+        "source": "HackForums",
+        "metric_value": 5.94,
+        "baseline_value": 2.26
+      }
+    },
+    {
+      "timestamp": "2026-02-23T02:02:11.723891",
+      "alert_type": "bulk_dump",
+      "platform": "Fortnite",
+      "severity": "medium",
+      "description": "Large bulk account dump detected for Fortnite",
+      "details": {
+        "source": "Reddit",
+        "metric_value": 8.43,
+        "baseline_value": 0.76
+      }
+    },
+    {
+      "timestamp": "2026-02-22T16:02:11.723897",
+      "alert_type": "bulk_dump",
+      "platform": "Minecraft",
+      "severity": "high",
+      "description": "Large bulk account dump detected for Minecraft",
+      "details": {
+        "source": "Twitter/X",
+        "metric_value": 7.76,
+        "baseline_value": 1.88
+      }
+    }
+  ],
+  "config": {
+    "platforms": [
+      "Roblox",
+      "Fortnite",
+      "Minecraft",
+      "Steam"
+    ],
+    "source_types": [
+      "marketplace",
+      "forum",
+      "social"
+    ],
+    "sources": {
+      "marketplace": [
+        "PlayerAuctions",
+        "G2G",
+        "Eldorado.gg",
+        "Z2U",
+        "IGVault",
+        "AccountWarehouse",
+        "EpicNPC",
+        "Gameflip",
+        "SEAgm",
+        "Mulefactory"
+      ],
+      "forum": [
+        "V3rmillion",
+        "OGUsers",
+        "Nulled.to",
+        "Sythe.org",
+        "MPGH",
+        "UnknownCheats",
+        "RaidForums Archive",
+        "HackForums",
+        "Cracked.io",
+        "BreachForums"
+      ],
+      "social": [
+        "Telegram",
+        "Discord",
+        "Twitter/X",
+        "Reddit",
+        "TikTok",
+        "Facebook Marketplace",
+        "WhatsApp Groups",
+        "Instagram"
+      ]
+    },
+    "regions": [
+      "North America",
+      "Europe",
+      "Southeast Asia",
+      "Latin America",
+      "Middle East",
+      "East Asia",
+      "South Asia",
+      "Africa",
+      "Oceania"
+    ],
+    "languages": [
+      "English",
+      "Spanish",
+      "Portuguese",
+      "Russian",
+      "Chinese",
+      "Arabic",
+      "Turkish",
+      "Indonesian",
+      "French",
+      "German",
+      "Vietnamese",
+      "Korean"
+    ],
+    "keywords": {
+      "Roblox": [
+        "robux",
+        "limiteds",
+        "korblox",
+        "headless",
+        "account dump",
+        "rich account",
+        "blox fruits",
+        "adopt me pets",
+        "roblox OG",
+        "verified email",
+        "premium",
+        "voice chat enabled",
+        "display name",
+        "banned unban",
+        "cookie log"
+      ],
+      "Fortnite": [
+        "og skins",
+        "renegade raider",
+        "black knight",
+        "galaxy skin",
+        "v-bucks",
+        "stacked account",
+        "season 1",
+        "save the world",
+        "aerial assault",
+        "account merge",
+        "full access"
+      ],
+      "Minecraft": [
+        "java edition",
+        "bedrock",
+        "hypixel rank",
+        "optifine cape",
+        "minecon cape",
+        "migrated",
+        "unmigrated",
+        "NFA",
+        "SFA",
+        "full access",
+        "alt accounts"
+      ],
+      "Steam": [
+        "csgo skins",
+        "steam wallet",
+        "game library",
+        "VAC clean",
+        "prime",
+        "high level",
+        "inventory value",
+        "rare items",
+        "old account",
+        "badge level"
+      ]
+    },
+    "quality_tiers": [
+      "Premium/Stacked",
+      "Mid-Tier",
+      "Basic/Starter",
+      "Bulk/NFA"
+    ]
+  }
+}
