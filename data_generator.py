@@ -1,333 +1,136 @@
 #!/usr/bin/env python3
 """
-Roblox Accounts Monitoring - Data Collection Framework & Sample Data Generator
+Roblox Accounts Monitoring - Real Data Assembler
 
-This module defines the data schema for tracking account sales across the open web,
-and generates realistic sample data for the dashboard. Replace the sample data
-generation with live scraping modules for production use.
+Assembles the dashboard dataset from verified marketplace data only.
+No synthetic/random data is used. All data comes from real_data_collector.py.
 """
 
 import json
-import random
-import hashlib
-from datetime import datetime, timedelta
+from datetime import datetime
 from real_data_collector import (
-    VERIFIED_LISTINGS,
-    MARKETPLACE_PROFILES,
-    SOURCE_URLS,
+    VERIFIED_LISTINGS, MARKETPLACE_PROFILES, SOURCE_URLS,
+    PRICE_BENCHMARKS, get_source_stats, get_quality_tier_stats,
+    SCRAPE_DATE,
 )
 
-# ============================================================
-# CONFIGURATION
-# ============================================================
 
-PLATFORMS = ["Roblox", "Fortnite", "Minecraft", "Steam"]
-
-SOURCES = {
-    "marketplace": [
-        "PlayerAuctions", "G2G", "Eldorado.gg", "Z2U", "IGVault",
-        "AccountWarehouse", "EpicNPC", "Gameflip", "SEAgm", "Mulefactory",
-        "U7Buy", "Zeusx.com", "Ownedcore", "Funpay", "eBay"
-    ],
-    "forum": [
-        "V3rmillion", "OGUsers", "Nulled.to", "Sythe.org", "MPGH",
-        "UnknownCheats", "RaidForums Archive", "HackForums", "Cracked.io", "BreachForums"
-    ],
-    "social": [
-        "Telegram", "Discord", "Twitter/X", "Reddit", "TikTok",
-        "Facebook Marketplace", "WhatsApp Groups", "Instagram"
-    ]
-}
-
-REGIONS = ["North America", "Europe", "Southeast Asia", "Latin America",
-           "Middle East", "East Asia", "South Asia", "Africa", "Oceania"]
-
-LANGUAGES = ["English", "Spanish", "Portuguese", "Russian", "Chinese",
-             "Arabic", "Turkish", "Indonesian", "French", "German", "Vietnamese", "Korean"]
-
-KEYWORDS = {
-    "Roblox": ["robux", "limiteds", "korblox", "headless", "account dump", "rich account",
-                "blox fruits", "adopt me pets", "roblox OG", "verified email", "premium",
-                "voice chat enabled", "display name", "banned unban", "cookie log"],
-    "Fortnite": ["og skins", "renegade raider", "black knight", "galaxy skin", "v-bucks",
-                  "stacked account", "season 1", "save the world", "aerial assault",
-                  "account merge", "full access"],
-    "Minecraft": ["java edition", "bedrock", "hypixel rank", "optifine cape", "minecon cape",
-                   "migrated", "unmigrated", "NFA", "SFA", "full access", "alt accounts"],
-    "Steam": ["csgo skins", "steam wallet", "game library", "VAC clean", "prime",
-              "high level", "inventory value", "rare items", "old account", "badge level"]
-}
-
-QUALITY_TIERS = ["Premium/Stacked", "Mid-Tier", "Basic/Starter", "Bulk/NFA"]
-
-# ============================================================
-# SAMPLE DATA GENERATION
-# ============================================================
-
-def generate_monthly_data(start_date, months=12):
-    """Generate monthly time-series data for all platforms."""
+def build_source_breakdown():
+    """Build source breakdown from verified marketplace profiles and listings."""
     data = []
-    base_date = datetime.strptime(start_date, "%Y-%m-%d")
-
-    # Base metrics per platform (listings count, avg price, median price)
-    platform_baselines = {
-        "Roblox":   {"listings": 4200, "avg_price": 28, "median_price": 15, "growth_rate": 0.06},
-        "Fortnite": {"listings": 3100, "avg_price": 45, "median_price": 25, "growth_rate": 0.03},
-        "Minecraft":{"listings": 2800, "avg_price": 12, "median_price": 5,  "growth_rate": 0.02},
-        "Steam":    {"listings": 1900, "avg_price": 85, "median_price": 40, "growth_rate": 0.04},
-    }
-
-    for month_offset in range(months):
-        current_date = base_date + timedelta(days=30 * month_offset)
-        month_str = current_date.strftime("%Y-%m")
-
-        for platform in PLATFORMS:
-            base = platform_baselines[platform]
-            # Apply growth trend + seasonal variation + noise
-            trend = 1 + base["growth_rate"] * month_offset
-            seasonal = 1 + 0.15 * (1 if current_date.month in [6, 7, 8, 11, 12] else -0.05)
-            noise = random.uniform(0.9, 1.1)
-
-            listings = int(base["listings"] * trend * seasonal * noise)
-            avg_price = round(base["avg_price"] * (1 + random.uniform(-0.15, 0.15)) * (1 + 0.01 * month_offset), 2)
-            median_price = round(base["median_price"] * (1 + random.uniform(-0.1, 0.1)), 2)
-
-            data.append({
-                "month": month_str,
-                "platform": platform,
-                "total_listings": listings,
-                "new_listings": int(listings * random.uniform(0.25, 0.45)),
-                "avg_price_usd": avg_price,
-                "median_price_usd": median_price,
-                "max_price_usd": round(avg_price * random.uniform(8, 25), 2),
-                "total_sellers": int(listings * random.uniform(0.3, 0.5)),
-                "unique_sources": random.randint(15, 45),
-            })
-
-    return data
-
-
-def generate_source_breakdown():
-    """Generate listings breakdown by source type and specific source."""
-    data = []
-    for platform in PLATFORMS:
-        for source_type, sources in SOURCES.items():
-            for source in sources:
-                # Not all sources sell all platforms
-                if random.random() < 0.7:
-                    weight = {"marketplace": 3, "forum": 2, "social": 1.5}[source_type]
-
-                    # Use real data for verified marketplaces on Roblox
-                    if platform == "Roblox" and source in MARKETPLACE_PROFILES:
-                        profile = MARKETPLACE_PROFILES[source]
-                        listings = int(profile["estimated_roblox_listings"] * random.uniform(0.85, 1.15))
-                        avg_price = profile["avg_price_usd"]
-                        verified_pct = profile["verified_sellers_pct"]
-                        source_url = profile["url"]
-                        is_verified = True
-                    else:
-                        listings = int(random.uniform(10, 500) * weight)
-                        avg_price = round(random.uniform(5, 120), 2)
-                        verified_pct = round(random.uniform(0.1, 0.9), 2)
-                        source_url = None
-                        is_verified = False
-
-                    data.append({
-                        "platform": platform,
-                        "source_type": source_type,
-                        "source_name": source,
-                        "listings_count": listings,
-                        "avg_price_usd": avg_price if is_verified else avg_price,
-                        "verified_sellers_pct": verified_pct,
-                        "avg_account_age_days": random.randint(30, 2000),
-                        "last_scraped": (datetime.now() - timedelta(hours=random.randint(1, 168))).isoformat(),
-                        "source_url": source_url,
-                        "verified": is_verified,
-                    })
-    return data
-
-
-def generate_keyword_trends(months=12):
-    """Generate keyword frequency trends over time."""
-    data = []
-    base_date = datetime(2025, 4, 1)
-
-    for platform in PLATFORMS:
-        for keyword in KEYWORDS[platform]:
-            base_freq = random.randint(20, 500)
-            for month_offset in range(months):
-                current_date = base_date + timedelta(days=30 * month_offset)
-                trend = 1 + random.uniform(-0.1, 0.15) * month_offset / 6
-                freq = int(base_freq * trend * random.uniform(0.7, 1.3))
-                data.append({
-                    "month": current_date.strftime("%Y-%m"),
-                    "platform": platform,
-                    "keyword": keyword,
-                    "mention_count": freq,
-                    "avg_listing_price_usd": round(random.uniform(5, 150), 2),
-                    "sentiment_score": round(random.uniform(-0.3, 0.8), 2),
-                })
-    return data
-
-
-def generate_regional_data():
-    """Generate regional breakdown of account sales."""
-    data = []
-    region_weights = {
-        "North America": 0.28, "Europe": 0.25, "Southeast Asia": 0.15,
-        "Latin America": 0.10, "Middle East": 0.06, "East Asia": 0.08,
-        "South Asia": 0.04, "Africa": 0.02, "Oceania": 0.02
-    }
-
-    for platform in PLATFORMS:
-        total_listings = random.randint(3000, 8000)
-        for region, weight in region_weights.items():
-            noise = random.uniform(0.7, 1.3)
-            listings = int(total_listings * weight * noise)
-            # Price varies by region
-            price_multiplier = {"North America": 1.2, "Europe": 1.15, "Southeast Asia": 0.6,
-                                "Latin America": 0.7, "Middle East": 0.9, "East Asia": 1.0,
-                                "South Asia": 0.5, "Africa": 0.4, "Oceania": 1.1}[region]
-            data.append({
-                "platform": platform,
-                "region": region,
-                "listings_count": listings,
-                "avg_price_usd": round(random.uniform(15, 60) * price_multiplier, 2),
-                "dominant_language": random.choice(LANGUAGES[:3]) if region == "North America"
-                    else random.choice(LANGUAGES),
-                "seller_count": int(listings * random.uniform(0.3, 0.5)),
-                "pct_of_total": round(weight * noise, 3),
-            })
-    return data
-
-
-def generate_language_data():
-    """Generate language breakdown for listings."""
-    data = []
-    lang_weights = {
-        "English": 0.38, "Spanish": 0.10, "Portuguese": 0.07, "Russian": 0.09,
-        "Chinese": 0.08, "Arabic": 0.05, "Turkish": 0.06, "Indonesian": 0.05,
-        "French": 0.04, "German": 0.03, "Vietnamese": 0.03, "Korean": 0.02
-    }
-
-    for platform in PLATFORMS:
-        for lang, weight in lang_weights.items():
-            noise = random.uniform(0.7, 1.4)
-            listings = int(random.randint(2500, 7000) * weight * noise)
-            data.append({
-                "platform": platform,
-                "language": lang,
-                "listings_count": listings,
-                "avg_price_usd": round(random.uniform(10, 80), 2),
-                "avg_description_length": random.randint(30, 300),
-                "pct_with_images": round(random.uniform(0.2, 0.85), 2),
-            })
-    return data
-
-
-def generate_quality_distribution():
-    """Generate quality tier distribution per platform."""
-    data = []
-    tier_profiles = {
-        "Roblox": {"Premium/Stacked": 0.12, "Mid-Tier": 0.28, "Basic/Starter": 0.35, "Bulk/NFA": 0.25},
-        "Fortnite": {"Premium/Stacked": 0.18, "Mid-Tier": 0.32, "Basic/Starter": 0.30, "Bulk/NFA": 0.20},
-        "Minecraft": {"Premium/Stacked": 0.08, "Mid-Tier": 0.20, "Basic/Starter": 0.30, "Bulk/NFA": 0.42},
-        "Steam": {"Premium/Stacked": 0.22, "Mid-Tier": 0.30, "Basic/Starter": 0.28, "Bulk/NFA": 0.20},
-    }
-    price_ranges = {
-        "Premium/Stacked": (80, 500),
-        "Mid-Tier": (20, 80),
-        "Basic/Starter": (5, 20),
-        "Bulk/NFA": (0.5, 5),
-    }
-
-    for platform in PLATFORMS:
-        total = random.randint(3000, 8000)
-        for tier in QUALITY_TIERS:
-            pct = tier_profiles[platform][tier]
-            count = int(total * pct * random.uniform(0.85, 1.15))
-            lo, hi = price_ranges[tier]
-            data.append({
-                "platform": platform,
-                "quality_tier": tier,
-                "listings_count": count,
-                "pct_of_total": round(pct, 3),
-                "avg_price_usd": round(random.uniform(lo, hi), 2),
-                "median_price_usd": round(random.uniform(lo, (lo + hi) / 2), 2),
-            })
-    return data
-
-
-def generate_alert_signals():
-    """Generate recent alert signals (unusual activity, price spikes, new sources)."""
-    alerts = []
-    alert_types = [
-        ("price_spike", "Significant price increase detected"),
-        ("volume_surge", "Unusual increase in listing volume"),
-        ("new_source", "New marketplace or forum detected selling accounts"),
-        ("bulk_dump", "Large bulk account dump detected"),
-        ("keyword_trend", "Trending keyword with rapid growth"),
-        ("regional_shift", "Significant shift in regional distribution"),
-    ]
-
-    for _ in range(random.randint(8, 18)):
-        atype, desc = random.choice(alert_types)
-        platform = random.choice(PLATFORMS)
-        alerts.append({
-            "timestamp": (datetime.now() - timedelta(hours=random.randint(1, 720))).isoformat(),
-            "alert_type": atype,
-            "platform": platform,
-            "severity": random.choice(["low", "medium", "high", "critical"]),
-            "description": f"{desc} for {platform}",
-            "details": {
-                "source": random.choice(SOURCES["marketplace"] + SOURCES["forum"] + SOURCES["social"]),
-                "metric_value": round(random.uniform(1.5, 10), 2),
-                "baseline_value": round(random.uniform(0.5, 3), 2),
-            }
+    for source_name, profile in MARKETPLACE_PROFILES.items():
+        listings = [l for l in VERIFIED_LISTINGS if l["source"] == source_name]
+        prices = [l["price_usd"] for l in listings]
+        data.append({
+            "source_name": source_name,
+            "source_type": "marketplace",
+            "source_url": profile["url"],
+            "estimated_total_listings": profile["estimated_roblox_listings"],
+            "estimated_total_sold": profile.get("estimated_total_sold", 0),
+            "verified_sample_count": len(listings),
+            "price_range_min": profile["price_range_usd"][0],
+            "price_range_max": profile["price_range_usd"][1],
+            "avg_price_usd": round(sum(prices) / len(prices), 2) if prices else profile["avg_price_usd"],
+            "account_guarantee_days": profile["account_guarantee_days"],
+            "delivery": profile["delivery"],
+            "verified_sellers": profile["verified_sellers"],
+            "categories": profile["categories"],
+            "last_scraped": SCRAPE_DATE,
         })
-    return sorted(alerts, key=lambda x: x["timestamp"], reverse=True)
+    return data
 
 
-def generate_verified_listings():
-    """Return verified listings from real marketplaces."""
-    return VERIFIED_LISTINGS
+def build_listings_by_category():
+    """Group verified listings by category with stats."""
+    categories = {}
+    for listing in VERIFIED_LISTINGS:
+        cat = listing["category"]
+        if cat not in categories:
+            categories[cat] = {"listings": [], "prices": [], "sources": set()}
+        categories[cat]["listings"].append(listing)
+        categories[cat]["prices"].append(listing["price_usd"])
+        categories[cat]["sources"].add(listing["source"])
+
+    result = []
+    for cat, data in sorted(categories.items()):
+        prices = data["prices"]
+        result.append({
+            "category": cat,
+            "listing_count": len(data["listings"]),
+            "sources": sorted(list(data["sources"])),
+            "min_price_usd": min(prices),
+            "max_price_usd": max(prices),
+            "avg_price_usd": round(sum(prices) / len(prices), 2),
+        })
+    return result
+
+
+def build_quality_tier_breakdown():
+    """Build quality tier breakdown from real listings."""
+    tier_stats = get_quality_tier_stats()
+    result = []
+    total = len(VERIFIED_LISTINGS)
+    for tier, stats in tier_stats.items():
+        result.append({
+            "quality_tier": tier,
+            "listing_count": stats["count"],
+            "pct_of_total": round(stats["count"] / total, 3),
+            "min_price_usd": stats["min_price"],
+            "max_price_usd": stats["max_price"],
+            "avg_price_usd": stats["avg_price"],
+        })
+    return result
+
+
+def build_price_comparison():
+    """Build cross-source price comparison for common categories."""
+    cat_source_prices = {}
+    for listing in VERIFIED_LISTINGS:
+        key = listing["category"]
+        source = listing["source"]
+        if key not in cat_source_prices:
+            cat_source_prices[key] = {}
+        if source not in cat_source_prices[key]:
+            cat_source_prices[key][source] = []
+        cat_source_prices[key][source].append(listing["price_usd"])
+
+    result = []
+    for cat, sources in cat_source_prices.items():
+        if len(sources) >= 2:
+            comparison = {"category": cat, "sources": {}}
+            for source, prices in sources.items():
+                comparison["sources"][source] = {
+                    "count": len(prices),
+                    "avg_price": round(sum(prices) / len(prices), 2),
+                    "min_price": min(prices),
+                    "max_price": max(prices),
+                }
+            result.append(comparison)
+    return result
 
 
 def generate_all_data():
-    """Generate complete dataset for the dashboard."""
-    random.seed()  # Unique data each run
-
+    """Generate complete dataset from real data only."""
     dataset = {
         "metadata": {
             "generated_at": datetime.now().isoformat(),
-            "data_period": "2025-04 to 2026-03",
-            "platforms": PLATFORMS,
-            "sources_tracked": sum(len(v) for v in SOURCES.values()),
-            "refresh_frequency": "Monthly",
-            "version": "1.0.0",
-            "verified_sources": list(MARKETPLACE_PROFILES.keys()),
-            "verified_listings_count": len(VERIFIED_LISTINGS),
+            "scrape_date": SCRAPE_DATE,
+            "data_source": "Real marketplace data scraped from U7Buy, Eldorado.gg, and eBay",
+            "total_verified_listings": len(VERIFIED_LISTINGS),
+            "sources_tracked": len(MARKETPLACE_PROFILES),
+            "synthetic_data": False,
+            "version": "2.0.0",
         },
-        "monthly_trends": generate_monthly_data("2025-04-01", 12),
-        "source_breakdown": generate_source_breakdown(),
-        "keyword_trends": generate_keyword_trends(12),
-        "regional_data": generate_regional_data(),
-        "language_data": generate_language_data(),
-        "quality_distribution": generate_quality_distribution(),
-        "alerts": generate_alert_signals(),
-        "verified_listings": generate_verified_listings(),
         "marketplace_profiles": MARKETPLACE_PROFILES,
-        "config": {
-            "platforms": PLATFORMS,
-            "source_types": list(SOURCES.keys()),
-            "sources": SOURCES,
-            "regions": REGIONS,
-            "languages": LANGUAGES,
-            "keywords": KEYWORDS,
-            "quality_tiers": QUALITY_TIERS,
-        }
+        "source_urls": SOURCE_URLS,
+        "source_breakdown": build_source_breakdown(),
+        "verified_listings": VERIFIED_LISTINGS,
+        "categories": build_listings_by_category(),
+        "quality_distribution": build_quality_tier_breakdown(),
+        "price_comparison": build_price_comparison(),
+        "price_benchmarks": PRICE_BENCHMARKS,
+        "source_stats": get_source_stats(),
     }
-
     return dataset
 
 
@@ -335,11 +138,14 @@ if __name__ == "__main__":
     data = generate_all_data()
     with open("dashboard_data.json", "w") as f:
         json.dump(data, f, indent=2)
-    print(f"Generated {len(data['monthly_trends'])} monthly records")
-    print(f"Generated {len(data['source_breakdown'])} source breakdown records")
-    print(f"Generated {len(data['keyword_trends'])} keyword trend records")
-    print(f"Generated {len(data['regional_data'])} regional records")
-    print(f"Generated {len(data['language_data'])} language records")
-    print(f"Generated {len(data['quality_distribution'])} quality distribution records")
-    print(f"Generated {len(data['alerts'])} alert signals")
-    print("Data saved to dashboard_data.json")
+    print(f"=== Real Data Dashboard ===")
+    print(f"Total verified listings: {data['metadata']['total_verified_listings']}")
+    print(f"Sources tracked: {data['metadata']['sources_tracked']}")
+    print(f"Categories found: {len(data['categories'])}")
+    print(f"Quality tiers: {len(data['quality_distribution'])}")
+    print(f"Price comparisons: {len(data['price_comparison'])}")
+    print(f"\nSource breakdown:")
+    for s in data['source_breakdown']:
+        print(f"  {s['source_name']}: ~{s['estimated_total_listings']} listings, "
+              f"avg ${s['avg_price_usd']}, {s['verified_sample_count']} verified samples")
+    print(f"\nData saved to dashboard_data.json")

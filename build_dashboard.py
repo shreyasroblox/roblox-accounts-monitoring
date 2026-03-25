@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 Build the interactive HTML dashboard for Roblox Accounts Monitoring.
-Embeds the data JSON directly into the HTML for a fully self-contained file.
+Real data only - no synthetic data. All listings link back to source marketplaces.
 """
 
 import json
@@ -32,10 +32,9 @@ html = f"""<!DOCTYPE html>
   --orange: #ffa502;
   --green: #26de81;
   --blue: #4ecdc4;
-  --roblox: #e74c3c;
-  --fortnite: #9b59b6;
-  --minecraft: #27ae60;
-  --steam: #2980b9;
+  --u7buy: #e74c3c;
+  --eldorado: #f39c12;
+  --ebay: #3498db;
 }}
 
 * {{ margin: 0; padding: 0; box-sizing: border-box; }}
@@ -48,8 +47,13 @@ body {{ background: var(--bg); color: var(--text); font-family: 'Segoe UI', syst
   display: flex; align-items: center; justify-content: space-between;
 }}
 .header h1 {{ font-size: 22px; font-weight: 600; }}
-.header h1 span {{ color: var(--roblox); }}
-.header-meta {{ color: var(--text-dim); font-size: 13px; }}
+.header h1 span {{ color: var(--red); }}
+.header-meta {{ color: var(--text-dim); font-size: 13px; text-align: right; }}
+.header-badge {{
+  display: inline-block; background: #26de8133; color: var(--green);
+  padding: 2px 10px; border-radius: 12px; font-size: 11px; font-weight: 600;
+  margin-left: 8px;
+}}
 
 .nav {{
   display: flex; gap: 4px; padding: 12px 32px; background: var(--surface);
@@ -64,13 +68,12 @@ body {{ background: var(--bg); color: var(--text); font-family: 'Segoe UI', syst
 .nav button.active {{ background: var(--accent); border-color: var(--accent); color: #fff; }}
 
 .container {{ max-width: 1440px; margin: 0 auto; padding: 24px 32px; }}
-
 .section {{ display: none; }}
 .section.active {{ display: block; }}
 
 /* KPI Cards */
 .kpi-grid {{
-  display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 16px; margin-bottom: 28px;
 }}
 .kpi-card {{
@@ -80,56 +83,107 @@ body {{ background: var(--bg); color: var(--text); font-family: 'Segoe UI', syst
 .kpi-card::before {{
   content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px;
 }}
-.kpi-card.roblox::before {{ background: var(--roblox); }}
-.kpi-card.fortnite::before {{ background: var(--fortnite); }}
-.kpi-card.minecraft::before {{ background: var(--minecraft); }}
-.kpi-card.steam::before {{ background: var(--steam); }}
+.kpi-card.u7buy::before {{ background: var(--u7buy); }}
+.kpi-card.eldorado::before {{ background: var(--eldorado); }}
+.kpi-card.ebay::before {{ background: var(--ebay); }}
+.kpi-card.total::before {{ background: var(--accent); }}
 .kpi-label {{ font-size: 12px; color: var(--text-dim); text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 8px; }}
 .kpi-value {{ font-size: 28px; font-weight: 700; }}
 .kpi-sub {{ font-size: 12px; color: var(--text-dim); margin-top: 4px; }}
-.kpi-change {{ font-size: 12px; margin-top: 6px; }}
-.kpi-change.up {{ color: var(--red); }}
-.kpi-change.down {{ color: var(--green); }}
 
+/* Source cards */
+.source-cards {{
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  gap: 20px; margin-bottom: 28px;
+}}
+.source-card {{
+  background: var(--surface); border: 1px solid var(--border); border-radius: 12px;
+  padding: 24px; position: relative; overflow: hidden;
+}}
+.source-card::before {{
+  content: ''; position: absolute; top: 0; left: 0; right: 0; height: 4px;
+}}
+.source-card.u7buy::before {{ background: var(--u7buy); }}
+.source-card.eldorado::before {{ background: var(--eldorado); }}
+.source-card.ebay::before {{ background: var(--ebay); }}
+.source-card h3 {{ font-size: 18px; margin-bottom: 8px; }}
+.source-card h3 a {{ color: var(--text); text-decoration: none; }}
+.source-card h3 a:hover {{ color: var(--accent2); text-decoration: underline; }}
+.source-card .desc {{ font-size: 13px; color: var(--text-dim); margin-bottom: 14px; line-height: 1.5; }}
+.source-stat {{ display: flex; justify-content: space-between; padding: 6px 0; border-bottom: 1px solid var(--border); font-size: 13px; }}
+.source-stat:last-child {{ border-bottom: none; }}
+.source-stat .label {{ color: var(--text-dim); }}
+.source-stat .val {{ font-weight: 600; }}
+
+/* Chart layout */
 .chart-row {{
   display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-bottom: 24px;
 }}
 .chart-row.full {{ grid-template-columns: 1fr; }}
-.chart-row.triple {{ grid-template-columns: 1fr 1fr 1fr; }}
-
 .chart-card {{
   background: var(--surface); border: 1px solid var(--border); border-radius: 12px;
   padding: 20px;
 }}
-.chart-card h3 {{
-  font-size: 14px; font-weight: 600; margin-bottom: 16px; color: var(--text);
-}}
-.chart-card canvas {{ max-height: 340px; }}
+.chart-card h3 {{ font-size: 14px; font-weight: 600; margin-bottom: 16px; color: var(--text); }}
+.chart-card canvas {{ max-height: 380px; }}
 
 /* Tables */
 .table-wrap {{ overflow-x: auto; }}
 table {{ width: 100%; border-collapse: collapse; font-size: 13px; }}
 th {{ text-align: left; padding: 10px 12px; border-bottom: 2px solid var(--border);
      color: var(--text-dim); font-weight: 600; text-transform: uppercase; font-size: 11px;
-     letter-spacing: 0.5px; }}
+     letter-spacing: 0.5px; white-space: nowrap; }}
 td {{ padding: 10px 12px; border-bottom: 1px solid var(--border); }}
 tr:hover {{ background: var(--surface2); }}
 
-/* Alerts */
-.alert-item {{
-  background: var(--surface); border: 1px solid var(--border); border-radius: 10px;
-  padding: 16px 20px; margin-bottom: 10px; display: flex; align-items: flex-start; gap: 14px;
+/* Tags */
+.source-tag {{
+  display: inline-block; padding: 2px 10px; border-radius: 4px; font-size: 11px; font-weight: 600;
 }}
-.alert-badge {{
-  padding: 4px 10px; border-radius: 20px; font-size: 11px; font-weight: 600;
-  text-transform: uppercase; white-space: nowrap;
+.source-tag.u7buy {{ background: #e74c3c33; color: var(--u7buy); }}
+.source-tag.eldorado {{ background: #f39c1233; color: var(--eldorado); }}
+.source-tag.ebay {{ background: #3498db33; color: var(--ebay); }}
+
+.tier-tag {{
+  display: inline-block; padding: 2px 10px; border-radius: 4px; font-size: 11px; font-weight: 600;
 }}
-.alert-badge.critical {{ background: #ff6b6b33; color: var(--red); }}
-.alert-badge.high {{ background: #ffa50233; color: var(--orange); }}
-.alert-badge.medium {{ background: #6c5ce733; color: var(--accent); }}
-.alert-badge.low {{ background: #26de8133; color: var(--green); }}
-.alert-desc {{ font-size: 14px; }}
-.alert-time {{ font-size: 11px; color: var(--text-dim); margin-top: 4px; }}
+.tier-tag.premium {{ background: #f39c1233; color: var(--orange); }}
+.tier-tag.mid {{ background: #6c5ce733; color: var(--accent); }}
+.tier-tag.basic {{ background: #26de8133; color: var(--green); }}
+
+.feature-tag {{
+  display: inline-block; padding: 1px 6px; border-radius: 3px; font-size: 10px;
+  background: var(--surface2); color: var(--text-dim); margin: 1px 2px;
+}}
+
+a.view-link {{
+  color: var(--accent2); text-decoration: none; font-weight: 600; font-size: 12px;
+}}
+a.view-link:hover {{ text-decoration: underline; }}
+
+/* Provenance banner */
+.provenance {{
+  background: var(--surface); border: 1px solid var(--border); border-radius: 12px;
+  padding: 20px 24px; margin-bottom: 24px; display: flex; align-items: center; gap: 16px;
+}}
+.provenance-icon {{ font-size: 28px; }}
+.provenance-text {{ font-size: 13px; color: var(--text-dim); line-height: 1.6; }}
+.provenance-text strong {{ color: var(--text); }}
+.provenance-text a {{ color: var(--accent2); text-decoration: none; }}
+.provenance-text a:hover {{ text-decoration: underline; }}
+
+/* Price benchmark */
+.benchmark-grid {{
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 12px; margin-bottom: 24px;
+}}
+.benchmark-item {{
+  background: var(--surface); border: 1px solid var(--border); border-radius: 8px;
+  padding: 14px 18px;
+}}
+.benchmark-item .bname {{ font-size: 13px; color: var(--text); font-weight: 600; margin-bottom: 4px; }}
+.benchmark-item .brange {{ font-size: 12px; color: var(--text-dim); }}
+.benchmark-item .btypical {{ font-size: 16px; font-weight: 700; color: var(--accent2); }}
 
 /* Filters */
 .filters {{
@@ -141,102 +195,11 @@ tr:hover {{ background: var(--surface2); }}
   padding: 6px 12px; border-radius: 6px; font-size: 13px;
 }}
 
-/* Platform tags */
-.platform-tag {{
-  display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 11px; font-weight: 600;
-}}
-.platform-tag.Roblox {{ background: #e74c3c33; color: var(--roblox); }}
-.platform-tag.Fortnite {{ background: #9b59b633; color: var(--fortnite); }}
-.platform-tag.Minecraft {{ background: #27ae6033; color: var(--minecraft); }}
-.platform-tag.Steam {{ background: #2980b933; color: var(--steam); }}
-
-.source-type-tag {{
-  display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 11px;
-}}
-.source-type-tag.marketplace {{ background: #4ecdc433; color: var(--blue); }}
-.source-type-tag.forum {{ background: #ffa50233; color: var(--orange); }}
-.source-type-tag.social {{ background: #9b59b633; color: var(--fortnite); }}
-
-/* Verified Badge */
-.verified-badge {{
-  display: inline-flex; align-items: center; gap: 4px; padding: 2px 8px;
-  border-radius: 4px; background: #26de8133; color: var(--green); font-size: 11px;
-  font-weight: 600; text-transform: uppercase;
-}}
-
-/* Data Provenance Section */
-.provenance-section {{
-  background: var(--surface2); border: 1px solid var(--border); border-radius: 12px;
-  padding: 20px; margin-bottom: 24px;
-}}
-.provenance-section h2 {{
-  font-size: 16px; font-weight: 600; margin-bottom: 12px; color: var(--text);
-}}
-.provenance-text {{
-  font-size: 14px; color: var(--text-dim); margin-bottom: 12px;
-}}
-.provenance-links {{
-  display: flex; gap: 12px; flex-wrap: wrap;
-}}
-.provenance-links a {{
-  display: inline-block; padding: 6px 12px; background: var(--accent);
-  color: #fff; text-decoration: none; border-radius: 6px; font-size: 13px;
-  font-weight: 500; transition: all 0.2s;
-}}
-.provenance-links a:hover {{
-  background: var(--accent2); transform: translateY(-2px);
-}}
-
-/* Marketplace Profile Cards */
-.marketplace-cards {{
-  display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 16px; margin-bottom: 24px;
-}}
-.marketplace-card {{
-  background: var(--surface); border: 1px solid var(--border); border-radius: 12px;
-  padding: 20px;
-}}
-.marketplace-card h3 {{
-  font-size: 16px; font-weight: 600; margin-bottom: 12px; color: var(--text);
-}}
-.marketplace-stat {{
-  font-size: 13px; color: var(--text-dim); margin-bottom: 8px; display: flex;
-  justify-content: space-between;
-}}
-.marketplace-stat .value {{
-  color: var(--text); font-weight: 500;
-}}
-.marketplace-card-link {{
-  display: inline-block; margin-top: 12px; padding: 6px 12px;
-  background: var(--accent); color: #fff; text-decoration: none;
-  border-radius: 6px; font-size: 12px; font-weight: 500;
-  transition: all 0.2s;
-}}
-.marketplace-card-link:hover {{
-  background: var(--accent2);
-}}
-
-/* Verified Listings Table */
-.verified-table {{
-  margin-top: 16px;
-}}
-.verified-table td:last-child {{
-  white-space: nowrap;
-}}
-.view-listing-btn {{
-  display: inline-block; padding: 4px 10px; background: var(--blue);
-  color: #fff; text-decoration: none; border-radius: 4px;
-  font-size: 11px; font-weight: 600; transition: all 0.2s;
-}}
-.view-listing-btn:hover {{
-  background: var(--accent2); text-decoration: none;
-}}
-
 @media (max-width: 900px) {{
   .chart-row {{ grid-template-columns: 1fr; }}
-  .chart-row.triple {{ grid-template-columns: 1fr; }}
+  .source-cards {{ grid-template-columns: 1fr; }}
   .kpi-grid {{ grid-template-columns: repeat(2, 1fr); }}
-  .marketplace-cards {{ grid-template-columns: 1fr; }}
+  .benchmark-grid {{ grid-template-columns: 1fr; }}
 }}
 </style>
 </head>
@@ -244,186 +207,135 @@ tr:hover {{ background: var(--surface2); }}
 <div class="header">
   <h1><span>Roblox</span> Accounts Monitoring Dashboard</h1>
   <div class="header-meta">
-    <div>Data Period: Apr 2025 – Mar 2026 &nbsp;|&nbsp; Refresh: Monthly &nbsp;|&nbsp; Sources Tracked: <span id="sourceCount"></span></div>
-    <div style="margin-top:4px">Comparative Platforms: Fortnite, Minecraft, Steam</div>
+    <div>Data Scraped: {data['metadata']['scrape_date']} <span class="header-badge">REAL DATA</span></div>
+    <div style="margin-top:4px">{data['metadata']['total_verified_listings']} Verified Listings from {data['metadata']['sources_tracked']} Marketplaces</div>
   </div>
 </div>
 
 <div class="nav" id="nav">
   <button class="active" data-tab="overview">Overview</button>
-  <button data-tab="trends">Trends &amp; Timeline</button>
-  <button data-tab="sources">Sources</button>
-  <button data-tab="keywords">Keywords</button>
-  <button data-tab="regions">Regions</button>
-  <button data-tab="languages">Languages</button>
-  <button data-tab="quality">Quality Tiers</button>
-  <button data-tab="alerts">Alerts</button>
-  <button data-tab="rawdata">Raw Data</button>
+  <button data-tab="listings">All Listings</button>
+  <button data-tab="sources">Marketplace Sources</button>
+  <button data-tab="categories">Categories</button>
+  <button data-tab="prices">Price Analysis</button>
+  <button data-tab="benchmarks">Benchmarks</button>
 </div>
 
 <div class="container">
 
 <!-- ========== OVERVIEW ========== -->
 <div class="section active" id="sec-overview">
+  <div class="provenance">
+    <div class="provenance-icon">&#9989;</div>
+    <div class="provenance-text">
+      <strong>All data on this dashboard is from real marketplace listings.</strong> No synthetic or generated data is used.<br>
+      Sources:
+      <a href="https://www.u7buy.com/roblox/roblox-accounts" target="_blank">U7Buy</a> &bull;
+      <a href="https://www.eldorado.gg/roblox-accounts-for-sale/a/70-1-0" target="_blank">Eldorado.gg</a> &bull;
+      <a href="https://www.ebay.com/shop/roblox-account-with-headless?_nkw=roblox+account+with+headless" target="_blank">eBay</a>
+      &nbsp;|&nbsp; Last scraped: <strong>{data['metadata']['scrape_date']}</strong>
+    </div>
+  </div>
+
   <div class="kpi-grid" id="kpiGrid"></div>
+
   <div class="chart-row">
-    <div class="chart-card"><h3>Total Listings Over Time (All Platforms)</h3><canvas id="chartOverviewListings"></canvas></div>
-    <div class="chart-card"><h3>Average Price Over Time (USD)</h3><canvas id="chartOverviewPrices"></canvas></div>
+    <div class="chart-card"><h3>Listings by Source</h3><canvas id="chartSourcePie"></canvas></div>
+    <div class="chart-card"><h3>Average Price by Source (USD)</h3><canvas id="chartSourcePrice"></canvas></div>
   </div>
   <div class="chart-row">
-    <div class="chart-card"><h3>Listings by Source Type</h3><canvas id="chartSourceType"></canvas></div>
-    <div class="chart-card"><h3>Quality Tier Distribution</h3><canvas id="chartQualityOverview"></canvas></div>
+    <div class="chart-card"><h3>Listings by Quality Tier</h3><canvas id="chartQualityPie"></canvas></div>
+    <div class="chart-card"><h3>Average Price by Quality Tier (USD)</h3><canvas id="chartQualityPrice"></canvas></div>
   </div>
 </div>
 
-<!-- ========== TRENDS ========== -->
-<div class="section" id="sec-trends">
+<!-- ========== ALL LISTINGS ========== -->
+<div class="section" id="sec-listings">
+  <div class="provenance">
+    <div class="provenance-icon">&#128269;</div>
+    <div class="provenance-text">
+      <strong>Verified listings scraped on {data['metadata']['scrape_date']}.</strong>
+      Each listing links directly to the original marketplace page. Click "View Listing" to verify.
+    </div>
+  </div>
   <div class="filters">
-    <label>Platform:</label>
-    <select id="trendPlatform"><option value="all">All Platforms</option></select>
-  </div>
-  <div class="chart-row full">
-    <div class="chart-card"><h3>Monthly Listing Volume</h3><canvas id="chartTrendVolume"></canvas></div>
-  </div>
-  <div class="chart-row">
-    <div class="chart-card"><h3>Average Price Trend</h3><canvas id="chartTrendPrice"></canvas></div>
-    <div class="chart-card"><h3>New Listings vs Total</h3><canvas id="chartTrendNew"></canvas></div>
-  </div>
-  <div class="chart-row">
-    <div class="chart-card"><h3>Unique Sellers</h3><canvas id="chartTrendSellers"></canvas></div>
-    <div class="chart-card"><h3>Month-over-Month Growth (%)</h3><canvas id="chartTrendGrowth"></canvas></div>
-  </div>
-</div>
-
-<!-- ========== SOURCES ========== -->
-<div class="section" id="sec-sources">
-  <div class="filters">
-    <label>Platform:</label>
-    <select id="sourcePlatform"><option value="all">All Platforms</option></select>
-    <label>Source Type:</label>
-    <select id="sourceType">
-      <option value="all">All Types</option>
-      <option value="marketplace">Marketplaces</option>
-      <option value="forum">Forums</option>
-      <option value="social">Social</option>
+    <label>Source:</label>
+    <select id="listingSource">
+      <option value="all">All Sources</option>
+      <option value="U7Buy">U7Buy</option>
+      <option value="Eldorado.gg">Eldorado.gg</option>
+      <option value="eBay">eBay</option>
+    </select>
+    <label>Quality Tier:</label>
+    <select id="listingTier">
+      <option value="all">All Tiers</option>
+      <option value="Premium/Stacked">Premium/Stacked</option>
+      <option value="Mid-Tier">Mid-Tier</option>
+      <option value="Basic/Starter">Basic/Starter</option>
+    </select>
+    <label>Sort:</label>
+    <select id="listingSort">
+      <option value="price-desc">Price: High to Low</option>
+      <option value="price-asc">Price: Low to High</option>
+      <option value="source">By Source</option>
     </select>
   </div>
-  <div class="chart-row">
-    <div class="chart-card"><h3>Listings by Source Type</h3><canvas id="chartSourcePie"></canvas></div>
-    <div class="chart-card"><h3>Top Sources by Listing Count</h3><canvas id="chartSourceBar"></canvas></div>
-  </div>
-  <div class="chart-card" style="margin-bottom:24px">
-    <h3>Source Details</h3>
-    <div class="table-wrap"><table id="sourceTable"><thead><tr>
-      <th>Source</th><th>Type</th><th>Platform</th><th>Listings</th><th>Avg Price</th><th>Verified Sellers</th><th>Last Scraped</th><th>Link</th>
-    </tr></thead><tbody></tbody></table></div>
-  </div>
-</div>
-
-<!-- ========== KEYWORDS ========== -->
-<div class="section" id="sec-keywords">
-  <div class="filters">
-    <label>Platform:</label>
-    <select id="kwPlatform"></select>
-  </div>
-  <div class="chart-row full">
-    <div class="chart-card"><h3>Top Keywords by Mention Count (Latest Month)</h3><canvas id="chartKwBar"></canvas></div>
-  </div>
-  <div class="chart-row full">
-    <div class="chart-card"><h3>Keyword Trends Over Time</h3><canvas id="chartKwTrend"></canvas></div>
-  </div>
   <div class="chart-card">
-    <h3>Keyword Details</h3>
-    <div class="table-wrap"><table id="kwTable"><thead><tr>
-      <th>Keyword</th><th>Mentions (Latest)</th><th>Avg Price</th><th>Sentiment</th><th>Trend</th>
-    </tr></thead><tbody></tbody></table></div>
-  </div>
-</div>
-
-<!-- ========== REGIONS ========== -->
-<div class="section" id="sec-regions">
-  <div class="filters">
-    <label>Platform:</label>
-    <select id="regionPlatform"><option value="all">All Platforms</option></select>
-  </div>
-  <div class="chart-row">
-    <div class="chart-card"><h3>Listings by Region</h3><canvas id="chartRegionBar"></canvas></div>
-    <div class="chart-card"><h3>Average Price by Region (USD)</h3><canvas id="chartRegionPrice"></canvas></div>
-  </div>
-  <div class="chart-card">
-    <h3>Regional Breakdown</h3>
-    <div class="table-wrap"><table id="regionTable"><thead><tr>
-      <th>Region</th><th>Platform</th><th>Listings</th><th>Avg Price</th><th>Dominant Language</th><th>Sellers</th>
-    </tr></thead><tbody></tbody></table></div>
-  </div>
-</div>
-
-<!-- ========== LANGUAGES ========== -->
-<div class="section" id="sec-languages">
-  <div class="filters">
-    <label>Platform:</label>
-    <select id="langPlatform"><option value="all">All Platforms</option></select>
-  </div>
-  <div class="chart-row">
-    <div class="chart-card"><h3>Listings by Language</h3><canvas id="chartLangBar"></canvas></div>
-    <div class="chart-card"><h3>Average Price by Language (USD)</h3><canvas id="chartLangPrice"></canvas></div>
-  </div>
-  <div class="chart-card">
-    <h3>Language Details</h3>
-    <div class="table-wrap"><table id="langTable"><thead><tr>
-      <th>Language</th><th>Platform</th><th>Listings</th><th>Avg Price</th><th>% with Images</th>
-    </tr></thead><tbody></tbody></table></div>
-  </div>
-</div>
-
-<!-- ========== QUALITY ========== -->
-<div class="section" id="sec-quality">
-  <div class="chart-row">
-    <div class="chart-card"><h3>Quality Tier Distribution by Platform</h3><canvas id="chartQualityStacked"></canvas></div>
-    <div class="chart-card"><h3>Average Price by Quality Tier</h3><canvas id="chartQualityPrice"></canvas></div>
-  </div>
-  <div class="chart-card">
-    <h3>Quality Tier Details</h3>
-    <div class="table-wrap"><table id="qualityTable"><thead><tr>
-      <th>Platform</th><th>Tier</th><th>Listings</th><th>% of Total</th><th>Avg Price</th><th>Median Price</th>
-    </tr></thead><tbody></tbody></table></div>
-  </div>
-</div>
-
-<!-- ========== ALERTS ========== -->
-<div class="section" id="sec-alerts">
-  <div class="filters">
-    <label>Severity:</label>
-    <select id="alertSeverity">
-      <option value="all">All</option>
-      <option value="critical">Critical</option>
-      <option value="high">High</option>
-      <option value="medium">Medium</option>
-      <option value="low">Low</option>
-    </select>
-    <label>Platform:</label>
-    <select id="alertPlatform"><option value="all">All Platforms</option></select>
-  </div>
-  <div id="alertList"></div>
-</div>
-
-<!-- ========== RAW DATA ========== -->
-<div class="section" id="sec-rawdata">
-  <div class="provenance-section">
-    <h2>Verified Data Provenance</h2>
-    <div class="provenance-text">This dashboard integrates verified, real-world listing data from 3 primary marketplace sources. Comparative platforms (Fortnite, Minecraft, Steam) use synthetic data for comparison.</div>
-    <div class="provenance-links" id="provenanceLinks"></div>
-  </div>
-
-  <h3 style="margin-bottom:16px; font-size:16px; color:var(--text);">Verified Marketplace Profiles</h3>
-  <div class="marketplace-cards" id="marketplaceCards"></div>
-
-  <div class="chart-card">
-    <h3>Verified Listings from Real Marketplaces</h3>
-    <div class="table-wrap verified-table"><table id="verifiedListingsTable"><thead><tr>
+    <h3>Verified Listings (<span id="listingCount"></span>)</h3>
+    <div class="table-wrap"><table id="listingsTable"><thead><tr>
       <th>Source</th><th>Title</th><th>Price</th><th>Category</th><th>Quality Tier</th><th>Features</th><th>Link</th>
     </tr></thead><tbody></tbody></table></div>
   </div>
+</div>
+
+<!-- ========== MARKETPLACE SOURCES ========== -->
+<div class="section" id="sec-sources">
+  <div class="source-cards" id="sourceCards"></div>
+  <div class="chart-card">
+    <h3>Source Comparison</h3>
+    <div class="table-wrap"><table id="sourceTable"><thead><tr>
+      <th>Source</th><th>Est. Listings</th><th>Est. Sold</th><th>Price Range</th><th>Avg Price</th>
+      <th>Guarantee</th><th>Delivery</th><th>Verified Sellers</th><th>Link</th>
+    </tr></thead><tbody></tbody></table></div>
+  </div>
+</div>
+
+<!-- ========== CATEGORIES ========== -->
+<div class="section" id="sec-categories">
+  <div class="chart-row">
+    <div class="chart-card"><h3>Listings by Category</h3><canvas id="chartCatBar"></canvas></div>
+    <div class="chart-card"><h3>Average Price by Category (USD)</h3><canvas id="chartCatPrice"></canvas></div>
+  </div>
+  <div class="chart-card">
+    <h3>Category Breakdown</h3>
+    <div class="table-wrap"><table id="catTable"><thead><tr>
+      <th>Category</th><th>Listings</th><th>Sources</th><th>Min Price</th><th>Max Price</th><th>Avg Price</th>
+    </tr></thead><tbody></tbody></table></div>
+  </div>
+</div>
+
+<!-- ========== PRICE ANALYSIS ========== -->
+<div class="section" id="sec-prices">
+  <div class="chart-row full">
+    <div class="chart-card"><h3>Price Distribution Across All Listings</h3><canvas id="chartPriceDist"></canvas></div>
+  </div>
+  <div class="chart-row">
+    <div class="chart-card"><h3>Price by Source (Box Plot Style)</h3><canvas id="chartPriceBySource"></canvas></div>
+    <div class="chart-card"><h3>Price by Quality Tier</h3><canvas id="chartPriceByTier"></canvas></div>
+  </div>
+  <div id="priceCompSection"></div>
+</div>
+
+<!-- ========== BENCHMARKS ========== -->
+<div class="section" id="sec-benchmarks">
+  <div class="provenance">
+    <div class="provenance-icon">&#128200;</div>
+    <div class="provenance-text">
+      <strong>Market price benchmarks</strong> derived from cross-marketplace research.
+      Official Robux costs vs. typical resale prices for key account types.
+    </div>
+  </div>
+  <div class="benchmark-grid" id="benchmarkGrid"></div>
 </div>
 
 </div><!-- container -->
@@ -431,12 +343,9 @@ tr:hover {{ background: var(--surface2); }}
 <script>
 const D = {data_js};
 
-const COLORS = {{
-  Roblox: '#e74c3c', Fortnite: '#9b59b6', Minecraft: '#27ae60', Steam: '#2980b9'
-}};
-const COLORS_ARR = ['#e74c3c','#9b59b6','#27ae60','#2980b9'];
+const SOURCE_COLORS = {{ 'U7Buy': '#e74c3c', 'Eldorado.gg': '#f39c12', 'eBay': '#3498db' }};
+const TIER_COLORS = {{ 'Premium/Stacked': '#f39c12', 'Mid-Tier': '#6c5ce7', 'Basic/Starter': '#26de81' }};
 
-// Chart.js defaults
 Chart.defaults.color = '#8b8fa3';
 Chart.defaults.borderColor = '#2e3347';
 Chart.defaults.font.family = "'Segoe UI', system-ui, sans-serif";
@@ -454,618 +363,351 @@ document.getElementById('nav').addEventListener('click', e => {{
 }});
 
 // ============ UTILITIES ============
-function fmt(n) {{ return n >= 1000 ? (n/1000).toFixed(1) + 'k' : n.toString(); }}
 function fmtUSD(n) {{ return '$' + n.toFixed(2); }}
-function pct(n) {{ return (n * 100).toFixed(1) + '%'; }}
+function fmt(n) {{ return n >= 1000 ? (n/1000).toFixed(1) + 'k' : n.toString(); }}
+function sourceClass(s) {{ return s === 'U7Buy' ? 'u7buy' : s === 'Eldorado.gg' ? 'eldorado' : 'ebay'; }}
+function tierClass(t) {{ return t.includes('Premium') ? 'premium' : t.includes('Mid') ? 'mid' : 'basic'; }}
 
-function populateSelect(id, options, includeAll) {{
-  const sel = document.getElementById(id);
-  if (!sel) return;
-  if (includeAll && !sel.querySelector('option[value="all"]')) {{
-    sel.innerHTML = '<option value="all">All Platforms</option>';
-  }}
-  options.forEach(o => {{
-    const opt = document.createElement('option');
-    opt.value = o; opt.textContent = o;
-    sel.appendChild(opt);
-  }});
-}}
-
-const platforms = D.config.platforms;
-['trendPlatform','sourcePlatform','kwPlatform','regionPlatform','langPlatform','alertPlatform'].forEach(id => {{
-  populateSelect(id, platforms, id !== 'kwPlatform');
-}});
-// kwPlatform starts with Roblox
-const kwSel = document.getElementById('kwPlatform');
-kwSel.innerHTML = '';
-platforms.forEach(p => {{ const o = document.createElement('option'); o.value = p; o.textContent = p; kwSel.appendChild(o); }});
-
-document.getElementById('sourceCount').textContent = D.metadata.sources_tracked;
-
-// ============ CHART INSTANCES ============
 const charts = {{}};
 function destroyChart(id) {{ if(charts[id]) {{ charts[id].destroy(); delete charts[id]; }} }}
 
 // ============ OVERVIEW ============
 function renderOverview() {{
-  // KPI cards - latest month for each platform
-  const months = [...new Set(D.monthly_trends.map(r => r.month))].sort();
-  const latestMonth = months[months.length - 1];
-  const prevMonth = months[months.length - 2];
   const grid = document.getElementById('kpiGrid');
   grid.innerHTML = '';
 
-  platforms.forEach(p => {{
-    const latest = D.monthly_trends.find(r => r.month === latestMonth && r.platform === p);
-    const prev = D.monthly_trends.find(r => r.month === prevMonth && r.platform === p);
-    if (!latest) return;
-    const listChange = prev ? ((latest.total_listings - prev.total_listings) / prev.total_listings * 100).toFixed(1) : 0;
-    const priceChange = prev ? ((latest.avg_price_usd - prev.avg_price_usd) / prev.avg_price_usd * 100).toFixed(1) : 0;
+  // Total KPI
+  const totalListings = D.verified_listings.length;
+  const prices = D.verified_listings.map(l => l.price_usd);
+  const avgPrice = prices.reduce((a,b) => a+b, 0) / prices.length;
+  grid.innerHTML += `
+    <div class="kpi-card total">
+      <div class="kpi-label">Total Verified Listings</div>
+      <div class="kpi-value">${{totalListings}}</div>
+      <div class="kpi-sub">Across ${{D.metadata.sources_tracked}} marketplaces</div>
+    </div>
+    <div class="kpi-card total">
+      <div class="kpi-label">Average Price</div>
+      <div class="kpi-value">${{fmtUSD(avgPrice)}}</div>
+      <div class="kpi-sub">${{fmtUSD(Math.min(...prices))}} - ${{fmtUSD(Math.max(...prices))}}</div>
+    </div>`;
 
+  // Per-source KPIs
+  D.source_breakdown.forEach(s => {{
     grid.innerHTML += `
-      <div class="kpi-card ${{p.toLowerCase()}}">
-        <div class="kpi-label">${{p}} Listings</div>
-        <div class="kpi-value">${{fmt(latest.total_listings)}}</div>
-        <div class="kpi-change ${{parseFloat(listChange) > 0 ? 'up' : 'down'}}">${{parseFloat(listChange) > 0 ? '&#9650;' : '&#9660;'}} ${{Math.abs(listChange)}}% vs prev month</div>
-      </div>
-      <div class="kpi-card ${{p.toLowerCase()}}">
-        <div class="kpi-label">${{p}} Avg Price</div>
-        <div class="kpi-value">${{fmtUSD(latest.avg_price_usd)}}</div>
-        <div class="kpi-change ${{parseFloat(priceChange) > 0 ? 'up' : 'down'}}">${{parseFloat(priceChange) > 0 ? '&#9650;' : '&#9660;'}} ${{Math.abs(priceChange)}}%</div>
+      <div class="kpi-card ${{sourceClass(s.source_name)}}">
+        <div class="kpi-label">${{s.source_name}} (est.)</div>
+        <div class="kpi-value">${{fmt(s.estimated_total_listings)}}</div>
+        <div class="kpi-sub">${{s.verified_sample_count}} verified samples &bull; avg ${{fmtUSD(s.avg_price_usd)}}</div>
       </div>`;
   }});
 
-  // Listings over time
-  destroyChart('overviewListings');
-  const labels = months;
-  const datasets = platforms.map(p => ({{
-    label: p,
-    data: months.map(m => {{
-      const r = D.monthly_trends.find(x => x.month === m && x.platform === p);
-      return r ? r.total_listings : 0;
-    }}),
-    borderColor: COLORS[p],
-    backgroundColor: COLORS[p] + '22',
-    fill: true,
-    tension: 0.3,
-  }}));
-  charts.overviewListings = new Chart(document.getElementById('chartOverviewListings'), {{
-    type: 'line',
-    data: {{ labels, datasets }},
-    options: {{ responsive: true, plugins: {{ legend: {{ position: 'top' }} }}, scales: {{ y: {{ beginAtZero: true }} }} }}
-  }});
-
-  // Prices over time
-  destroyChart('overviewPrices');
-  charts.overviewPrices = new Chart(document.getElementById('chartOverviewPrices'), {{
-    type: 'line',
-    data: {{
-      labels: months,
-      datasets: platforms.map(p => ({{
-        label: p,
-        data: months.map(m => {{
-          const r = D.monthly_trends.find(x => x.month === m && x.platform === p);
-          return r ? r.avg_price_usd : 0;
-        }}),
-        borderColor: COLORS[p],
-        tension: 0.3,
-      }}))
-    }},
-    options: {{ responsive: true, plugins: {{ legend: {{ position: 'top' }} }}, scales: {{ y: {{ beginAtZero: true }} }} }}
-  }});
-
-  // Source type donut
-  destroyChart('sourceType');
-  const sourceAgg = {{}};
-  D.source_breakdown.forEach(r => {{ sourceAgg[r.source_type] = (sourceAgg[r.source_type] || 0) + r.listings_count; }});
-  charts.sourceType = new Chart(document.getElementById('chartSourceType'), {{
-    type: 'doughnut',
-    data: {{
-      labels: Object.keys(sourceAgg).map(s => s.charAt(0).toUpperCase() + s.slice(1)),
-      datasets: [{{ data: Object.values(sourceAgg), backgroundColor: ['#4ecdc4','#ffa502','#9b59b6'] }}]
-    }},
-    options: {{ responsive: true, plugins: {{ legend: {{ position: 'bottom' }} }} }}
-  }});
-
-  // Quality overview
-  destroyChart('qualityOverview');
-  const qAgg = {{}};
-  D.quality_distribution.forEach(r => {{ qAgg[r.quality_tier] = (qAgg[r.quality_tier] || 0) + r.listings_count; }});
-  charts.qualityOverview = new Chart(document.getElementById('chartQualityOverview'), {{
-    type: 'doughnut',
-    data: {{
-      labels: Object.keys(qAgg),
-      datasets: [{{ data: Object.values(qAgg), backgroundColor: ['#6c5ce7','#00cec9','#ffa502','#ff6b6b'] }}]
-    }},
-    options: {{ responsive: true, plugins: {{ legend: {{ position: 'bottom' }} }} }}
-  }});
-}}
-
-// ============ TRENDS ============
-function renderTrends() {{
-  const plat = document.getElementById('trendPlatform').value;
-  const months = [...new Set(D.monthly_trends.map(r => r.month))].sort();
-  const filtered = plat === 'all' ? D.monthly_trends : D.monthly_trends.filter(r => r.platform === plat);
-  const activePlats = plat === 'all' ? platforms : [plat];
-
-  // Volume
-  destroyChart('trendVolume');
-  charts.trendVolume = new Chart(document.getElementById('chartTrendVolume'), {{
-    type: 'bar',
-    data: {{
-      labels: months,
-      datasets: activePlats.map(p => ({{
-        label: p,
-        data: months.map(m => {{
-          const r = filtered.find(x => x.month === m && x.platform === p);
-          return r ? r.total_listings : 0;
-        }}),
-        backgroundColor: COLORS[p] + 'aa',
-        borderColor: COLORS[p],
-        borderWidth: 1,
-      }}))
-    }},
-    options: {{ responsive: true, plugins: {{ legend: {{ position: 'top' }} }}, scales: {{ y: {{ beginAtZero: true }} }} }}
-  }});
-
-  // Price trend
-  destroyChart('trendPrice');
-  charts.trendPrice = new Chart(document.getElementById('chartTrendPrice'), {{
-    type: 'line',
-    data: {{
-      labels: months,
-      datasets: activePlats.map(p => ({{
-        label: p,
-        data: months.map(m => {{
-          const r = filtered.find(x => x.month === m && x.platform === p);
-          return r ? r.avg_price_usd : 0;
-        }}),
-        borderColor: COLORS[p], tension: 0.3,
-      }}))
-    }},
-    options: {{ responsive: true, scales: {{ y: {{ beginAtZero: true }} }} }}
-  }});
-
-  // New vs Total
-  destroyChart('trendNew');
-  const mainPlat = plat === 'all' ? 'Roblox' : plat;
-  charts.trendNew = new Chart(document.getElementById('chartTrendNew'), {{
-    type: 'bar',
-    data: {{
-      labels: months,
-      datasets: [
-        {{
-          label: 'Total Listings',
-          data: months.map(m => {{ const r = D.monthly_trends.find(x => x.month === m && x.platform === mainPlat); return r ? r.total_listings : 0; }}),
-          backgroundColor: COLORS[mainPlat] + '55',
-          borderColor: COLORS[mainPlat],
-          borderWidth: 1,
-        }},
-        {{
-          label: 'New Listings',
-          data: months.map(m => {{ const r = D.monthly_trends.find(x => x.month === m && x.platform === mainPlat); return r ? r.new_listings : 0; }}),
-          backgroundColor: COLORS[mainPlat] + 'cc',
-          borderColor: COLORS[mainPlat],
-          borderWidth: 1,
-        }}
-      ]
-    }},
-    options: {{ responsive: true, plugins: {{ title: {{ display: true, text: mainPlat }} }}, scales: {{ y: {{ beginAtZero: true }} }} }}
-  }});
-
-  // Sellers
-  destroyChart('trendSellers');
-  charts.trendSellers = new Chart(document.getElementById('chartTrendSellers'), {{
-    type: 'line',
-    data: {{
-      labels: months,
-      datasets: activePlats.map(p => ({{
-        label: p,
-        data: months.map(m => {{ const r = filtered.find(x => x.month === m && x.platform === p); return r ? r.total_sellers : 0; }}),
-        borderColor: COLORS[p], tension: 0.3,
-      }}))
-    }},
-    options: {{ responsive: true, scales: {{ y: {{ beginAtZero: true }} }} }}
-  }});
-
-  // Growth
-  destroyChart('trendGrowth');
-  charts.trendGrowth = new Chart(document.getElementById('chartTrendGrowth'), {{
-    type: 'bar',
-    data: {{
-      labels: months.slice(1),
-      datasets: activePlats.map(p => {{
-        const vals = months.map(m => {{ const r = D.monthly_trends.find(x => x.month === m && x.platform === p); return r ? r.total_listings : 0; }});
-        const growth = vals.slice(1).map((v, i) => vals[i] > 0 ? ((v - vals[i]) / vals[i] * 100).toFixed(1) : 0);
-        return {{ label: p, data: growth, backgroundColor: COLORS[p] + '88', borderColor: COLORS[p], borderWidth: 1 }};
-      }})
-    }},
-    options: {{ responsive: true, scales: {{ y: {{ }} }} }}
-  }});
-}}
-
-document.getElementById('trendPlatform').addEventListener('change', renderTrends);
-
-// ============ SOURCES ============
-function renderSources() {{
-  const plat = document.getElementById('sourcePlatform').value;
-  const stype = document.getElementById('sourceType').value;
-  let filtered = D.source_breakdown;
-  if (plat !== 'all') filtered = filtered.filter(r => r.platform === plat);
-  if (stype !== 'all') filtered = filtered.filter(r => r.source_type === stype);
-
-  // Pie
+  // Source pie chart
   destroyChart('sourcePie');
-  const typeAgg = {{}};
-  filtered.forEach(r => {{ typeAgg[r.source_type] = (typeAgg[r.source_type] || 0) + r.listings_count; }});
+  const sourceLabels = D.source_breakdown.map(s => s.source_name);
+  const sourceCounts = D.source_breakdown.map(s => s.verified_sample_count);
   charts.sourcePie = new Chart(document.getElementById('chartSourcePie'), {{
     type: 'doughnut',
     data: {{
-      labels: Object.keys(typeAgg).map(s => s.charAt(0).toUpperCase() + s.slice(1)),
-      datasets: [{{ data: Object.values(typeAgg), backgroundColor: ['#4ecdc4','#ffa502','#9b59b6'] }}]
+      labels: sourceLabels,
+      datasets: [{{ data: sourceCounts, backgroundColor: sourceLabels.map(s => SOURCE_COLORS[s]) }}]
     }},
     options: {{ responsive: true, plugins: {{ legend: {{ position: 'bottom' }} }} }}
   }});
 
-  // Top sources bar
-  destroyChart('sourceBar');
-  const srcAgg = {{}};
-  filtered.forEach(r => {{ srcAgg[r.source_name] = (srcAgg[r.source_name] || 0) + r.listings_count; }});
-  const sorted = Object.entries(srcAgg).sort((a, b) => b[1] - a[1]).slice(0, 15);
-  charts.sourceBar = new Chart(document.getElementById('chartSourceBar'), {{
+  // Source price bar
+  destroyChart('sourcePrice');
+  charts.sourcePrice = new Chart(document.getElementById('chartSourcePrice'), {{
     type: 'bar',
     data: {{
-      labels: sorted.map(s => s[0]),
-      datasets: [{{ data: sorted.map(s => s[1]), backgroundColor: '#6c5ce7aa', borderColor: '#6c5ce7', borderWidth: 1 }}]
-    }},
-    options: {{ responsive: true, indexAxis: 'y', plugins: {{ legend: {{ display: false }} }} }}
-  }});
-
-  // Table
-  const tbody = document.querySelector('#sourceTable tbody');
-  tbody.innerHTML = '';
-  const sortedAll = [...filtered].sort((a, b) => b.listings_count - a.listings_count);
-  sortedAll.forEach(r => {{
-    const ago = Math.round((Date.now() - new Date(r.last_scraped).getTime()) / 3600000);
-    const linkHtml = r.verified && r.source_url ?
-      `<a href="${{r.source_url}}" target="_blank" class="view-listing-btn">✓ Verified ↗</a>` :
-      '';
-    tbody.innerHTML += `<tr>
-      <td>${{r.source_name}}</td>
-      <td><span class="source-type-tag ${{r.source_type}}">${{r.source_type}}</span></td>
-      <td><span class="platform-tag ${{r.platform}}">${{r.platform}}</span></td>
-      <td>${{r.listings_count}}</td>
-      <td>${{fmtUSD(r.avg_price_usd)}}</td>
-      <td>${{pct(r.verified_sellers_pct)}}</td>
-      <td>${{ago}}h ago</td>
-      <td>${{linkHtml}}</td>
-    </tr>`;
-  }});
-}}
-
-document.getElementById('sourcePlatform').addEventListener('change', renderSources);
-document.getElementById('sourceType').addEventListener('change', renderSources);
-
-// ============ KEYWORDS ============
-function renderKeywords() {{
-  const plat = document.getElementById('kwPlatform').value;
-  const kwData = D.keyword_trends.filter(r => r.platform === plat);
-  const months = [...new Set(kwData.map(r => r.month))].sort();
-  const latestMonth = months[months.length - 1];
-  const keywords = [...new Set(kwData.map(r => r.keyword))];
-
-  // Latest month bar
-  destroyChart('kwBar');
-  const latestData = kwData.filter(r => r.month === latestMonth).sort((a, b) => b.mention_count - a.mention_count);
-  charts.kwBar = new Chart(document.getElementById('chartKwBar'), {{
-    type: 'bar',
-    data: {{
-      labels: latestData.map(r => r.keyword),
-      datasets: [{{ data: latestData.map(r => r.mention_count), backgroundColor: COLORS[plat] + 'aa', borderColor: COLORS[plat], borderWidth: 1 }}]
-    }},
-    options: {{ responsive: true, indexAxis: 'y', plugins: {{ legend: {{ display: false }} }} }}
-  }});
-
-  // Trend lines for top 5
-  destroyChart('kwTrend');
-  const top5 = latestData.slice(0, 5).map(r => r.keyword);
-  const trendColors = ['#e74c3c','#9b59b6','#27ae60','#2980b9','#ffa502'];
-  charts.kwTrend = new Chart(document.getElementById('chartKwTrend'), {{
-    type: 'line',
-    data: {{
-      labels: months,
-      datasets: top5.map((kw, i) => ({{
-        label: kw,
-        data: months.map(m => {{ const r = kwData.find(x => x.month === m && x.keyword === kw); return r ? r.mention_count : 0; }}),
-        borderColor: trendColors[i], tension: 0.3,
-      }}))
-    }},
-    options: {{ responsive: true }}
-  }});
-
-  // Table
-  const tbody = document.querySelector('#kwTable tbody');
-  tbody.innerHTML = '';
-  const firstMonth = months[0];
-  latestData.forEach(r => {{
-    const first = kwData.find(x => x.keyword === r.keyword && x.month === firstMonth);
-    const trend = first ? ((r.mention_count - first.mention_count) / first.mention_count * 100).toFixed(1) : '—';
-    const sentColor = r.sentiment_score > 0.3 ? 'var(--green)' : r.sentiment_score < -0.1 ? 'var(--red)' : 'var(--text-dim)';
-    tbody.innerHTML += `<tr>
-      <td>${{r.keyword}}</td>
-      <td>${{r.mention_count}}</td>
-      <td>${{fmtUSD(r.avg_listing_price_usd)}}</td>
-      <td style="color:${{sentColor}}">${{r.sentiment_score.toFixed(2)}}</td>
-      <td>${{trend}}%</td>
-    </tr>`;
-  }});
-}}
-
-document.getElementById('kwPlatform').addEventListener('change', renderKeywords);
-
-// ============ REGIONS ============
-function renderRegions() {{
-  const plat = document.getElementById('regionPlatform').value;
-  let filtered = D.regional_data;
-  if (plat !== 'all') filtered = filtered.filter(r => r.platform === plat);
-
-  // Aggregate by region
-  const regAgg = {{}};
-  const regPrice = {{}};
-  filtered.forEach(r => {{
-    regAgg[r.region] = (regAgg[r.region] || 0) + r.listings_count;
-    if (!regPrice[r.region]) regPrice[r.region] = [];
-    regPrice[r.region].push(r.avg_price_usd);
-  }});
-  const regions = Object.keys(regAgg).sort((a, b) => regAgg[b] - regAgg[a]);
-
-  destroyChart('regionBar');
-  charts.regionBar = new Chart(document.getElementById('chartRegionBar'), {{
-    type: 'bar',
-    data: {{
-      labels: regions,
-      datasets: [{{ data: regions.map(r => regAgg[r]), backgroundColor: '#6c5ce7aa', borderColor: '#6c5ce7', borderWidth: 1 }}]
-    }},
-    options: {{ responsive: true, plugins: {{ legend: {{ display: false }} }} }}
-  }});
-
-  destroyChart('regionPrice');
-  charts.regionPrice = new Chart(document.getElementById('chartRegionPrice'), {{
-    type: 'bar',
-    data: {{
-      labels: regions,
-      datasets: [{{ data: regions.map(r => (regPrice[r].reduce((a,b) => a+b, 0) / regPrice[r].length).toFixed(2)), backgroundColor: '#00cec9aa', borderColor: '#00cec9', borderWidth: 1 }}]
-    }},
-    options: {{ responsive: true, plugins: {{ legend: {{ display: false }} }} }}
-  }});
-
-  // Table
-  const tbody = document.querySelector('#regionTable tbody');
-  tbody.innerHTML = '';
-  [...filtered].sort((a, b) => b.listings_count - a.listings_count).forEach(r => {{
-    tbody.innerHTML += `<tr>
-      <td>${{r.region}}</td>
-      <td><span class="platform-tag ${{r.platform}}">${{r.platform}}</span></td>
-      <td>${{r.listings_count}}</td>
-      <td>${{fmtUSD(r.avg_price_usd)}}</td>
-      <td>${{r.dominant_language}}</td>
-      <td>${{r.seller_count}}</td>
-    </tr>`;
-  }});
-}}
-
-document.getElementById('regionPlatform').addEventListener('change', renderRegions);
-
-// ============ LANGUAGES ============
-function renderLanguages() {{
-  const plat = document.getElementById('langPlatform').value;
-  let filtered = D.language_data;
-  if (plat !== 'all') filtered = filtered.filter(r => r.platform === plat);
-
-  const langAgg = {{}};
-  const langPrice = {{}};
-  filtered.forEach(r => {{
-    langAgg[r.language] = (langAgg[r.language] || 0) + r.listings_count;
-    if (!langPrice[r.language]) langPrice[r.language] = [];
-    langPrice[r.language].push(r.avg_price_usd);
-  }});
-  const langs = Object.keys(langAgg).sort((a, b) => langAgg[b] - langAgg[a]);
-
-  destroyChart('langBar');
-  charts.langBar = new Chart(document.getElementById('chartLangBar'), {{
-    type: 'bar',
-    data: {{
-      labels: langs,
-      datasets: [{{ data: langs.map(l => langAgg[l]), backgroundColor: '#e74c3caa', borderColor: '#e74c3c', borderWidth: 1 }}]
-    }},
-    options: {{ responsive: true, plugins: {{ legend: {{ display: false }} }} }}
-  }});
-
-  destroyChart('langPrice');
-  charts.langPrice = new Chart(document.getElementById('chartLangPrice'), {{
-    type: 'bar',
-    data: {{
-      labels: langs,
-      datasets: [{{ data: langs.map(l => (langPrice[l].reduce((a,b) => a+b, 0) / langPrice[l].length).toFixed(2)), backgroundColor: '#9b59b6aa', borderColor: '#9b59b6', borderWidth: 1 }}]
-    }},
-    options: {{ responsive: true, plugins: {{ legend: {{ display: false }} }} }}
-  }});
-
-  // Table
-  const tbody = document.querySelector('#langTable tbody');
-  tbody.innerHTML = '';
-  [...filtered].sort((a, b) => b.listings_count - a.listings_count).forEach(r => {{
-    tbody.innerHTML += `<tr>
-      <td>${{r.language}}</td>
-      <td><span class="platform-tag ${{r.platform}}">${{r.platform}}</span></td>
-      <td>${{r.listings_count}}</td>
-      <td>${{fmtUSD(r.avg_price_usd)}}</td>
-      <td>${{pct(r.pct_with_images)}}</td>
-    </tr>`;
-  }});
-}}
-
-document.getElementById('langPlatform').addEventListener('change', renderLanguages);
-
-// ============ QUALITY ============
-function renderQuality() {{
-  const tiers = D.config.quality_tiers;
-  const tierColors = ['#6c5ce7','#00cec9','#ffa502','#ff6b6b'];
-
-  destroyChart('qualityStacked');
-  charts.qualityStacked = new Chart(document.getElementById('chartQualityStacked'), {{
-    type: 'bar',
-    data: {{
-      labels: platforms,
-      datasets: tiers.map((t, i) => ({{
-        label: t,
-        data: platforms.map(p => {{
-          const r = D.quality_distribution.find(x => x.platform === p && x.quality_tier === t);
-          return r ? r.listings_count : 0;
-        }}),
-        backgroundColor: tierColors[i] + 'aa',
-        borderColor: tierColors[i],
+      labels: sourceLabels,
+      datasets: [{{
+        label: 'Avg Price (USD)',
+        data: D.source_breakdown.map(s => s.avg_price_usd),
+        backgroundColor: sourceLabels.map(s => SOURCE_COLORS[s] + 'cc'),
+        borderColor: sourceLabels.map(s => SOURCE_COLORS[s]),
         borderWidth: 1,
-      }}))
+      }}]
     }},
-    options: {{ responsive: true, scales: {{ x: {{ stacked: true }}, y: {{ stacked: true, beginAtZero: true }} }} }}
+    options: {{ responsive: true, scales: {{ y: {{ beginAtZero: true }} }}, plugins: {{ legend: {{ display: false }} }} }}
   }});
 
+  // Quality pie
+  destroyChart('qualityPie');
+  const tierLabels = D.quality_distribution.map(q => q.quality_tier);
+  charts.qualityPie = new Chart(document.getElementById('chartQualityPie'), {{
+    type: 'doughnut',
+    data: {{
+      labels: tierLabels,
+      datasets: [{{ data: D.quality_distribution.map(q => q.listing_count), backgroundColor: tierLabels.map(t => TIER_COLORS[t]) }}]
+    }},
+    options: {{ responsive: true, plugins: {{ legend: {{ position: 'bottom' }} }} }}
+  }});
+
+  // Quality price bar
   destroyChart('qualityPrice');
   charts.qualityPrice = new Chart(document.getElementById('chartQualityPrice'), {{
     type: 'bar',
     data: {{
-      labels: tiers,
-      datasets: platforms.map((p, i) => ({{
-        label: p,
-        data: tiers.map(t => {{
-          const r = D.quality_distribution.find(x => x.platform === p && x.quality_tier === t);
-          return r ? r.avg_price_usd : 0;
-        }}),
-        backgroundColor: COLORS_ARR[i] + 'aa',
-        borderColor: COLORS_ARR[i],
+      labels: tierLabels,
+      datasets: [{{
+        label: 'Avg Price (USD)',
+        data: D.quality_distribution.map(q => q.avg_price_usd),
+        backgroundColor: tierLabels.map(t => TIER_COLORS[t] + 'cc'),
+        borderColor: tierLabels.map(t => TIER_COLORS[t]),
         borderWidth: 1,
-      }}))
+      }}]
     }},
-    options: {{ responsive: true, scales: {{ y: {{ beginAtZero: true }} }} }}
+    options: {{ responsive: true, scales: {{ y: {{ beginAtZero: true }} }}, plugins: {{ legend: {{ display: false }} }} }}
   }});
+}}
 
-  // Table
-  const tbody = document.querySelector('#qualityTable tbody');
+// ============ ALL LISTINGS ============
+function renderListings() {{
+  const sourceFilter = document.getElementById('listingSource').value;
+  const tierFilter = document.getElementById('listingTier').value;
+  const sortVal = document.getElementById('listingSort').value;
+
+  let listings = [...D.verified_listings];
+  if (sourceFilter !== 'all') listings = listings.filter(l => l.source === sourceFilter);
+  if (tierFilter !== 'all') listings = listings.filter(l => l.quality_tier === tierFilter);
+
+  if (sortVal === 'price-desc') listings.sort((a,b) => b.price_usd - a.price_usd);
+  else if (sortVal === 'price-asc') listings.sort((a,b) => a.price_usd - b.price_usd);
+  else listings.sort((a,b) => a.source.localeCompare(b.source));
+
+  document.getElementById('listingCount').textContent = listings.length;
+
+  const tbody = document.querySelector('#listingsTable tbody');
   tbody.innerHTML = '';
-  D.quality_distribution.forEach(r => {{
+  listings.forEach(l => {{
+    const features = l.features.map(f => `<span class="feature-tag">${{f}}</span>`).join(' ');
     tbody.innerHTML += `<tr>
-      <td><span class="platform-tag ${{r.platform}}">${{r.platform}}</span></td>
-      <td>${{r.quality_tier}}</td>
-      <td>${{r.listings_count}}</td>
-      <td>${{pct(r.pct_of_total)}}</td>
-      <td>${{fmtUSD(r.avg_price_usd)}}</td>
-      <td>${{fmtUSD(r.median_price_usd)}}</td>
+      <td><span class="source-tag ${{sourceClass(l.source)}}">${{l.source}}</span></td>
+      <td>${{l.title}}</td>
+      <td style="font-weight:700">${{fmtUSD(l.price_usd)}}</td>
+      <td>${{l.category}}</td>
+      <td><span class="tier-tag ${{tierClass(l.quality_tier)}}">${{l.quality_tier}}</span></td>
+      <td>${{features}}</td>
+      <td><a class="view-link" href="${{l.url}}" target="_blank">View Listing &#8599;</a></td>
     </tr>`;
   }});
 }}
 
-// ============ ALERTS ============
-function renderAlerts() {{
-  const sev = document.getElementById('alertSeverity').value;
-  const plat = document.getElementById('alertPlatform').value;
-  let filtered = D.alerts;
-  if (sev !== 'all') filtered = filtered.filter(r => r.severity === sev);
-  if (plat !== 'all') filtered = filtered.filter(r => r.platform === plat);
+// ============ SOURCES ============
+function renderSources() {{
+  const cards = document.getElementById('sourceCards');
+  cards.innerHTML = '';
 
-  const list = document.getElementById('alertList');
-  list.innerHTML = '';
-  if (filtered.length === 0) {{ list.innerHTML = '<div style="color:var(--text-dim);padding:20px;">No alerts matching filters.</div>'; return; }}
-
-  filtered.forEach(a => {{
-    const ago = Math.round((Date.now() - new Date(a.timestamp).getTime()) / 3600000);
-    const agoStr = ago < 24 ? ago + 'h ago' : Math.round(ago / 24) + 'd ago';
-    list.innerHTML += `<div class="alert-item">
-      <span class="alert-badge ${{a.severity}}">${{a.severity}}</span>
-      <div>
-        <div class="alert-desc"><span class="platform-tag ${{a.platform}}">${{a.platform}}</span> ${{a.description}}</div>
-        <div class="alert-time">${{agoStr}} &middot; Source: ${{a.details.source}} &middot; Value: ${{a.details.metric_value}}x (baseline: ${{a.details.baseline_value}}x)</div>
-      </div>
+  for (const [name, profile] of Object.entries(D.marketplace_profiles)) {{
+    cards.innerHTML += `
+    <div class="source-card ${{sourceClass(name)}}">
+      <h3><a href="${{profile.url}}" target="_blank">${{name}} &#8599;</a></h3>
+      <div class="desc">${{profile.description}}</div>
+      <div class="source-stat"><span class="label">Est. Listings</span><span class="val">${{fmt(profile.estimated_roblox_listings)}}</span></div>
+      <div class="source-stat"><span class="label">Est. Total Sold</span><span class="val">${{fmt(profile.estimated_total_sold)}}</span></div>
+      <div class="source-stat"><span class="label">Price Range</span><span class="val">$${{profile.price_range_usd[0]}} - $${{profile.price_range_usd[1]}}</span></div>
+      <div class="source-stat"><span class="label">Avg Price</span><span class="val">$${{profile.avg_price_usd}}</span></div>
+      <div class="source-stat"><span class="label">Guarantee</span><span class="val">${{profile.account_guarantee_days}} days</span></div>
+      <div class="source-stat"><span class="label">Delivery</span><span class="val">${{profile.delivery}}</span></div>
+      <div class="source-stat"><span class="label">Support</span><span class="val">${{profile.support}}</span></div>
+      <div class="source-stat"><span class="label">Categories</span><span class="val">${{profile.categories.length}}</span></div>
     </div>`;
+  }}
+
+  const tbody = document.querySelector('#sourceTable tbody');
+  tbody.innerHTML = '';
+  D.source_breakdown.forEach(s => {{
+    tbody.innerHTML += `<tr>
+      <td><span class="source-tag ${{sourceClass(s.source_name)}}">${{s.source_name}}</span></td>
+      <td>${{fmt(s.estimated_total_listings)}}</td>
+      <td>${{fmt(s.estimated_total_sold)}}</td>
+      <td>$${{s.price_range_min}} - $${{s.price_range_max}}</td>
+      <td style="font-weight:700">${{fmtUSD(s.avg_price_usd)}}</td>
+      <td>${{s.account_guarantee_days}} days</td>
+      <td>${{s.delivery}}</td>
+      <td>${{s.verified_sellers ? '&#9989; Yes' : '&#10060; No'}}</td>
+      <td><a class="view-link" href="${{s.source_url}}" target="_blank">Visit &#8599;</a></td>
+    </tr>`;
   }});
 }}
 
-document.getElementById('alertSeverity').addEventListener('change', renderAlerts);
-document.getElementById('alertPlatform').addEventListener('change', renderAlerts);
+// ============ CATEGORIES ============
+function renderCategories() {{
+  const cats = D.categories.sort((a,b) => b.listing_count - a.listing_count);
 
-// ============ RAW DATA ============
-function renderRawData() {{
-  // Render provenance links
-  const provenanceDiv = document.getElementById('provenanceLinks');
-  provenanceDiv.innerHTML = '';
-  if (D.marketplace_profiles) {{
-    Object.entries(D.marketplace_profiles).forEach(([source, profile]) => {{
-      const a = document.createElement('a');
-      a.href = profile.url;
-      a.target = '_blank';
-      a.textContent = '↗ ' + source;
-      provenanceDiv.appendChild(a);
-    }});
-  }}
+  destroyChart('catBar');
+  charts.catBar = new Chart(document.getElementById('chartCatBar'), {{
+    type: 'bar',
+    data: {{
+      labels: cats.map(c => c.category),
+      datasets: [{{
+        label: 'Listings',
+        data: cats.map(c => c.listing_count),
+        backgroundColor: '#6c5ce7cc',
+        borderColor: '#6c5ce7',
+        borderWidth: 1,
+      }}]
+    }},
+    options: {{ responsive: true, indexAxis: 'y', scales: {{ x: {{ beginAtZero: true }} }}, plugins: {{ legend: {{ display: false }} }} }}
+  }});
 
-  // Render marketplace profile cards
-  const cardsDiv = document.getElementById('marketplaceCards');
-  cardsDiv.innerHTML = '';
-  if (D.marketplace_profiles) {{
-    Object.entries(D.marketplace_profiles).forEach(([source, profile]) => {{
-      const card = document.createElement('div');
-      card.className = 'marketplace-card';
-      card.innerHTML = `
-        <h3>${{source}}</h3>
-        <div class="marketplace-stat"><span>Listings:</span><span class="value">${{fmt(profile.estimated_roblox_listings)}}</span></div>
-        <div class="marketplace-stat"><span>Est. Yearly Sales:</span><span class="value">${{fmt(profile.estimated_total_sold_yearly)}}</span></div>
-        <div class="marketplace-stat"><span>Price Range:</span><span class="value">${{fmtUSD(profile.price_range[0])}}-${{profile.price_range[1]}}</span></div>
-        <div class="marketplace-stat"><span>Avg Price:</span><span class="value">${{fmtUSD(profile.avg_price_usd)}}</span></div>
-        <div class="marketplace-stat"><span>Verified Sellers:</span><span class="value">${{pct(profile.verified_sellers_pct)}}</span></div>
-        <div class="marketplace-stat"><span>Guarantee:</span><span class="value">${{profile.account_guarantee_days}} days</span></div>
-        <a href="${{profile.url}}" target="_blank" class="marketplace-card-link">Browse Listings ↗</a>
-      `;
-      cardsDiv.appendChild(card);
-    }});
-  }}
+  destroyChart('catPrice');
+  charts.catPrice = new Chart(document.getElementById('chartCatPrice'), {{
+    type: 'bar',
+    data: {{
+      labels: cats.map(c => c.category),
+      datasets: [{{
+        label: 'Avg Price (USD)',
+        data: cats.map(c => c.avg_price_usd),
+        backgroundColor: '#00cec9cc',
+        borderColor: '#00cec9',
+        borderWidth: 1,
+      }}]
+    }},
+    options: {{ responsive: true, indexAxis: 'y', scales: {{ x: {{ beginAtZero: true }} }}, plugins: {{ legend: {{ display: false }} }} }}
+  }});
 
-  // Render verified listings table
-  const tbody = document.querySelector('#verifiedListingsTable tbody');
+  const tbody = document.querySelector('#catTable tbody');
   tbody.innerHTML = '';
-  if (D.verified_listings) {{
-    D.verified_listings.forEach(listing => {{
-      const featuresStr = listing.features.join(', ');
-      tbody.innerHTML += `<tr>
-        <td><span class="verified-badge">✓ ${{listing.source}}</span></td>
-        <td style="font-weight:500;">${{listing.title}}</td>
-        <td style="font-weight:600;color:var(--green);">${{fmtUSD(listing.price)}}</td>
-        <td><span style="font-size:11px;color:var(--text-dim);">${{listing.category}}</span></td>
-        <td><span style="font-size:11px;padding:2px 6px;background:var(--surface2);border-radius:3px;">${{listing.quality_tier}}</span></td>
-        <td style="font-size:12px;">${{featuresStr}}</td>
-        <td><a href="${{listing.source_url}}" target="_blank" class="view-listing-btn">View ↗</a></td>
-      </tr>`;
+  cats.forEach(c => {{
+    tbody.innerHTML += `<tr>
+      <td style="font-weight:600">${{c.category}}</td>
+      <td>${{c.listing_count}}</td>
+      <td>${{c.sources.map(s => `<span class="source-tag ${{sourceClass(s)}}">${{s}}</span>`).join(' ')}}</td>
+      <td>${{fmtUSD(c.min_price_usd)}}</td>
+      <td>${{fmtUSD(c.max_price_usd)}}</td>
+      <td style="font-weight:700">${{fmtUSD(c.avg_price_usd)}}</td>
+    </tr>`;
+  }});
+}}
+
+// ============ PRICE ANALYSIS ============
+function renderPrices() {{
+  // Price distribution histogram
+  const prices = D.verified_listings.map(l => l.price_usd).sort((a,b) => a - b);
+  const buckets = ['$0-10', '$10-50', '$50-100', '$100-200', '$200-500'];
+  const ranges = [[0,10],[10,50],[50,100],[100,200],[200,500]];
+  const counts = ranges.map(([lo,hi]) => prices.filter(p => p >= lo && p < hi).length);
+
+  destroyChart('priceDist');
+  charts.priceDist = new Chart(document.getElementById('chartPriceDist'), {{
+    type: 'bar',
+    data: {{
+      labels: buckets,
+      datasets: [{{
+        label: 'Number of Listings',
+        data: counts,
+        backgroundColor: '#6c5ce7cc',
+        borderColor: '#6c5ce7',
+        borderWidth: 1,
+      }}]
+    }},
+    options: {{ responsive: true, scales: {{ y: {{ beginAtZero: true }} }}, plugins: {{ legend: {{ display: false }} }} }}
+  }});
+
+  // Price by source
+  const sources = ['U7Buy', 'Eldorado.gg', 'eBay'];
+  const sourceAvgs = sources.map(s => {{
+    const sp = D.verified_listings.filter(l => l.source === s).map(l => l.price_usd);
+    return sp.reduce((a,b) => a+b, 0) / sp.length;
+  }});
+  const sourceMins = sources.map(s => Math.min(...D.verified_listings.filter(l => l.source === s).map(l => l.price_usd)));
+  const sourceMaxs = sources.map(s => Math.max(...D.verified_listings.filter(l => l.source === s).map(l => l.price_usd)));
+
+  destroyChart('priceBySource');
+  charts.priceBySource = new Chart(document.getElementById('chartPriceBySource'), {{
+    type: 'bar',
+    data: {{
+      labels: sources,
+      datasets: [
+        {{ label: 'Min', data: sourceMins, backgroundColor: '#26de8166' }},
+        {{ label: 'Average', data: sourceAvgs, backgroundColor: sources.map(s => SOURCE_COLORS[s] + 'cc') }},
+        {{ label: 'Max', data: sourceMaxs, backgroundColor: '#ff6b6b66' }},
+      ]
+    }},
+    options: {{ responsive: true, scales: {{ y: {{ beginAtZero: true }} }}, plugins: {{ legend: {{ position: 'top' }} }} }}
+  }});
+
+  // Price by tier
+  const tiers = D.quality_distribution.map(q => q.quality_tier);
+  destroyChart('priceByTier');
+  charts.priceByTier = new Chart(document.getElementById('chartPriceByTier'), {{
+    type: 'bar',
+    data: {{
+      labels: tiers,
+      datasets: [
+        {{ label: 'Min', data: D.quality_distribution.map(q => q.min_price_usd), backgroundColor: '#26de8166' }},
+        {{ label: 'Average', data: D.quality_distribution.map(q => q.avg_price_usd), backgroundColor: tiers.map(t => TIER_COLORS[t] + 'cc') }},
+        {{ label: 'Max', data: D.quality_distribution.map(q => q.max_price_usd), backgroundColor: '#ff6b6b66' }},
+      ]
+    }},
+    options: {{ responsive: true, scales: {{ y: {{ beginAtZero: true }} }}, plugins: {{ legend: {{ position: 'top' }} }} }}
+  }});
+
+  // Cross-source price comparison
+  const compDiv = document.getElementById('priceCompSection');
+  if (D.price_comparison && D.price_comparison.length > 0) {{
+    let html = '<div class="chart-card" style="margin-top:20px"><h3>Cross-Source Price Comparison</h3><div class="table-wrap"><table><thead><tr><th>Category</th>';
+    sources.forEach(s => html += `<th>${{s}}</th>`);
+    html += '</tr></thead><tbody>';
+    D.price_comparison.forEach(pc => {{
+      html += `<tr><td style="font-weight:600">${{pc.category}}</td>`;
+      sources.forEach(s => {{
+        if (pc.sources[s]) {{
+          html += `<td>${{fmtUSD(pc.sources[s].avg_price)}} <span style="color:var(--text-dim);font-size:11px">(${{pc.sources[s].count}} listings)</span></td>`;
+        }} else {{
+          html += '<td style="color:var(--text-dim)">-</td>';
+        }}
+      }});
+      html += '</tr>';
     }});
+    html += '</tbody></table></div></div>';
+    compDiv.innerHTML = html;
+  }}
+}}
+
+// ============ BENCHMARKS ============
+function renderBenchmarks() {{
+  const grid = document.getElementById('benchmarkGrid');
+  grid.innerHTML = '';
+  for (const [name, bench] of Object.entries(D.price_benchmarks)) {{
+    if (bench.typical_usd !== undefined) {{
+      grid.innerHTML += `
+        <div class="benchmark-item">
+          <div class="bname">${{name}}</div>
+          <div class="btypical">${{fmtUSD(bench.typical_usd)}}</div>
+          <div class="brange">Range: $${{bench.min_usd}} - $${{bench.max_usd}}</div>
+        </div>`;
+    }} else if (bench.usd_equivalent !== undefined) {{
+      grid.innerHTML += `
+        <div class="benchmark-item">
+          <div class="bname">${{name}}</div>
+          <div class="btypical">${{fmt(bench.robux)}} Robux</div>
+          <div class="brange">~${{fmtUSD(bench.usd_equivalent)}} USD equivalent</div>
+        </div>`;
+    }}
   }}
 }}
 
 // ============ INIT ============
 renderOverview();
-renderTrends();
+renderListings();
 renderSources();
-renderKeywords();
-renderRegions();
-renderLanguages();
-renderQuality();
-renderAlerts();
-renderRawData();
+renderCategories();
+renderPrices();
+renderBenchmarks();
+
+// Listing filters
+['listingSource', 'listingTier', 'listingSort'].forEach(id => {{
+  document.getElementById(id).addEventListener('change', renderListings);
+}});
 </script>
 </body>
-</html>
-"""
+</html>"""
 
-import os
-output_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "index.html")
-with open(output_path, "w") as f:
+with open("index.html", "w") as f:
     f.write(html)
-print(f"Dashboard written to {output_path}")
+
+print(f"Dashboard written to index.html")
 print(f"File size: {len(html):,} bytes")
